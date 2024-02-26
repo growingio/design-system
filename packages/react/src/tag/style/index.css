@@ -1,0 +1,359 @@
+/* disabled */
+.arco-tag-disabled {
+  cursor: not-allowed;
+}
+
+/* type： normal */
+.arco-tag-normal.arco-tag-not-started {
+  background: var(--color-fill-2);
+  color: var(--color-text-1);
+}
+.arco-tag-normal.arco-tag-not-started.arco-tag-disabled {
+  border: 1px solid var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+.arco-tag-normal.arco-tag-success {
+  background: rgb(var(--success-1));
+  color: rgb(var(--success-6));
+}
+.arco-tag-normal.arco-tag-success.arco-tag-disabled {
+  color: rgb(var(--success-3));
+}
+
+.arco-tag-normal.arco-tag-warning {
+  background: rgb(var(--warning-1));
+  color: rgb(var(--warning-6));
+}
+.arco-tag-normal.arco-tag-warning.arco-tag-disabled {
+  color: rgb(var(--warning-3));
+}
+
+.arco-tag-normal.arco-tag-danger {
+  background: rgb(var(--danger-1));
+  color: rgb(var(--danger-6));
+}
+.arco-tag-normal.arco-tag-danger.arco-tag-disabled {
+  color: rgb(var(--danger-3));
+}
+
+.arco-tag-normal.arco-tag-doing {
+  background: rgb(var(--primary-1));
+  color: rgb(var(--primary-6));
+}
+.arco-tag-normal.arco-tag-doing.arco-tag-disabled {
+  color: rgb(var(--primary-3));
+}
+
+.arco-tag-normal.arco-tag-done {
+  background: var(--color-fill-2);
+  color: var(--color-text-2);
+}
+.arco-tag-normal.arco-tag-done.arco-tag-disabled {
+  border: 1px solid var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+/* type： highlighted */
+.arco-tag-highlighted {
+  color: var(--color-text-5);
+}
+
+.arco-tag-highlighted.arco-tag-not-started {
+  background: var(--color-text-1);
+}
+.arco-tag-highlighted.arco-tag-not-started.arco-tag-disabled {
+  background: var(--color-text-4);
+}
+
+.arco-tag-highlighted.arco-tag-success {
+  background: rgb(var(--success-6));
+}
+.arco-tag-highlighted.arco-tag-success.arco-tag-disabled {
+  background: rgb(var(--success-3));
+}
+
+.arco-tag-highlighted.arco-tag-warning {
+  background: rgb(var(--warning-6));
+}
+.arco-tag-highlighted.arco-tag-warning.arco-tag-disabled {
+  background: rgb(var(--warning-3));
+}
+
+.arco-tag-highlighted.arco-tag-danger {
+  background: rgb(var(--danger-6));
+}
+.arco-tag-highlighted.arco-tag-danger.arco-tag-disabled {
+  background: rgb(var(--danger-3));
+}
+
+.arco-tag-highlighted.arco-tag-doing {
+  background: rgb(var(--primary-6));
+}
+.arco-tag-highlighted.arco-tag-doing.arco-tag-disabled {
+  background: rgb(var(--primary-3));
+}
+
+.arco-tag-highlighted.arco-tag-done {
+  background: var(--color-text-2);
+}
+.arco-tag-highlighted.arco-tag-done.arco-tag-disabled {
+  background: var(--color-text-4);
+}
+
+/* type： outline */
+.arco-tag-outline {
+  background: var(--color-white);
+  border: 1px solid;
+}
+
+.arco-tag-outline.arco-tag-not-started {
+  border-color: var(--color-text-1);
+  color: var(--color-text-1);
+}
+.arco-tag-outline.arco-tag-not-started.arco-tag-disabled {
+  border-color: var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+.arco-tag-outline.arco-tag-success {
+  border-color: rgb(var(--success-6));
+  color: rgb(var(--success-6));
+}
+.arco-tag-outline.arco-tag-success.arco-tag-disabled {
+  border-color: rgb(var(--success-3));
+  color: rgb(var(--success-3));
+}
+
+.arco-tag-outline.arco-tag-warning {
+  border-color: rgb(var(--warning-6));
+  color: rgb(var(--warning-6));
+}
+.arco-tag-outline.arco-tag-warning.arco-tag-disabled {
+  border-color: rgb(var(--warning-3));
+  color: rgb(var(--warning-3));
+}
+
+.arco-tag-outline.arco-tag-danger {
+  border-color: rgb(var(--danger-6));
+  color: rgb(var(--danger-6));
+}
+.arco-tag-outline.arco-tag-danger.arco-tag-disabled {
+  border-color: rgb(var(--danger-3));
+  color: rgb(var(--danger-3));
+}
+
+.arco-tag-outline.arco-tag-doing {
+  border-color: rgb(var(--primary-6));
+  color: rgb(var(--primary-6));
+}
+.arco-tag-outline.arco-tag-doing.arco-tag-disabled {
+  border-color: rgb(var(--primary-3));
+  color: rgb(var(--primary-3));
+}
+
+.arco-tag-outline.arco-tag-done {
+  border-color: var(--color-text-2);
+  color: var(--color-text-2);
+}
+.arco-tag-outline.arco-tag-done.arco-tag-disabled {
+  border-color: var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+/* type： light-outline */
+.arco-tag-light-outline {
+  border: 1px solid;
+}
+
+.arco-tag-light-outline.arco-tag-not-started {
+  background: var(--color-fill-2);
+  border-color: var(--color-fill-5);
+  color: var(--color-text-1);
+}
+.arco-tag-light-outline.arco-tag-not-started.arco-tag-disabled {
+  background: var(--color-fill-2);
+  border-color: var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+.arco-tag-light-outline.arco-tag-success {
+  background: rgb(var(--success-1));
+  border-color: rgb(var(--success-6));
+  color: rgb(var(--success-6));
+}
+.arco-tag-light-outline.arco-tag-success.arco-tag-disabled {
+  background: rgb(var(--success-1));
+  border-color: rgb(var(--success-3));
+  color: rgb(var(--success-3));
+}
+
+.arco-tag-light-outline.arco-tag-warning {
+  background: rgb(var(--warning-1));
+  border-color: rgb(var(--warning-6));
+  color: rgb(var(--warning-6));
+}
+.arco-tag-light-outline.arco-tag-warning.arco-tag-disabled {
+  background: rgb(var(--warning-1));
+  border-color: rgb(var(--warning-3));
+  color: rgb(var(--warning-3));
+}
+
+.arco-tag-light-outline.arco-tag-danger {
+  background: rgb(var(--danger-1));
+  border-color: rgb(var(--danger-6));
+  color: rgb(var(--danger-6));
+}
+.arco-tag-light-outline.arco-tag-danger.arco-tag-disabled {
+  background: rgb(var(--danger-1));
+  border-color: rgb(var(--danger-3));
+  color: rgb(var(--danger-3));
+}
+
+.arco-tag-light-outline.arco-tag-doing {
+  background: rgb(var(--primary-1));
+  border-color: rgb(var(--primary-6));
+  color: rgb(var(--primary-6));
+}
+.arco-tag-light-outline.arco-tag-doing.arco-tag-disabled {
+  background: rgb(var(--primary-1));
+  border-color: rgb(var(--primary-3));
+  color: rgb(var(--primary-3));
+}
+
+.arco-tag-light-outline.arco-tag-done {
+  background: var(--color-fill-1);
+  border-color: var(--color-text-2);
+  color: var(--color-text-2);
+}
+.arco-tag-light-outline.arco-tag-done.arco-tag-disabled {
+  background: var(--color-fill-1);
+  border-color: var(--color-border-2);
+  color: var(--color-text-4);
+}
+
+.arco-tag-checked.arco-tag-gio-orange {
+  color: rgb(var(--gio-orange-6));
+  background-color: rgb(var(--gio-orange-1));
+  border: 1px solid #0000;
+}
+.arco-tag-checked.arco-tag-gio-orange.arco-tag-bordered {
+  border-color: rgb(var(--gio-orange-6));
+}
+.arco-tag-checked.arco-tag-primary {
+  color: rgb(var(--primary-6));
+  background-color: rgb(var(--primary-1));
+  border: 1px solid #0000;
+}
+.arco-tag-checked.arco-tag-primary.arco-tag-bordered {
+  border-color: rgb(var(--primary-6));
+}
+.arco-tag-checked.arco-tag-sky-blue {
+  color: rgb(var(--sky-blue-6));
+  background-color: rgb(var(--sky-blue-1));
+  border: 1px solid #0000;
+}
+.arco-tag-checked.arco-tag-sky-blue.arco-tag-bordered {
+  border-color: rgb(var(--sky-blue-6));
+}
+
+/* badge-tag */
+.arco-badge-tag {
+  display: inline-flex;
+  align-items: flex-start;
+
+  color: var(--color-text-5);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.arco-badge-tag-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px 0px 0px 4px;
+  background: var(--color-fill-5);
+  color: var(--color-text-5);
+}
+
+.arco-badge-tag-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 0px 4px 4px 0px;
+  background: rgb(var(--primary-6));
+}
+
+.arco-badge-tag-large .arco-badge-tag-title,
+.arco-badge-tag-large .arco-badge-tag-content,
+.arco-avatar-tag-large {
+  padding: 5px 8px;
+}
+.arco-badge-tag-default .arco-badge-tag-title,
+.arco-badge-tag-default .arco-badge-tag-content,
+.arco-avatar-tag-default {
+  padding: 3px 8px;
+}
+.arco-badge-tag-small .arco-badge-tag-title,
+.arco-badge-tag-small .arco-badge-tag-content,
+.arco-avatar-tag-small {
+  padding: 1px 8px;
+}
+.arco-badge-tag-mini .arco-badge-tag-title,
+.arco-badge-tag-mini .arco-badge-tag-content,
+.arco-avatar-tag-mini {
+  padding: 0px 8px;
+}
+
+/* avatar tag */
+.arco-avatar-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.arco-avatar-tag-light {
+  background: var(--color-fill-2);
+  color: var(--color-text-1);
+}
+
+.arco-avatar-tag-dark {
+  background: var(--color-fill-5);
+  color: var(--color-text-5);
+}
+
+.arco-avatar-tag-avatar {
+  border-radius: 50%;
+}
+
+.arco-avatar-tag-large .arco-avatar-tag-avatar {
+  width: 22px;
+  height: 22px;
+}
+.arco-avatar-tag-default .arco-avatar-tag-avatar {
+  width: 20px;
+  height: 20px;
+}
+.arco-avatar-tag-small .arco-avatar-tag-avatar {
+  width: 16px;
+  height: 16px;
+}
+.arco-avatar-tag-mini .arco-avatar-tag-avatar {
+  width: 14px;
+  height: 14px;
+}
+
+.arco-badge-tag-mini,
+.arco-avatar-tag-mini {
+  font-size: 12px;
+  line-height: 20px;
+}

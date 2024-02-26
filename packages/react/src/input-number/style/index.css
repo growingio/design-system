@@ -1,0 +1,22 @@
+.arco-input-number.arco-input-group-wrapper-disabled {
+  .arco-input-group-addbefore,
+  .arco-input-group-addafter {
+    border-color: var(--color-border-2);
+  }
+}
+
+.arco-input-number-mode-button {
+  .arco-input-group-addbefore {
+    .arco-input-number-step-button {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+  }
+
+  .arco-input-group-addafter {
+    .arco-input-number-step-button {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}

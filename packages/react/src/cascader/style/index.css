@@ -1,0 +1,21 @@
+.arco-cascader-wrapper .arco-cascader:not(:first-child) .arco-cascader-view {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.arco-cascader-addbefore {
+  border-color: var(--color-border-3);
+  border-right-width: 0;
+}
+
+.arco-cascader-list-item,
+.arco-cascader-list-search-item {
+  margin: 0 4px;
+  border-radius: 4px;
+}
+
+.arco-cascader-list:overflowing {
+  .arco-cascader-list-item {
+    margin-right: 0;
+  }
+}

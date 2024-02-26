@@ -1,0 +1,234 @@
+.arco-btn-group .arco-btn:not(:last-child, .arco-btn-rtl),
+.arco-btn-group .arco-btn:not(:last-child, .arco-btn-rtl):hover,
+.arco-btn-group .arco-btn-rtl.arco-btn-primary:not(:first-child),
+.arco-btn-group .arco-btn-rtl.arco-btn-primary:not(:first-child):hover,
+.arco-btn-group .arco-btn-rtl.arco-btn-secondary:not(:first-child),
+.arco-btn-group .arco-btn-rtl.arco-btn-secondary:not(:first-child):hover {
+  border-right: 1px solid var(--color-bg-1);
+}
+
+/**
+ * type - dashed, status - primary
+ */
+.arco-btn-dashed.arco-btn-status-primary:not(.arco-btn-disabled) {
+  background-color: rgb(var(--primary-1));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-4));
+}
+
+.arco-btn-dashed.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: rgb(var(--primary-2));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-4));
+}
+
+.arco-btn-dashed.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: rgb(var(--primary-3));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-4));
+}
+
+.arco-btn-dashed.arco-btn-status-primary.arco-btn-disabled {
+  background-color: rgb(var(--primary-1));
+  color: rgb(var(--primary-2));
+  border-color: rgb(var(--primary-2));
+}
+
+/**
+ * type - outline, status - primary
+ */
+.arco-btn-outline.arco-btn-status-primary:not(.arco-btn-disabled) {
+  background-color: rgb(var(--color-bg-white));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-6));
+}
+
+.arco-btn-outline.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: rgb(var(--primary-1));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-6));
+}
+
+.arco-btn-outline.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: rgb(var(--primary-2));
+  color: rgb(var(--primary-6));
+  border-color: rgb(var(--primary-6));
+}
+
+.arco-btn-outline.arco-btn-status-primary.arco-btn-disabled {
+  background-color: rgb(var(--color-bg-white));
+  color: rgb(var(--primary-2));
+  border-color: rgb(var(--primary-3));
+}
+
+/**
+ * type - text, status - primary
+ */
+.arco-btn-text.arco-btn-status-primary:not(.arco-btn-disabled) {
+  background-color: transparent;
+  color: rgb(var(--primary-6));
+  border-color: transparent;
+}
+
+.arco-btn-text.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: var(--color-fill-2);
+  color: rgb(var(--primary-6));
+}
+
+.arco-btn-text.arco-btn-status-primary:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: var(--color-fill-3);
+  color: rgb(var(--primary-6));
+}
+
+.arco-btn-text.arco-btn-status-primary.arco-btn-disabled {
+  background-color: transparent;
+  color: rgb(var(--primary-2));
+  border-color: transparent;
+}
+
+/**
+ * type - primary, status - default
+ */
+.arco-btn-primary.arco-btn-status-default:not(.arco-btn-disabled) {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-1);
+}
+
+.arco-btn-primary.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: var(--color-fill-2);
+  color: rgb(var(--primary-6));
+}
+
+.arco-btn-primary.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: var(--color-fill-3);
+  color: rgb(var(--primary-6));
+}
+
+.arco-btn-primary.arco-btn-status-default.arco-btn-disabled {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-4);
+}
+
+/**
+ * type - secondary, status - default
+ */
+.arco-btn-secondary.arco-btn-status-default:not(.arco-btn-disabled) {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-1);
+}
+
+.arco-btn-secondary.arco-btn-status-default.arco-btn-disabled {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-4);
+}
+
+/**
+ * type - dashed, status - default
+ */
+.arco-btn-dashed.arco-btn-status-default:not(.arco-btn-disabled) {
+  background-color: var(--color-fill-1);
+  color: var(--color-text-1);
+  border-color: var(--color-border-3);
+}
+
+.arco-btn-dashed.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: var(--color-fill-2);
+}
+
+.arco-btn-dashed.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: var(--color-fill-3);
+}
+
+.arco-btn-dashed.arco-btn-status-default.arco-btn-disabled {
+  background-color: var(--color-fill-2);
+  color: var(--color-text-4);
+  border-color: var(--color-border-2);
+}
+
+/**
+ * type - outline, status - default
+ */
+.arco-btn-outline.arco-btn-status-default:not(.arco-btn-disabled) {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-1);
+  border-color: var(--color-border-3);
+}
+
+.arco-btn-outline.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: var(--color-fill-2);
+}
+
+.arco-btn-outline.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: var(--color-fill-3);
+}
+
+.arco-btn-outline.arco-btn-status-default.arco-btn-disabled {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-4);
+  border-color: var(--color-border-2);
+}
+
+/**
+ * type - text, status - default
+ */
+.arco-btn-text.arco-btn-status-default:not(.arco-btn-disabled) {
+  background-color: transparent;
+  color: var(--color-text-1);
+  border-color: transparent;
+}
+
+.arco-btn-text.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):hover {
+  background-color: var(--color-fill-2);
+}
+
+.arco-btn-text.arco-btn-status-default:not(
+    .arco-btn-disabled,
+    .arco-btn-loading
+  ):active {
+  background-color: var(--color-fill-3);
+}
+
+.arco-btn-text.arco-btn-status-default.arco-btn-disabled {
+  background-color: transparent;
+  color: var(--color-text-4);
+  border-color: transparent;
+}

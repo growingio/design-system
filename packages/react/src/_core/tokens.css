@@ -1,0 +1,26 @@
+body {
+  --gio-orange-1: 255, 240, 232;
+  --gio-orange-2: 254, 215, 197;
+  --gio-orange-3: 254, 188, 162;
+  --gio-orange-4: 253, 159, 127;
+  --gio-orange-5: 253, 127, 92;
+  --gio-orange-6: 252, 95, 58;
+  --gio-orange-7: 208, 62, 36;
+  --gio-orange-8: 164, 36, 19;
+  --gio-orange-9: 120, 16, 7;
+  --gio-orange-10: 77, 4, 0;
+
+  --sky-blue-1: 232, 250, 255;
+  --sky-blue-2: 194, 239, 254;
+  --sky-blue-3: 157, 226, 253;
+  --sky-blue-4: 120, 210, 252;
+  --sky-blue-5: 83, 192, 251;
+  --sky-blue-6: 46, 171, 250;
+  --sky-blue-7: 29, 132, 207;
+  --sky-blue-8: 15, 97, 163;
+  --sky-blue-9: 6, 65, 120;
+  --sky-blue-10: 0, 37, 77;
+
+  --color-fill-5: #2a2e35;
+  --color-text-5: #ffffff;
+}

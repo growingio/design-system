@@ -1,0 +1,58 @@
+.arco-tooltip-mini {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.arco-trigger-arrow {
+  width: 10px;
+  height: 5px;
+  clip-path: path(
+    'M10 0H0L4.37531 3.50024C4.74052 3.79242 5.25948 3.79242 5.62469 3.50024L10 0Z'
+  );
+  transform: none;
+}
+
+.arco-trigger[trigger-placement='top'] .arco-trigger-arrow,
+.arco-trigger[trigger-placement='tl'] .arco-trigger-arrow,
+.arco-trigger[trigger-placement='tr'] .arco-trigger-arrow {
+  border-radius: 0px;
+}
+
+.arco-trigger[trigger-placement='bottom'] .arco-trigger-arrow,
+.arco-trigger[trigger-placement='bl'] .arco-trigger-arrow,
+.arco-trigger[trigger-placement='br'] .arco-trigger-arrow {
+  border-radius: 0px;
+  transform: rotate(180deg);
+}
+
+.arco-trigger[trigger-placement='left']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow,
+.arco-trigger[trigger-placement='lt']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow,
+.arco-trigger[trigger-placement='lb']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow {
+  border-radius: 0px;
+  right: -5px;
+  margin-top: -10px;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+}
+
+.arco-trigger[trigger-placement='right']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow,
+.arco-trigger[trigger-placement='rt']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow,
+.arco-trigger[trigger-placement='rb']
+  > .arco-trigger-arrow-container
+  .arco-trigger-arrow {
+  border-radius: 0px;
+  left: 0;
+  margin-top: -5px;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build --docs"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "2.58.0",
+    "@arco-iconbox/react-growingio": "0.4.0",
+    "@arco-themes/react-growingio": "0.2.0",
+    "@giod/react": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "babel-plugin-formatjs": "^10.5.10",
+    "clsx": "^2.0.0",
+    "dayjs": "^1.11.10",
+    "lodash-es": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-intl": "^6.5.2",
+    "react-resizable": "^3.0.5",
+    "react-sticky": "^6.0.3"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/manager-api": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@storybook/theming": "^7.6.17",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.8.0",
+    "storybook": "^7.6.17",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4"
+  }
+}

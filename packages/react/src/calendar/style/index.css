@@ -1,0 +1,9 @@
+.arco-calendar-mode-month:not(.arco-calendar-panel) {
+  .arco-calendar-cell {
+    &:hover {
+      .arco-calendar-date {
+        background: var(--color-fill-1);
+      }
+    }
+  }
+}

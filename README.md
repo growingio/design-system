@@ -1,6 +1,6 @@
-# Turborepo starter
+# GrowingIO Design
 
-This is an official starter Turborepo.
+A comprehensive React UI components library based on the GrowingIO Design and Arco Design.
 
 ## Using this example
 
@@ -16,9 +16,8 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
+- `website`: the document site for GrowingIO Design
+- `@giod/react`: a comprehensive React UI components library based on GrowingIO Design
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 

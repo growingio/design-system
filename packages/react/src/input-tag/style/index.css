@@ -1,0 +1,15 @@
+.arco-input-tag-addbefore,
+.arco-input-tag-addafter {
+  border-top: 1px solid var(--color-border-3);
+  border-bottom: 1px solid var(--color-border-3);
+}
+
+.arco-input-tag-addbefore {
+  border-left: 1px solid var(--color-border-3);
+  border-right-width: 0px;
+}
+
+.arco-input-tag-addafter {
+  border-right: 1px solid var(--color-border-3);
+  border-left-width: 0px;
+}

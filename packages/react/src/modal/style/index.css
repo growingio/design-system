@@ -1,0 +1,66 @@
+.arco-modal:not(.arco-modal-simple) {
+  background-color: var(--color-fill-2);
+
+  div[tabindex='-1'] {
+    background-color: transparent;
+  }
+
+  .arco-modal-header {
+    border-bottom: none;
+  }
+
+  .arco-modal-content {
+    background-color: var(--color-bg-2);
+    border-radius: 8px;
+
+    &:has(~ .arco-modal-footer) {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  .arco-modal-footer {
+    background-color: var(--color-bg-2);
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    padding: 0px 32px 24px 32px;
+  }
+
+  .arco-modal-close-icon {
+    color: var(--color-text-2);
+
+    &:hover::before,
+    &:active::before {
+      background-color: var(--color-fill-3);
+    }
+  }
+}
+
+.arco-modal-fullscreen {
+  width: calc(100% - 96px);
+  height: calc(100% - 96px);
+  top: 48px;
+  right: 48px;
+  bottom: 48px;
+  left: 48px;
+  margin: 0;
+
+  div[tabindex='-1'] {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arco-modal-content {
+    flex: 1;
+  }
+}
+
+.arco-modal-wrapper {
+  box-sizing: border-box;
+  padding: 48px 0;
+
+  /* .arco-modal {
+    transform: translateY(-48px);
+  } */
+}

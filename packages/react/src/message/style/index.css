@@ -1,0 +1,19 @@
+.arco-message {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.arco-message-close-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arco-message-content {
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: start;
+  line-height: 22px;
+}
+.arco-message-icon {
+  height: 20px;
+}

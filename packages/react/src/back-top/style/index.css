@@ -1,0 +1,8 @@
+.arco-backtop-button {
+  background: var(--color-text-2);
+
+  &:hover,
+  &:active {
+    background: var(--color-text-1);
+  }
+}

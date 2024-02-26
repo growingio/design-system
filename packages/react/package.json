@@ -1,0 +1,52 @@
+{
+  "name": "@giod/react",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "module": "dist/index.min.js",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "bundle": " bundle:css && bundle:js",
+    "bundle:css": "esbuild src/index.css --bundle --minify --outfile=dist/index.min.css",
+    "bundle:js": "esbuild src/index.ts --bundle --minify --outfile=dist/index.min.js",
+    "build": "build:es && build:cjs",
+    "build:es": "arco-scripts build:component:es",
+    "build:cjs": "arco-scripts build:component:cjs",
+    "stylelint": "stylelint 'components/**/*.css'"
+  },
+  "keywords": [],
+  "files": [
+    "dist",
+    "es",
+    "cjs"
+  ],
+  "author": "GrowingIO Frontend <eng-frontend@growingio.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@arco-design/web-react": "2.58.0",
+    "@arco-themes/react-growingio": "0.2.0",
+    "@rc-component/tour": "^1.12.3",
+    "clsx": "^2.0.0"
+  },
+  "devDependencies": {
+    "@arco-iconbox/react-growingio": "0.4.0",
+    "@storybook/blocks": "7.6.12",
+    "@storybook/react": "7.6.12",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "arco-scripts": "^1.27.13",
+    "dayjs": "^1.11.10",
+    "lodash-es": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
+    "react-intl": "^6.5.2",
+    "react-resizable": "^3.0.5",
+    "react-sticky": "^6.0.3",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}

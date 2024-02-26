@@ -1,0 +1,45 @@
+.arco-empty .arco-empty-wrapper .arco-empty-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arco-empty .arco-empty-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 22px;
+}
+
+/* size - large */
+.arco-empty-large .arco-empty-wrapper {
+  max-width: 300px;
+}
+
+.arco-empty-large .arco-empty-wrapper .arco-empty-image {
+  margin-bottom: 16px;
+}
+
+.arco-empty-large .arco-empty-wrapper .arco-empty-image svg {
+  width: 180px;
+  height: 120px;
+}
+
+/* size - small */
+.arco-empty-small .arco-empty-wrapper {
+  max-width: 160px;
+}
+
+.arco-empty-small .arco-empty-wrapper .arco-empty-image {
+  margin-bottom: 12px;
+}
+
+.arco-empty-small .arco-empty-wrapper .arco-empty-image svg {
+  width: 120px;
+  height: 80px;
+}
+
+.arco-empty-small .arco-empty-description {
+  font-size: 12px;
+  line-height: 20px;
+}

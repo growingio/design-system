@@ -1,0 +1,11 @@
+.arco-alert-with-title {
+  .arco-alert-close-btn {
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+  }
+}
+
+.arco-alert-title:last-child {
+  margin-bottom: 0;
+}

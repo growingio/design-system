@@ -1,0 +1,28 @@
+.arco-dropdown-menu {
+  padding: 4px;
+
+  .arco-dropdown-menu-item {
+    &:active {
+      background-color: var(--color-fill-2);
+      font-weight: 500;
+    }
+  }
+}
+
+.arco-dropdown-menu-item,
+.arco-dropdown-menu-pop-header {
+  border-radius: 4px;
+}
+
+.arco-btn {
+  .arco-icon-down {
+    transform: rotate(0deg);
+    transition: all 0.2s;
+  }
+}
+
+.arco-btn.arco-dropdown-popup-visible {
+  .arco-icon-down {
+    transform: rotate(180deg);
+  }
+}
