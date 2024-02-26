@@ -6,10 +6,10 @@
   "module": "dist/index.min.js",
   "main": "dist/index.min.js",
   "scripts": {
-    "bundle": " bundle:css && bundle:js",
+    "bundle": "pnpm run bundle:css && pnpm run bundle:js",
     "bundle:css": "esbuild src/index.css --bundle --minify --outfile=dist/index.min.css",
     "bundle:js": "esbuild src/index.ts --bundle --minify --outfile=dist/index.min.js",
-    "build": "build:es && build:cjs",
+    "build": "pnpm run build:es && pnpm run build:cjs",
     "build:es": "arco-scripts build:component:es",
     "build:cjs": "arco-scripts build:component:cjs",
     "stylelint": "stylelint 'components/**/*.css'"
@@ -18,7 +18,7 @@
   "files": [
     "dist",
     "es",
-    "cjs"
+    "lib"
   ],
   "author": "GrowingIO Frontend <eng-frontend@growingio.com>",
   "license": "Apache-2.0",
