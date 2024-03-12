@@ -13,7 +13,6 @@
     "@arco-iconbox/react-growingio": "0.4.0",
     "@arco-themes/react-growingio": "0.2.0",
     "@giod/react": "workspace:*",
-    "@repo/ui": "workspace:*",
     "babel-plugin-formatjs": "^10.5.10",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",

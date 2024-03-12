@@ -167,3 +167,6 @@ export {
 export type { ConfigProviderProps } from "@arco-design/web-react/es/ConfigProvider";
 
 export { default as Tour, type TourProps, type TourStepProps } from "./tour";
+
+export { default as Trigger } from "@arco-design/web-react/es/Trigger";
+export type { TriggerProps } from "@arco-design/web-react/es/Trigger";

@@ -1,0 +1,75 @@
+.gio-past-period-picker-panel {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0px;
+
+  background-color: var(--color-bg-1);
+
+  border: 1px solid var(--color-border-2);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-large);
+}
+
+.gio-past-period-picker-content {
+  box-sizing: border-box;
+
+  flex: 1;
+
+  min-width: 284px;
+
+  .arco-radio-group {
+    margin: 24px;
+  }
+}
+
+.gio-date-range-panel {
+  width: 544px;
+
+  .arco-picker-range-container {
+    border: none;
+
+    .arco-picker-header {
+      border-bottom: none;
+    }
+  }
+}
+
+.gio-date-range-panel-header {
+  border-bottom: 1px solid var(--color-border-2);
+  padding: 12px 16px 16px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.gio-date-range-panel-header-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+
+  color: var(--color-text-3);
+  font-size: 12px;
+  line-height: 20px;
+}
+.gio-date-range-panel-header-date-range {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--color-text-1);
+}
+.gio-date-range-panel-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 8px 24px 24px;
+  gap: 10px;
+}

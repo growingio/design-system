@@ -1,0 +1,8 @@
+.gio-past-time-shortcuts {
+  .arco-btn-secondary:not(.arco-btn-disabled) {
+    &:hover {
+      background-color: rgb(var(--primary-1));
+      border: 1px solid rgb(var(--primary-4));
+    }
+  }
+}

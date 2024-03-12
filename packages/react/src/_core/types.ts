@@ -1,17 +1,19 @@
-export type SizeType = 'mini' | 'small' | 'default' | 'large';
+import type { CSSProperties } from "react";
+
+export type SizeType = "mini" | "small" | "default" | "large";
 export type ColorType =
-  | 'red'
-  | 'orangered'
-  | 'orange'
-  | 'gold'
-  | 'lime'
-  | 'green'
-  | 'cyan'
-  | 'arcoblue'
-  | 'purple'
-  | 'pinkpurple'
-  | 'magenta'
-  | 'gray'
+  | "red"
+  | "orangered"
+  | "orange"
+  | "gold"
+  | "lime"
+  | "green"
+  | "cyan"
+  | "arcoblue"
+  | "purple"
+  | "pinkpurple"
+  | "magenta"
+  | "gray"
   | string;
 
 export interface InputCommonProps {
@@ -22,4 +24,9 @@ export interface InputCommonProps {
   error?: boolean;
 }
 
-export type DropdownPositionType = 'bl' | 'bottom' | 'br' | 'tl' | 'top' | 'tr';
+export type DropdownPositionType = "bl" | "bottom" | "br" | "tl" | "top" | "tr";
+
+export interface CommonProps {
+  className?: string | string[];
+  style?: CSSProperties;
+}

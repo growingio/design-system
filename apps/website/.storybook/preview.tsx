@@ -139,6 +139,7 @@ const preview: Preview = {
           "Components",
           [
             "Overview",
+            "Internal",
             "General",
             "Layout",
             "Navigation",

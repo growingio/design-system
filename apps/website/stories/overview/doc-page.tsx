@@ -118,11 +118,6 @@ function DocPage({ intl }: { intl: IntlShape }) {
           title: formatMessage({ defaultMessage: "菜单 Menu" }),
         },
         {
-          name: "menu",
-          svg: <MenuSvg />,
-          title: formatMessage({ defaultMessage: "菜单 Menu" }),
-        },
-        {
           name: "steps",
           svg: <StepsSvg />,
           title: formatMessage({ defaultMessage: "步骤条 Steps" }),
@@ -289,13 +284,13 @@ function DocPage({ intl }: { intl: IntlShape }) {
       <Title heading={2}>{formatMessage({ defaultMessage: "基础组件" })}</Title>
       {Object.keys(groups).map((g) => (
         <>
-          <Title id={g} heading={3} className={styles.title}>
+          <Title key={`${g}-title`} id={g} heading={3} className={styles.title}>
             {groups[g].title}
             <Tag>{groups[g].components.length}</Tag>
           </Title>
-          <Grid.Row gutter={[18, 18]}>
+          <Grid.Row key={`${g}-row`} gutter={[18, 18]}>
             {groups[g].components.map((c) => (
-              <Grid.Col span={6}>
+              <Grid.Col key={c.name} span={6}>
                 <ListItem group={g} {...c} />
               </Grid.Col>
             ))}

@@ -43,6 +43,9 @@
     "react-intl": "^6.5.2",
     "react-resizable": "^3.0.5",
     "react-sticky": "^6.0.3",
+    "stylelint": "^16.2.1",
+    "stylelint-config-clean-order": "^5.4.1",
+    "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
