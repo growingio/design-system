@@ -34,7 +34,7 @@
     "@storybook/react": "7.6.12",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "arco-scripts": "^1.27.13",
+    "arco-scripts": "^1.27.14",
     "dayjs": "^1.11.10",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",

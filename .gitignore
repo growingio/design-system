@@ -28,6 +28,7 @@ build
 dist
 es
 lib
+storybook-static
 
 # Debug
 npm-debug.log*

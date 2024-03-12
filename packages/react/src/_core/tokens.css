@@ -9,7 +9,6 @@ body {
   --gio-orange-8: 164, 36, 19;
   --gio-orange-9: 120, 16, 7;
   --gio-orange-10: 77, 4, 0;
-
   --sky-blue-1: 232, 250, 255;
   --sky-blue-2: 194, 239, 254;
   --sky-blue-3: 157, 226, 253;
@@ -20,7 +19,6 @@ body {
   --sky-blue-8: 15, 97, 163;
   --sky-blue-9: 6, 65, 120;
   --sky-blue-10: 0, 37, 77;
-
   --color-fill-5: #2a2e35;
-  --color-text-5: #ffffff;
+  --color-text-5: #fff;
 }
