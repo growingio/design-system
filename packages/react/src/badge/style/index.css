@@ -1,9 +1,11 @@
 .arco-badge-color-gio-orange {
   background-color: rgb(var(--gio-orange-6));
 }
+
 .arco-badge-color-primary {
   background-color: rgb(var(--primary-6));
 }
+
 .arco-badge-color-sky-blue {
   background-color: rgb(var(--sky-blue-6));
 }

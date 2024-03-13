@@ -1,8 +1,11 @@
 .gio-picker-menu {
   all: unset;
 
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
+  box-sizing: border-box;
   width: 112px;
   padding: 16px 0;
 
@@ -10,47 +13,45 @@
   border-right: 1px solid var(--color-border-2);
   border-top-left-radius: var(--border-radius-large);
   border-bottom-left-radius: var(--border-radius-large);
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .gio-picker-menu-item {
   all: unset;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
+
+  cursor: pointer;
+
   display: flex;
   align-items: center;
 
   padding: 6px 20px;
 
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
   color: var(--color-text-1);
-
-  cursor: pointer;
 
   &:hover {
     background-color: rgb(var(--primary-1));
   }
 }
+
 .gio-picker-menu-item-active {
   position: relative;
-
-  background-color: rgb(var(--primary-1));
   color: rgb(var(--primary-6));
+  background-color: rgb(var(--primary-1));
 
-  &:after {
+  &::after {
     content: " ";
+
+    position: absolute;
+    right: 0;
+
     width: 2px;
     height: 100%;
 
+    background-color: rgb(var(--primary-6));
     clip-path: path(
       "M0 2C0 0.895431 0.895431 0 2 0V32C0.895431 32 0 31.1046 0 30V2Z"
     );
-
-    background-color: rgb(var(--primary-6));
-    position: absolute;
-    right: 0;
   }
 }

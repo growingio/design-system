@@ -3,8 +3,8 @@
 
   .arco-dropdown-menu-item {
     &:active {
-      background-color: var(--color-fill-2);
       font-weight: 500;
+      background-color: var(--color-fill-2);
     }
   }
 }

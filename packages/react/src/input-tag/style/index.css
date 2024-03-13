@@ -5,11 +5,11 @@
 }
 
 .arco-input-tag-addbefore {
+  border-right-width: 0;
   border-left: 1px solid var(--color-border-3);
-  border-right-width: 0px;
 }
 
 .arco-input-tag-addafter {
   border-right: 1px solid var(--color-border-3);
-  border-left-width: 0px;
+  border-left-width: 0;
 }

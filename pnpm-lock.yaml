@@ -187,12 +187,27 @@ importers:
       '@types/react-dom':
         specifier: ^18.2.18
         version: 18.2.19
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.0.2
+        version: 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: ^7.0.2
+        version: 7.0.2(eslint@8.56.0)(typescript@5.3.3)
       arco-scripts:
         specifier: ^1.27.14
-        version: 1.27.14(@babel/core@7.23.9)(postcss@8.4.35)(react@18.2.0)
+        version: 1.27.14(@babel/core@7.23.9)(eslint@8.56.0)(postcss@8.4.35)(react@18.2.0)
       dayjs:
         specifier: ^1.11.10
         version: 1.11.10
+      eslint:
+        specifier: ^8.56.0
+        version: 8.56.0
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.0
+        version: 4.6.0(eslint@8.56.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.5
+        version: 0.4.5(eslint@8.56.0)
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -6155,7 +6170,7 @@ packages:
       - supports-color
     dev: true
 
-  /arco-scripts@1.27.14(@babel/core@7.23.9)(postcss@8.4.35)(react@18.2.0):
+  /arco-scripts@1.27.14(@babel/core@7.23.9)(eslint@8.56.0)(postcss@8.4.35)(react@18.2.0):
     resolution: {integrity: sha512-AtR2JK7umAZZJleYOSWbXNDN3Pw38ZAsBr/2W0GSwn8F/KJMCro84ycW1PmP+SuZL9oRuVrsuWM4iPDjPh9dFw==}
     hasBin: true
     dependencies:
@@ -6174,7 +6189,7 @@ packages:
       enzyme: 3.11.0
       enzyme-to-json: 3.6.2(enzyme@3.11.0)
       file-loader: 1.1.11(webpack@4.47.0)
-      fork-ts-checker-webpack-plugin: 5.2.1(typescript@4.6.4)(webpack@4.47.0)
+      fork-ts-checker-webpack-plugin: 5.2.1(eslint@8.56.0)(typescript@4.6.4)(webpack@4.47.0)
       front-matter: 4.0.2
       fs-extra: 9.1.0
       glob: 7.2.3
@@ -10253,7 +10268,7 @@ packages:
     resolution: {integrity: sha512-Pqq5NnT78ehvUnAk/We/Jr22vSvanRlFTpAmQ88xBY/M1TlHe+P0ILuEyXS595ysdGfaj22634LBkGMA2GTcpA==}
     dev: true
 
-  /fork-ts-checker-webpack-plugin@5.2.1(typescript@4.6.4)(webpack@4.47.0):
+  /fork-ts-checker-webpack-plugin@5.2.1(eslint@8.56.0)(typescript@4.6.4)(webpack@4.47.0):
     resolution: {integrity: sha512-SVi+ZAQOGbtAsUWrZvGzz38ga2YqjWvca1pXQFUArIVXqli0lLoDQ8uS0wg0kSpcwpZmaW5jVCZXQebkyUQSsw==}
     engines: {node: '>=10', yarn: '>=1.0.0'}
     peerDependencies:
@@ -10272,6 +10287,7 @@ packages:
       chalk: 4.1.2
       cosmiconfig: 6.0.0
       deepmerge: 4.3.1
+      eslint: 8.56.0
       fs-extra: 9.1.0
       memfs: 3.5.3
       minimatch: 3.1.2

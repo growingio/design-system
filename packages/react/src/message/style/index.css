@@ -8,12 +8,14 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
 .arco-message-content {
   display: inline-block;
-  overflow-wrap: break-word;
-  text-align: start;
   line-height: 22px;
+  text-align: start;
+  overflow-wrap: break-word;
 }
+
 .arco-message-icon {
   height: 20px;
 }

@@ -8,9 +8,9 @@
     }
 
     .arco-checkbox {
+      padding-left: 4px;
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
-      padding-left: 4px;
     }
   }
 
@@ -27,8 +27,8 @@
   .arco-tree-node-disabled .arco-tree-node-title,
   .arco-tree-node-disabled-selectable .arco-tree-node-title:hover,
   .arco-tree-node-disabled .arco-tree-node-title:hover {
-    color: inherit;
     cursor: initial;
+    color: inherit;
   }
 }
 

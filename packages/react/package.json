@@ -12,7 +12,9 @@
     "build": "pnpm run build:es && pnpm run build:cjs",
     "build:es": "arco-scripts build:component:es",
     "build:cjs": "arco-scripts build:component:cjs",
-    "stylelint": "stylelint 'components/**/*.css'"
+    "lint": "pnpm run lint:es && pnpm run lint:style",
+    "lint:es": "eslint . --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:style": "stylelint 'src/**/*.css'"
   },
   "keywords": [],
   "files": [
@@ -34,8 +36,13 @@
     "@storybook/react": "7.6.12",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
     "arco-scripts": "^1.27.14",
     "dayjs": "^1.11.10",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
     "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

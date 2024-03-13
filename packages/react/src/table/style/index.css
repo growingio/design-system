@@ -10,6 +10,7 @@
   table tbody:not(:has(+ tfoot)) tr:last-child td:first-child {
     border-bottom-left-radius: 4px;
   }
+
   table tbody:not(:has(+ tfoot)) tr:last-child td:last-child {
     border-bottom-right-radius: 4px;
   }
@@ -27,6 +28,7 @@
       .arco-table-td:first-child {
         border-bottom-left-radius: 4px;
       }
+
       .arco-table-td:last-child {
         border-bottom-right-radius: 4px;
       }
@@ -40,8 +42,8 @@
       margin: 8px 0;
 
       .arco-table-container {
-        border-right: 1px solid #e4e5e8;
         border-top: 1px solid #e4e5e8;
+        border-right: 1px solid #e4e5e8;
       }
     }
   }
@@ -50,7 +52,7 @@
 .arco-table-no-data {
   .arco-empty {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 }

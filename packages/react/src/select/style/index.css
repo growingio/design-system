@@ -8,6 +8,7 @@
     background-color: var(--color-fill-2);
     border-radius: 4px;
   }
+
   &:active {
     background-color: transparent;
   }
