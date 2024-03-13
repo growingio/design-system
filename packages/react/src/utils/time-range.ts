@@ -1,6 +1,6 @@
 import dayjs, { type Dayjs } from "dayjs";
 
-const REGEX = /([\w\-]+):(\d+),(\d*)/;
+const REGEX = /([\w-]+):(\d+),(\d*)/;
 
 /**
  * Through the time range relative to today, calculate the specific
@@ -17,7 +17,7 @@ export function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
   if (matches.length < 4) {
     throw new Error(`Invalid time range: ${timeRange}`);
   }
-  const [_, prefix, startString, endString] = matches;
+  const [, prefix, startString, endString] = matches;
   const [start, end] = [
     parseInt(startString),
     endString.length === 0 ? 0 : parseInt(endString),
@@ -53,7 +53,7 @@ export function parsePeriodRange(periodRange: string, timeRange: string) {
   if (matches.length !== 4) {
     throw new Error(`Invalid period range: ${periodRange}`);
   }
-  const [_, prefix, startString, endString] = matches;
+  const [, prefix, startString, endString] = matches;
   const [start, end] = [parseInt(startString), parseInt(endString)];
 
   switch (prefix) {
