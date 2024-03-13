@@ -3,11 +3,13 @@ import { IconCalendar } from "@arco-iconbox/react-growingio";
 import { Tag } from "..";
 import SeparatorSvg from "./separator-svg";
 import { PastTimeTriggerProps } from "./interface";
+import clsx from "clsx";
 
 export default function PastTimeTrigger(props: PastTimeTriggerProps) {
-  const { value, placeholder, shortcut, startDate, endDate } = props;
+  const { className, style, value, placeholder, shortcut, startDate, endDate } =
+    props;
   const clsPrefix = "gio-past-time-trigger";
-
+  const cls = clsx(clsPrefix, className);
   let displayContent = (
     <span className={`${clsPrefix}-placeholder`}>{placeholder}</span>
   );
@@ -37,7 +39,7 @@ export default function PastTimeTrigger(props: PastTimeTriggerProps) {
   }
 
   return (
-    <div className={clsPrefix}>
+    <div className={cls} style={style}>
       {displayContent}
       <IconCalendar />
     </div>

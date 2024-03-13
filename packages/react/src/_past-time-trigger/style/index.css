@@ -24,6 +24,11 @@
   }
 }
 
+.gio-past-time-trigger-focused {
+  border-color: rgb(var(--primary-6));
+  box-shadow: 0 0 0 1px #bfd5ff;
+}
+
 .gio-past-time-trigger-placeholder {
   color: var(--color-text-3);
 }

@@ -1,9 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import PastPeriodPicker from "@giod/react/src/past-peroid-picker";
 
 const meta: Meta<typeof PastPeriodPicker> = {
   component: PastPeriodPicker,
   title: "Components/Data Entry/PastPeroidPicker",
+  args: {
+    onChange: fn(),
+  },
 };
 export default meta;
 
@@ -16,9 +20,6 @@ export const Default: Story = {
       {...args}
       timeRange="day:8,1"
       placeholder={formatMessage({ defaultMessage: "请选择过去周期" })}
-      onChange={(v) => {
-        console.log(v);
-      }}
     />
   ),
 };

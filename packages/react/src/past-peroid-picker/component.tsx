@@ -8,9 +8,11 @@ import DateRangePanel from "./date-range-panel";
 import dayjs, { Dayjs } from "dayjs";
 import { parsePeriodRange } from "../utils/time-range";
 import { PastTimeTriggerProps } from "../_past-time-trigger/interface";
+import { CommonProps } from "../_core/types";
 
 export interface PastPeriodPickerProps
-  extends Pick<PastTimeTriggerProps, "placeholder"> {
+  extends CommonProps,
+    Pick<PastTimeTriggerProps, "placeholder"> {
   timeRange: string;
   defaultValue?: string;
   value?: string;
@@ -156,6 +158,7 @@ export default function PastPeroidPicker(props: PastPeriodPickerProps) {
     >
       <div className={`${clsPrefix}-trigger`}>
         <PastTimeTrigger
+          className={controlledVisible && "gio-past-time-trigger-focused"}
           placeholder={placeholder}
           value={controlledValue}
           shortcut={controlledValue === "period:2,1" && LOCALE.lastPeriod}
