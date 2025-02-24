@@ -11,16 +11,6 @@ import enUSMessages from "../locales/en-US.json";
 
 import "../src/index.css";
 
-// export const withIntl = (storyRender) => {
-//   const intl = useIntl();
-//   return storyRender(intl);
-// };
-
-// export const getI18nDoc = (docsMap: { [key: string]: string }) => {
-//   const intl = useIntl();
-//   return docsMap[intl.locale];
-// };
-
 const getComponentLocale = (locale: string) => {
   switch (locale) {
     case "en-US":
