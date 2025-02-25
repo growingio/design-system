@@ -1,6 +1,6 @@
 import { Unstyled } from "@storybook/blocks";
 import { injectIntl, type IntlShape } from "react-intl";
-import { Typography, Grid, Tag, EmptyNoFile } from "../../src";
+import { Typography, Grid, Tag } from "../../src";
 import ListItem, { ListItemProps } from "./list-item";
 
 import ButtonSvg from "./svgs/button-svg";
@@ -32,11 +32,13 @@ import TreeSvg from "./svgs/tree-svg";
 import CascaderSvg from "./svgs/cascader-svg";
 import DatePickerSvg from "./svgs/date-picker-svg";
 import InputSvg from "./svgs/input-svg";
+import InputTagSvg from "./svgs/input-tag-svg";
 import InputNumberSvg from "./svgs/input-number-svg";
 import RadioSvg from "./svgs/radio-svg";
 import SelectSvg from "./svgs/select-svg";
 import TimePickerSvg from "./svgs/time-picker-svg";
 import UploadSvg from "./svgs/upload-svg";
+import VerificationCodeSvg from "./svgs/verification-code-svg";
 
 import AlertSvg from "./svgs/alert-svg";
 import MessageSvg from "./svgs/message-svg";
@@ -209,7 +211,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
         },
         {
           name: "input-tag",
-          svg: <EmptyNoFile />,
+          svg: <InputTagSvg />,
           title: formatMessage({ defaultMessage: "标签输入框 InputTag" }),
         },
         {
@@ -234,7 +236,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
         },
         {
           name: "verification-code",
-          svg: <EmptyNoFile />,
+          svg: <VerificationCodeSvg />,
           title: formatMessage({
             defaultMessage: "验证码输入框 VerificationCode",
           }),
