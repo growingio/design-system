@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { IconDown, IconEdit, IconLink } from "@arco-iconbox/react-growingio/src";
+import { IconDown, IconEdit } from "@arco-iconbox/react-growingio/src";
 import { Link, Space, Dropdown, Menu } from "../../../src";
 
 const meta: Meta<typeof Link> = {
