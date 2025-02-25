@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@arco-design/web-react": "2.65.0",
-    "@arco-themes/react-growingio": "0.3.0",
+    "@arco-themes/react-growingio": "0.3.1",
     "@rc-component/tour": "^2.0.0"
   },
   "peerDependencies": {
