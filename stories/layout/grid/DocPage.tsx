@@ -73,38 +73,38 @@ function DocPage({ intl }: { intl: IntlShape }) {
       type: "FlexType",
     },
     {
-      name: "lg",
-      description: formatMessage({ defaultMessage: ">= 992px 响应式栅格。" }),
+      name: "xxxl",
+      description: formatMessage({ defaultMessage: "≥ 2000px 响应式栅格。" }),
       type: "number | { [key: string]: any }",
     },
     {
-      name: "md",
-      description: formatMessage({ defaultMessage: ">= 768px 响应式栅格。" }),
-      type: "number | { [key: string]: any }",
-    },
-    {
-      name: "sm",
-      description: formatMessage({ defaultMessage: ">= 576px 响应式栅格。" }),
+      name: "xxl",
+      description: formatMessage({ defaultMessage: "≥ 1600px 响应式栅格。" }),
       type: "number | { [key: string]: any }",
     },
     {
       name: "xl",
-      description: formatMessage({ defaultMessage: ">= 1200px 响应式栅格。" }),
+      description: formatMessage({ defaultMessage: "≥ 1200px 响应式栅格。" }),
+      type: "number | { [key: string]: any }",
+    },
+    {
+      name: "lg",
+      description: formatMessage({ defaultMessage: "≥ 992px 响应式栅格。" }),
+      type: "number | { [key: string]: any }",
+    },
+    {
+      name: "md",
+      description: formatMessage({ defaultMessage: "≥ 768px 响应式栅格。" }),
+      type: "number | { [key: string]: any }",
+    },
+    {
+      name: "sm",
+      description: formatMessage({ defaultMessage: "≥ 576px 响应式栅格。" }),
       type: "number | { [key: string]: any }",
     },
     {
       name: "xs",
       description: formatMessage({ defaultMessage: "< 576px 响应式栅格。" }),
-      type: "number | { [key: string]: any }",
-    },
-    {
-      name: "xxl",
-      description: formatMessage({ defaultMessage: ">= 1600px 响应式栅格。" }),
-      type: "number | { [key: string]: any }",
-    },
-    {
-      name: "xxxl",
-      description: formatMessage({ defaultMessage: ">= 2000px 响应式栅格。" }),
       type: "number | { [key: string]: any }",
     },
   ];
