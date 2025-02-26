@@ -21,7 +21,7 @@ export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
 
 export { default as Space } from "@arco-design/web-react/es/Space";
-export type { SpaceProps } from "@arco-design/web-react/es/Space";
+export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
 
 export { default as Tag } from "./tag";
 export type { TagProps } from "./tag";
