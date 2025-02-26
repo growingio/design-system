@@ -238,7 +238,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "verification-code",
           svg: <VerificationCodeSvg />,
           title: formatMessage({
-            defaultMessage: "验证码输入框 VerificationCode",
+            defaultMessage: "验证码 VerificationCode",
           }),
         },
       ],
