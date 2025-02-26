@@ -71,10 +71,10 @@ function DocPage({ intl }: { intl: IntlShape }) {
   return (
     <Unstyled>
       <Title>
-        <FormattedMessage defaultMessage="分割线 Divider" />
+        <FormattedMessage defaultMessage="间距 Space" />
       </Title>
       <Paragraph>
-        <FormattedMessage defaultMessage="划分内容区域，对模块做分隔。" />
+        <FormattedMessage defaultMessage="设置组件之间的间距。" />
       </Paragraph>
 
       <Title heading={2}>
