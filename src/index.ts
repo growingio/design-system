@@ -134,11 +134,7 @@ export { default as Checkbox } from "@arco-design/web-react/es/Checkbox";
 export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";
 
 export { default as Form } from "@arco-design/web-react/es/Form";
-export type {
-  FormProps,
-  FormItemProps,
-  FormInstance,
-} from "@arco-design/web-react/es/Form";
+export type { FormProps, FormItemProps, FormInstance } from "@arco-design/web-react/es/Form";
 
 export { default as Rate } from "@arco-design/web-react/es/Rate";
 export type { RateProps } from "@arco-design/web-react/es/Rate";
@@ -167,6 +163,9 @@ export {
 export type { ConfigProviderProps } from "@arco-design/web-react/es/ConfigProvider";
 
 export { default as Tour, type TourProps, type TourStepProps } from "./tour";
+
+export { default as ResizeBox } from "@arco-design/web-react/es/ResizeBox";
+export type { ResizeBoxProps } from "@arco-design/web-react/es/ResizeBox";
 
 export { default as Trigger } from "@arco-design/web-react/es/Trigger";
 export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
