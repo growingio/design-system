@@ -1,12 +1,11 @@
-import { IconClose } from '@arco-iconbox/react-growingio';
-import classNames from 'clsx';
-import type { ReactNode } from 'react';
-import React from 'react';
-import type { ButtonProps } from '../button';
-import Button from '../button';
+import { IconClose } from "@arco-iconbox/react-growingio/src";
+import classNames from "clsx";
+import { type ReactNode, FC } from "react";
+import type { ButtonProps } from "../button";
+import Button from "../button";
 // import { useLocale } from '../locale';
 // import defaultLocale from '../locale/default';
-import type { TourStepProps } from './interface';
+import type { TourStepProps } from "./interface";
 // import useClosable from '../_util/hooks/useClosable';
 
 function isValidNode(node: ReactNode): boolean {
@@ -16,18 +15,12 @@ function isValidNode(node: ReactNode): boolean {
 interface TourPanelProps {
   stepProps: TourStepProps;
   current: number;
-  type: TourStepProps['type'];
-  indicatorType?: 'number' | 'dot';
+  type: TourStepProps["type"];
+  indicatorType?: "number" | "dot";
   closeIcon?: ReactNode;
 }
 
-const TourPanel: React.FC<TourPanelProps> = ({
-  stepProps,
-  current,
-  type,
-  indicatorType,
-  closeIcon,
-}) => {
+const TourPanel: FC<TourPanelProps> = ({ stepProps, current, type, indicatorType, closeIcon }) => {
   const {
     prefixCls,
     total = 1,
@@ -75,36 +68,32 @@ const TourPanel: React.FC<TourPanelProps> = ({
     <div className={`${prefixCls}-description`}>{description}</div>
   ) : null;
 
-  const coverNode = isValidNode(cover) ? (
-    <div className={`${prefixCls}-cover`}>{cover}</div>
-  ) : null;
+  const coverNode = isValidNode(cover) ? <div className={`${prefixCls}-cover`}>{cover}</div> : null;
 
   let mergeIndicatorNode: ReactNode;
 
-  if (mergedIndicatorType === 'dot') {
-    mergeIndicatorNode = [
-      ...Array.from({ length: total }).keys(),
-    ].map<ReactNode>((stepItem, index) => (
-      <span
-        key={stepItem}
-        className={classNames(
-          index === current && `${prefixCls}-indicator-active`,
-          `${prefixCls}-indicator`,
-        )}
-      />
-    ));
+  if (mergedIndicatorType === "dot") {
+    mergeIndicatorNode = [...Array.from({ length: total }).keys()].map<ReactNode>(
+      (stepItem, index) => (
+        <span
+          key={stepItem}
+          className={classNames(
+            index === current && `${prefixCls}-indicator-active`,
+            `${prefixCls}-indicator`,
+          )}
+        />
+      ),
+    );
   } else {
     mergeIndicatorNode = (
-      <span className={`${prefixCls}-indicator-number`}>{`${
-        current + 1
-      }/${total}`}</span>
+      <span className={`${prefixCls}-indicator-number`}>{`${current + 1}/${total}`}</span>
     );
   }
 
-  const mainBtnType = mergedType === 'primary' ? 'default' : 'primary';
+  const mainBtnType = mergedType === "primary" ? "default" : "primary";
 
   const secondaryBtnProps: ButtonProps = {
-    type: mergedType === 'primary' ? 'outline' : 'default',
+    type: mergedType === "primary" ? "outline" : "default",
   };
 
   // const [contextLocale] = useLocale('Tour', defaultLocale.Tour);
@@ -113,11 +102,7 @@ const TourPanel: React.FC<TourPanelProps> = ({
     <div className={`${prefixCls}-content`}>
       <div className={`${prefixCls}-inner`}>
         {mergedClosable && (
-          <span
-            onClick={onClose}
-            aria-label="Close"
-            className={`${prefixCls}-close`}
-          >
+          <span onClick={onClose} aria-label="Close" className={`${prefixCls}-close`}>
             <IconClose className={`${prefixCls}-close-icon`} />
           </span>
         )}
@@ -125,11 +110,7 @@ const TourPanel: React.FC<TourPanelProps> = ({
         {headerNode}
         {descriptionNode}
         <div className={`${prefixCls}-footer`}>
-          {total > 1 && (
-            <div className={`${prefixCls}-indicators`}>
-              {mergeIndicatorNode}
-            </div>
-          )}
+          {total > 1 && <div className={`${prefixCls}-indicators`}>{mergeIndicatorNode}</div>}
           <div className={`${prefixCls}-buttons`}>
             {current !== 0 ? (
               <Button
@@ -137,10 +118,7 @@ const TourPanel: React.FC<TourPanelProps> = ({
                 {...prevButtonProps}
                 onClick={prevBtnClick}
                 size="mini"
-                className={classNames(
-                  `${prefixCls}-prev-btn`,
-                  prevButtonProps?.className,
-                )}
+                className={classNames(`${prefixCls}-prev-btn`, prevButtonProps?.className)}
               >
                 {/* {prevButtonProps?.children ?? contextLocale?.Previous} */}
                 Previous
@@ -151,10 +129,7 @@ const TourPanel: React.FC<TourPanelProps> = ({
               {...nextButtonProps}
               onClick={nextBtnClick}
               size="mini"
-              className={classNames(
-                `${prefixCls}-next-btn`,
-                nextButtonProps?.className,
-              )}
+              className={classNames(`${prefixCls}-next-btn`, nextButtonProps?.className)}
             >
               {/* {nextButtonProps?.children ??
                 (isLastStep ? contextLocale?.Finish : contextLocale?.Next)} */}

@@ -1,0 +1,4 @@
+[test]
+root = "./tests"
+preload = ["./happydom.ts", "./testing-library.ts"]
+coverage = true

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useRef, useState } from "react";
-import { IconMore } from "@arco-iconbox/react-growingio";
+import { IconMore } from "@arco-iconbox/react-growingio/src";
 import { Button, Divider, Space, Tour, type TourProps } from "../../../src";
 
 const meta: Meta<typeof Tour> = {
@@ -76,7 +76,7 @@ export const Postion: Story = {
     const ref = useRef(null);
     const [open, setOpen] = useState<boolean>(false);
 
-    const placements = [
+    const placements: TourProps["placement"][] = [
       "topLeft",
       "top",
       "topRight",
@@ -91,7 +91,7 @@ export const Postion: Story = {
       "leftTop",
     ];
 
-    const steps: TourProps["steps"] = placements.map((p: TourProps["placement"]) => ({
+    const steps: TourProps["steps"] = placements.map((p) => ({
       title: `The title of ${p}`,
       description: `The description of ${p}.`,
       target: ref.current,
