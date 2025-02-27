@@ -1,6 +1,9 @@
 export { default as Alert } from "@arco-design/web-react/es/Alert";
 export type { AlertProps } from "@arco-design/web-react/es/Alert";
 
+export { default as Breadcrumb } from "@arco-design/web-react/es/Breadcrumb";
+export type { BreadcrumbProps } from "@arco-design/web-react/es/Breadcrumb";
+
 export { default as Button } from "./button";
 export type { ButtonProps } from "./button";
 

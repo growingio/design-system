@@ -13,6 +13,7 @@ import GridSvg from "./svgs/grid-svg";
 import LayoutSvg from "./svgs/layout-svg";
 import SpaceSvg from "./svgs/space-svg";
 
+import BreadcrumbSvg from "./svgs/breadcrumb-svg";
 import DropdownSvg from "./svgs/dropdown-svg";
 import MenuSvg from "./svgs/menu-svg";
 import StepsSvg from "./svgs/steps-svg";
@@ -109,6 +110,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
     navigation: {
       title: formatMessage({ defaultMessage: "导航" }),
       components: [
+        {
+          name: "breadcrumb",
+          svg: <BreadcrumbSvg />,
+          title: formatMessage({ defaultMessage: "面包屑 Breadcrumb" }),
+        },
         {
           name: "dropdown",
           svg: <DropdownSvg />,
