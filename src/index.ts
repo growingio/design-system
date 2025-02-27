@@ -1,11 +1,33 @@
 export { default as Alert } from "@arco-design/web-react/es/Alert";
 export type { AlertProps } from "@arco-design/web-react/es/Alert";
 
+export { default as BackTop } from "@arco-design/web-react/es/BackTop";
+export type { BackTopProps } from "@arco-design/web-react/es/BackTop";
+
+export { default as Badge } from "@arco-design/web-react/es/Badge";
+export type { BadgeProps } from "@arco-design/web-react/es/Badge";
+
 export { default as Breadcrumb } from "@arco-design/web-react/es/Breadcrumb";
 export type { BreadcrumbProps } from "@arco-design/web-react/es/Breadcrumb";
 
 export { default as Button } from "./button";
 export type { ButtonProps } from "./button";
+
+export { default as Calendar } from "@arco-design/web-react/es/Calendar";
+export type { CalendarProps } from "@arco-design/web-react/es/Calendar";
+
+export { default as Card } from "@arco-design/web-react/es/Card";
+export type { CardProps } from "@arco-design/web-react/es/Card";
+
+export { default as Cascader } from "./cascader";
+export type { CascaderProps } from "./cascader";
+
+export {
+  default as ConfigProvider,
+  ConfigContext,
+  ConfigConsumer,
+} from "@arco-design/web-react/es/ConfigProvider";
+export type { ConfigProviderProps } from "@arco-design/web-react/es/ConfigProvider";
 
 export { default as EmptyBoard } from "./empty/Board";
 export { default as EmptyForbidden } from "./empty/Forbidden";
@@ -22,6 +44,8 @@ export type { LinkProps } from "@arco-design/web-react/es/Link";
 
 export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
+
+export { default as Layout } from "@arco-design/web-react/es/Layout";
 
 export { default as Space } from "@arco-design/web-react/es/Space";
 export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
@@ -97,18 +121,6 @@ export type {
   DateRangePickerProps,
 } from "./date-picker";
 
-export { default as Cascader } from "./cascader";
-export type { CascaderProps } from "./cascader";
-
-export { default as Badge } from "@arco-design/web-react/es/Badge";
-export type { BadgeProps } from "@arco-design/web-react/es/Badge";
-
-export { default as Calendar } from "@arco-design/web-react/es/Calendar";
-export type { CalendarProps } from "@arco-design/web-react/es/Calendar";
-
-export { default as Card } from "@arco-design/web-react/es/Card";
-export type { CardProps } from "@arco-design/web-react/es/Card";
-
 export { default as Skeleton } from "@arco-design/web-react/es/Skeleton";
 export type { SkeletonProps } from "@arco-design/web-react/es/Skeleton";
 
@@ -117,9 +129,6 @@ export type { TabsProps } from "@arco-design/web-react/es/Tabs";
 
 export { default as Image } from "@arco-design/web-react/es/Image";
 export type { ImageProps } from "@arco-design/web-react/es/Image";
-
-export { default as BackTop } from "@arco-design/web-react/es/BackTop";
-export type { BackTopProps } from "@arco-design/web-react/es/BackTop";
 
 export { default as Steps } from "@arco-design/web-react/es/Steps";
 export type { StepsProps } from "@arco-design/web-react/es/Steps";
@@ -157,13 +166,6 @@ export { default as useVerificationCode } from "@arco-design/web-react/es/_hooks
 
 export { default as Watermark } from "./watermark";
 export type { WatermarkProps } from "./watermark";
-
-export {
-  default as ConfigProvider,
-  ConfigContext,
-  ConfigConsumer,
-} from "@arco-design/web-react/es/ConfigProvider";
-export type { ConfigProviderProps } from "@arco-design/web-react/es/ConfigProvider";
 
 export { default as Tour, type TourProps, type TourStepProps } from "./tour";
 

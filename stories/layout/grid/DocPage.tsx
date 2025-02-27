@@ -317,8 +317,8 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Title>
       <PropsTable data={gridItemPropsData} />
 
-      <Title id="responsive-props" heading={3}>
-        ResponsiveProps
+      <Title id="responsive-value" heading={3}>
+        ResponsiveValue
       </Title>
       <PropsTable data={responsivePropsData} includeCommonProps={false} />
     </Unstyled>
