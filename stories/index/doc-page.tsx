@@ -12,6 +12,7 @@ import DividerSvg from "./svgs/divider-svg";
 import GridSvg from "./svgs/grid-svg";
 import LayoutSvg from "./svgs/layout-svg";
 import SpaceSvg from "./svgs/space-svg";
+import ResizeBoxSvg from "./svgs/resize-box-svg";
 
 import BreadcrumbSvg from "./svgs/breadcrumb-svg";
 import DropdownSvg from "./svgs/dropdown-svg";
@@ -99,6 +100,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "layout",
           svg: <LayoutSvg />,
           title: formatMessage({ defaultMessage: "布局 Layout" }),
+        },
+        {
+          name: "resizebox",
+          svg: <ResizeBoxSvg />,
+          title: formatMessage({ defaultMessage: "伸缩框 ResizeBox" }),
         },
         {
           name: "space",

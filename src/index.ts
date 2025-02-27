@@ -42,6 +42,9 @@ export type { EmptyProps } from "./empty";
 export { default as Link } from "@arco-design/web-react/es/Link";
 export type { LinkProps } from "@arco-design/web-react/es/Link";
 
+export { default as ResizeBox } from "@arco-design/web-react/es/ResizeBox";
+export type { ResizeBoxProps } from "@arco-design/web-react/es/ResizeBox";
+
 export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
 
@@ -168,9 +171,6 @@ export { default as Watermark } from "./watermark";
 export type { WatermarkProps } from "./watermark";
 
 export { default as Tour, type TourProps, type TourStepProps } from "./tour";
-
-export { default as ResizeBox } from "@arco-design/web-react/es/ResizeBox";
-export type { ResizeBoxProps } from "@arco-design/web-react/es/ResizeBox";
 
 export { default as Trigger } from "@arco-design/web-react/es/Trigger";
 export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
