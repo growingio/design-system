@@ -1,0 +1,13 @@
+.page-header-default {
+    padding: 24px;
+    background-image: radial-gradient(var(--color-fill-3) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 16px 16px;
+}
+
+.page-header-all {
+    padding: 24px;
+    background-color: var(--color-fill-2);
+}
+.page-header-all .arco-page-header {
+    background-color: var(--color-bg-2);
+}

@@ -19,6 +19,7 @@ import BackTopSvg from "./svgs/back-top-svg";
 import BreadcrumbSvg from "./svgs/breadcrumb-svg";
 import DropdownSvg from "./svgs/dropdown-svg";
 import MenuSvg from "./svgs/menu-svg";
+import PageHeaderSvg from "./svgs/page-header-svg";
 import StepsSvg from "./svgs/steps-svg";
 
 import AvatarSvg from "./svgs/avatar-svg";
@@ -142,6 +143,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "menu",
           svg: <MenuSvg />,
           title: formatMessage({ defaultMessage: "菜单 Menu" }),
+        },
+        {
+          name: "pageheader",
+          svg: <PageHeaderSvg />,
+          title: formatMessage({ defaultMessage: "页头 PageHeader" }),
         },
         {
           name: "steps",

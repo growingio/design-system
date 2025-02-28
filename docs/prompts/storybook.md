@@ -20,9 +20,9 @@ stories.
 Below, here's the template I stick to. I keep the provided format, and add component variants if
 possible:
 
-import type { Meta, StoryFn } from '@storybook/react';
 /* import component file */
-import { /* Component */ } from "../../../src";
+import { /* Component */ } from "@/src";
+import type { Meta, StoryFn } from '@storybook/react';
 
 const meta: Meta<typeof Component> = {
   component: Component,
