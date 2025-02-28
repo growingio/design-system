@@ -1,6 +1,9 @@
 export { default as Alert } from "@arco-design/web-react/es/Alert";
 export type { AlertProps } from "@arco-design/web-react/es/Alert";
 
+export { default as Anchor } from "@arco-design/web-react/es/Anchor";
+export type { AnchorProps } from "@arco-design/web-react/es/Anchor";
+
 export { default as BackTop } from "@arco-design/web-react/es/BackTop";
 export type { BackTopProps } from "@arco-design/web-react/es/BackTop";
 

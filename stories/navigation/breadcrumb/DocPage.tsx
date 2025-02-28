@@ -1,14 +1,14 @@
 import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
-import * as DropdownStories from "./index.stories";
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import * as Stories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
 function DocPage({ intl }: { intl: IntlShape }) {
   const { formatMessage } = intl;
-  const data = [
+  const data: PropsTableData[] = [
     {
       name: "maxCount",
       description: formatMessage({ defaultMessage: "最多渲染的面包屑数量。" }),
@@ -31,7 +31,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
       type: "(route: RouteProps, routes: RouteProps[], paths: string[]) => ReactNode",
     },
   ];
-  const itemPropsData = [
+  const itemPropsData: PropsTableData[] = [
     {
       name: "href",
       description: formatMessage({ defaultMessage: "超链接地址。" }),
@@ -99,19 +99,19 @@ function DocPage({ intl }: { intl: IntlShape }) {
         <FormattedMessage defaultMessage="基础用法" />
       </Title>
       <Paragraph>
-        <FormattedMessage defaultMessage="适用于广泛基本用法。分隔方式分为图标分隔及斜线分隔两种方式，可根据不同场景使用。" />
+        <FormattedMessage defaultMessage="最简单的用法。" />
       </Paragraph>
-      <Canvas of={DropdownStories.Basic} />
+      <Canvas of={Stories.Basic} />
 
       <Title heading={3} id="separator">
         <FormattedMessage defaultMessage="自定义分隔符" />
       </Title>
-      <Canvas of={DropdownStories.Separator} />
+      <Canvas of={Stories.Separator} />
 
       <Title heading={3} id="icon">
         <FormattedMessage defaultMessage="自定义图标" />
       </Title>
-      <Canvas of={DropdownStories.Icon} />
+      <Canvas of={Stories.Icon} />
 
       <Title heading={3} id="dropdown">
         <FormattedMessage defaultMessage="下拉菜单" />
@@ -119,7 +119,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
       <Paragraph>
         <FormattedMessage defaultMessage="通过 droplist 或者 routes 来指定下拉菜单。" />
       </Paragraph>
-      <Canvas of={DropdownStories.Dropdown} />
+      <Canvas of={Stories.Dropdown} />
 
       <Title heading={3} id="max-count">
         <FormattedMessage defaultMessage="显示省略" />
@@ -127,7 +127,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
       <Paragraph>
         <FormattedMessage defaultMessage="通过 maxCount 来指定最多渲染的面包屑数量，超出的部分将显示为省略号。" />
       </Paragraph>
-      <Canvas of={DropdownStories.MaxCount} />
+      <Canvas of={Stories.MaxCount} />
 
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source

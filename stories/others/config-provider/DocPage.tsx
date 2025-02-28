@@ -13,8 +13,13 @@ function DocPage({ intl }: { intl: IntlShape }) {
 
   return (
     <Unstyled>
-      <Title>{formatMessage({ defaultMessage: "ConfigProvider" })}</Title>
-      <Paragraph>{formatMessage({ defaultMessage: "ConfigProvider" })}</Paragraph>
+      <Title>{formatMessage({ defaultMessage: "全局配置 ConfigProvider" })}</Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage:
+            "在应用的最外层进行配置，一次设置，全局生效。一般用于设置国际化语言等功能。",
+        })}
+      </Paragraph>
 
       <Title heading={2}>{formatMessage({ defaultMessage: "示例" })}</Title>
 
@@ -38,4 +43,5 @@ function DocPage({ intl }: { intl: IntlShape }) {
   );
 }
 
-export default injectIntl(DocPage);
+const IntlDocPage = injectIntl(DocPage);
+export default IntlDocPage;

@@ -14,6 +14,8 @@ import LayoutSvg from "./svgs/layout-svg";
 import SpaceSvg from "./svgs/space-svg";
 import ResizeBoxSvg from "./svgs/resize-box-svg";
 
+import AnchorSvg from "./svgs/anchor-svg";
+import BackTopSvg from "./svgs/back-top-svg";
 import BreadcrumbSvg from "./svgs/breadcrumb-svg";
 import DropdownSvg from "./svgs/dropdown-svg";
 import MenuSvg from "./svgs/menu-svg";
@@ -47,7 +49,7 @@ import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
 import ResultSvg from "./svgs/result-svg";
 
-import BackTopSvg from "./svgs/back-top-svg";
+import ConfigProviderSvg from "./svgs/config-provider-svg";
 
 import styles from "./doc-page.module.css";
 
@@ -116,6 +118,16 @@ function DocPage({ intl }: { intl: IntlShape }) {
     navigation: {
       title: formatMessage({ defaultMessage: "导航" }),
       components: [
+        {
+          name: "anchor",
+          svg: <AnchorSvg />,
+          title: formatMessage({ defaultMessage: "锚点 Anchor" }),
+        },
+        {
+          name: "backtop",
+          svg: <BackTopSvg />,
+          title: formatMessage({ defaultMessage: "返回顶部 BackTop" }),
+        },
         {
           name: "breadcrumb",
           svg: <BreadcrumbSvg />,
@@ -284,9 +296,9 @@ function DocPage({ intl }: { intl: IntlShape }) {
       title: formatMessage({ defaultMessage: "其他" }),
       components: [
         {
-          name: "back-top",
-          svg: <BackTopSvg />,
-          title: formatMessage({ defaultMessage: "返回顶部 BackTop" }),
+          name: "configprovider",
+          svg: <ConfigProviderSvg />,
+          title: formatMessage({ defaultMessage: "全局配置 ConfigProvider" }),
         },
       ],
     },

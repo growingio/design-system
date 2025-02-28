@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 import { BackTop, Button, InputNumber, Select, Space, Typography } from "@/src";
 import BrowserWindow from "@/components/browser-window";
-import { IconCaretUp } from "@arco-iconbox/react-growingio";
+import { IconCaretUp } from "@arco-iconbox/react-growingio/src";
 import classes from "./index.module.css";
 
 const { Paragraph, Text, Title } = Typography;
@@ -33,7 +33,7 @@ const meta: Meta<typeof BackTop> = {
   parameters: {
     layout: null,
   },
-  title: "Components/Others/BackTop",
+  title: "Components/Navigation/BackTop",
 };
 
 export default meta;
@@ -51,10 +51,7 @@ export const Basic: Story = {
       <Title heading={3} style={{ padding: "0 20px" }}>
         The button will appear in the bottom corner of the scrolling area
       </Title>
-      <div
-        id="custom_backtop0"
-        style={{ height: 300, overflow: "auto", padding: 20 }}
-      >
+      <div id="custom_backtop0" style={{ height: 300, overflow: "auto", padding: 20 }}>
         <Paragraph>This is the content</Paragraph>
         <Paragraph>This is the content</Paragraph>
         <Paragraph>This is the content</Paragraph>
@@ -97,10 +94,7 @@ export const Children: Story = {
       <Title heading={3} style={{ padding: "0 20px" }}>
         The button will appear in the bottom corner of the scrolling area
       </Title>
-      <div
-        id="custom_backtop1"
-        style={{ height: 300, overflow: "auto", padding: 20 }}
-      >
+      <div id="custom_backtop1" style={{ height: 300, overflow: "auto", padding: 20 }}>
         <Paragraph>This is the content</Paragraph>
         <Paragraph>This is the content</Paragraph>
         <Paragraph>This is the content</Paragraph>
@@ -135,11 +129,7 @@ export const EasingDuration: Story = {
       <BrowserWindow>
         <Space size={10} style={{ margin: 12 }}>
           <Text>Easing</Text>
-          <Select
-            onChange={setEasing}
-            defaultValue={easing}
-            style={{ width: 200 }}
-          >
+          <Select onChange={setEasing} defaultValue={easing} style={{ width: 200 }}>
             {easingTypes.map((easing) => (
               <Select.Option key={easing} value={easing}>
                 {easing}
@@ -164,9 +154,7 @@ export const EasingDuration: Story = {
               bottom: 60,
             }}
             visibleHeight={30}
-            target={() =>
-              document.getElementById("custom_backtop2") as HTMLElement
-            }
+            target={() => document.getElementById("custom_backtop2") as HTMLElement}
           >
             <div
               className={classes.customBacktop}
