@@ -1,0 +1,29 @@
+.menu-demo {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px;
+    background-color: var(--color-neutral-2);
+}
+
+.menu-demo .logo-item {
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background: var(--color-fill-3);
+    cursor: text;
+}
+
+.menu-demo .arco-menu-inner {
+    overflow-y: auto;
+    padding-bottom: 32px;
+}
+
+.menu-demo-button {
+    position: relative;
+    width: 660px;
+    height: 300px;
+    background-color: var(--color-fill-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

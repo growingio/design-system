@@ -98,20 +98,20 @@ const preview: Preview = {
         dynamicTitle: true,
       },
     },
-    theme: {
-      description: "Global theme for components",
-      defaultValue: "light",
-      toolbar: {
-        title: "Theme",
-        icon: "circlehollow",
-        items: [
-          { value: "light", icon: "sun", title: "Light mode" },
-          { value: "dark", icon: "moon", title: "Dark mode" },
-          { value: "system", icon: "browser", title: "Sync with system" },
-        ],
-        dynamicTitle: true,
-      },
-    },
+    // theme: {
+    //   description: "Global theme for components",
+    //   defaultValue: "light",
+    //   toolbar: {
+    //     title: "Theme",
+    //     icon: "circlehollow",
+    //     items: [
+    //       { value: "light", icon: "sun", title: "Light mode" },
+    //       { value: "dark", icon: "moon", title: "Dark mode" },
+    //       { value: "system", icon: "browser", title: "Sync with system" },
+    //     ],
+    //     dynamicTitle: true,
+    //   },
+    // },
   },
   parameters: {
     controls: {
