@@ -126,7 +126,7 @@ export const Collapse: Story = {
 
 export const Pop: Story = {
   render: () => (
-    <div className="menu-demo">
+    <div className="menu-demo menu-demo-pop">
       <Menu style={{ width: 200 }} mode="pop" hasCollapseButton>
         <MenuItem key="0">
           <IconApps />

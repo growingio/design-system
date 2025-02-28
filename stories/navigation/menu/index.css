@@ -15,6 +15,9 @@
 
 .menu-demo .arco-menu-inner {
     overflow-y: auto;
+}
+
+.menu-demo-pop .arco-menu-inner {
     padding-bottom: 32px;
 }
 
