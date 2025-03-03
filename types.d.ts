@@ -5,8 +5,6 @@ declare module "*.module.css" {
   export default classes;
 }
 declare module "@/components/*";
-declare module "@/src";
-declare module "@/src/*";
 declare module "lodash-es/*";
 declare module "react-resizable";
 declare module "react-sticky";

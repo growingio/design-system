@@ -180,3 +180,6 @@ export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
 
 export { default as PageHeader } from "@arco-design/web-react/es/PageHeader";
 export type { PageHeaderProps } from "@arco-design/web-react/es/PageHeader";
+
+export { default as Pagination } from "@arco-design/web-react/es/Pagination";
+export type { PaginationProps } from "@arco-design/web-react/es/Pagination";
