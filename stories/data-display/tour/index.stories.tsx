@@ -6,6 +6,7 @@ import { Button, Divider, Space, Tour, type TourProps } from "../../../src";
 const meta: Meta<typeof Tour> = {
   component: Tour,
   title: "Components/Data Display/Tour",
+  tags: ["new"],
 };
 
 export default meta;
