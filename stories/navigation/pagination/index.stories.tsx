@@ -1,13 +1,10 @@
-import { Space, Pagination, type PaginationProps, Radio } from "@/src";
+import { Pagination, type PaginationProps, Radio, Space } from "@/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 
 const meta: Meta<typeof Pagination> = {
   component: Pagination,
   title: "Components/Navigation/Pagination",
-  parameters: {
-    layout: "centered",
-  },
 };
 
 export default meta;
