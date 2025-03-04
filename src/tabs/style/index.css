@@ -1,0 +1,5 @@
+.arco-tabs-header-nav-line.arco-tabs-header-nav-horizontal
+    > .arco-tabs-header-scroll
+    .arco-tabs-header-title:first-of-type {
+    margin-left: 0;
+}

@@ -31,6 +31,7 @@ import CollapseSvg from "./svgs/collapse-svg";
 import EmptySvg from "./svgs/empty-svg";
 import ImageSvg from "./svgs/image-svg";
 import TableSvg from "./svgs/table-svg";
+import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
 import TooltipSvg from "./svgs/tooltip-svg";
 import TreeSvg from "./svgs/tree-svg";
@@ -204,6 +205,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "table",
           svg: <TableSvg />,
           title: formatMessage({ defaultMessage: "表格 Table" }),
+        },
+        {
+          name: "tabs",
+          svg: <TabsSvg />,
+          title: formatMessage({ defaultMessage: "标签页 Tabs" }),
         },
         {
           name: "tag",
