@@ -134,7 +134,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
   ];
   return (
     <Unstyled>
-      <Typography className="pagination-demo">
+      <div className="pagination-demo">
         <Title>
           <FormattedMessage defaultMessage="分页 Pagination" />
         </Title>
@@ -214,7 +214,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           PaginationProps
         </Title>
         <PropsTable data={data} />
-      </Typography>
+      </div>
     </Unstyled>
   );
 }
