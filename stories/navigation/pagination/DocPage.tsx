@@ -3,6 +3,7 @@ import { Canvas, Unstyled, Source } from "@storybook/blocks";
 import PropsTable, { type PropsTableData } from "@/components/props-table";
 import { Typography } from "@/src";
 import * as Stories from "./index.stories";
+import "./index.css";
 
 const { Title, Paragraph } = Typography;
 
@@ -133,85 +134,87 @@ function DocPage({ intl }: { intl: IntlShape }) {
   ];
   return (
     <Unstyled>
-      <Title>
-        <FormattedMessage defaultMessage="分页 Pagination" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="采用分页控制单页内的信息数量，也可进行页面跳转。" />
-      </Paragraph>
+      <Typography className="pagination-demo">
+        <Title>
+          <FormattedMessage defaultMessage="分页 Pagination" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="采用分页控制单页内的信息数量，也可进行页面跳转。" />
+        </Paragraph>
 
-      <Title heading={2}>
-        <FormattedMessage defaultMessage="示例" />
-      </Title>
+        <Title heading={2}>
+          <FormattedMessage defaultMessage="示例" />
+        </Title>
 
-      <Title heading={3} id="default">
-        <FormattedMessage defaultMessage="默认样式" />
-      </Title>
-      <Canvas of={Stories.Default} />
+        <Title heading={3} id="default">
+          <FormattedMessage defaultMessage="默认样式" />
+        </Title>
+        <Canvas of={Stories.Default} />
 
-      <Title heading={3} id="size-change">
-        <FormattedMessage defaultMessage="改变每页条目数量" />
-      </Title>
-      <Canvas of={Stories.SizeChange} />
+        <Title heading={3} id="size-change">
+          <FormattedMessage defaultMessage="改变每页条目数量" />
+        </Title>
+        <Canvas of={Stories.SizeChange} />
 
-      <Title heading={3} id="jumper">
-        <FormattedMessage defaultMessage="跳转页码" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="输入页码，可快速跳转到指定页。" />
-      </Paragraph>
-      <Canvas of={Stories.Jumper} />
+        <Title heading={3} id="jumper">
+          <FormattedMessage defaultMessage="跳转页码" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="输入页码，可快速跳转到指定页。" />
+        </Paragraph>
+        <Canvas of={Stories.Jumper} />
 
-      <Title heading={3} id="simple">
-        <FormattedMessage defaultMessage="简洁模式" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="在空间有限的场景下，可以将 simple 设置为 true，使用较为简单的文本分页方式。" />
-      </Paragraph>
-      <Canvas of={Stories.Simple} />
+        <Title heading={3} id="simple">
+          <FormattedMessage defaultMessage="简洁模式" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="在空间有限的场景下，可以将 simple 设置为 true，使用较为简单的文本分页方式。" />
+        </Paragraph>
+        <Canvas of={Stories.Simple} />
 
-      <Title heading={3} id="total">
-        <FormattedMessage defaultMessage="显示总数" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="通过设置 showTotal 来显示数据总数。" />
-      </Paragraph>
-      <Canvas of={Stories.Total} />
+        <Title heading={3} id="total">
+          <FormattedMessage defaultMessage="显示总数" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="通过设置 showTotal 来显示数据总数。" />
+        </Paragraph>
+        <Canvas of={Stories.Total} />
 
-      <Title heading={3} id="all">
-        <FormattedMessage defaultMessage="全部展示" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="展示全部配置项。" />
-      </Paragraph>
-      <Canvas of={Stories.All} />
+        <Title heading={3} id="all">
+          <FormattedMessage defaultMessage="全部展示" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="展示全部配置项。" />
+        </Paragraph>
+        <Canvas of={Stories.All} />
 
-      <Title heading={3} id="size">
-        <FormattedMessage defaultMessage="组件尺寸" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="通过指定 size 字段，可以使用不同尺寸的分页器。" />
-      </Paragraph>
-      <Canvas of={Stories.Size} />
+        <Title heading={3} id="size">
+          <FormattedMessage defaultMessage="组件尺寸" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="通过指定 size 字段，可以使用不同尺寸的分页器。" />
+        </Paragraph>
+        <Canvas of={Stories.Size} />
 
-      <Title heading={3} id="buffer-size">
-        <FormattedMessage defaultMessage="省略页面长度" />
-      </Title>
-      <Paragraph>
-        <FormattedMessage defaultMessage="通过 bufferSize 可以设置 current 页与 ... 之间的页码个数。" />
-      </Paragraph>
-      <Canvas of={Stories.BufferSize} />
+        <Title heading={3} id="buffer-size">
+          <FormattedMessage defaultMessage="省略页面长度" />
+        </Title>
+        <Paragraph>
+          <FormattedMessage defaultMessage="通过 bufferSize 可以设置 current 页与 ... 之间的页码个数。" />
+        </Paragraph>
+        <Canvas of={Stories.BufferSize} />
 
-      <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
-      <Source
-        code={`import { Pagination, type PaginationProps } from "@gio-design/react";`}
-        language="tsx"
-      />
+        <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
+        <Source
+          code={`import { Pagination, type PaginationProps } from "@gio-design/react";`}
+          language="tsx"
+        />
 
-      <Title id="pagination-props" heading={3}>
-        PaginationProps
-      </Title>
-      <PropsTable data={data} />
+        <Title id="pagination-props" heading={3}>
+          PaginationProps
+        </Title>
+        <PropsTable data={data} />
+      </Typography>
     </Unstyled>
   );
 }

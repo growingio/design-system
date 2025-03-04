@@ -1,0 +1,9 @@
+.arco-typography.pagination-demo .sbdocs-preview,
+.arco-typography.pagination-demo .sbdocs-preview .docs-story,
+.arco-typography.pagination-demo .sbdocs-preview .docs-story > div {
+    overflow: unset;
+}
+
+.arco-typography.pagination-demo .sbdocs-preview .docs-story > div:first-child {
+    padding: 60px 20px;
+}
