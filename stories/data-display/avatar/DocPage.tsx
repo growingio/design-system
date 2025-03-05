@@ -98,11 +98,10 @@ function DocPage({ intl }: { intl: IntlShape }) {
 
   return (
     <Unstyled>
-      <Title>{formatMessage({ defaultMessage: "标签页 Tabs" })}</Title>
+      <Title>{formatMessage({ defaultMessage: "头像 Avatar" })}</Title>
       <Paragraph>
         {formatMessage({
-          defaultMessage:
-            "将内容组织同一视图中，一次可查看一个视图内容。查看其他内容可切换选项卡查看。",
+          defaultMessage: "用作头像显示，可以为图片、图标或字符形式展示。",
         })}
       </Paragraph>
 
