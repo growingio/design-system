@@ -27,6 +27,7 @@ import AvatarSvg from "./svgs/avatar-svg";
 import BadgeSvg from "./svgs/badge-svg";
 import CalendarSvg from "./svgs/calendar-svg";
 import CardSvg from "./svgs/card-svg";
+import CarouselSvg from "./svgs/carousel-svg";
 import CollapseSvg from "./svgs/collapse-svg";
 import EmptySvg from "./svgs/empty-svg";
 import ImageSvg from "./svgs/image-svg";
@@ -185,6 +186,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "card",
           svg: <CardSvg />,
           title: formatMessage({ defaultMessage: "卡片 Card" }),
+        },
+        {
+          name: "carousel",
+          svg: <CarouselSvg />,
+          title: formatMessage({ defaultMessage: "轮播 Carousel" }),
         },
         {
           name: "collapse",

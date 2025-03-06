@@ -22,6 +22,9 @@ export type { CalendarProps } from "@arco-design/web-react/es/Calendar";
 export { default as Card } from "@arco-design/web-react/es/Card";
 export type { CardProps } from "@arco-design/web-react/es/Card";
 
+export { default as Carousel } from "@arco-design/web-react/es/Carousel";
+export type { CarouselProps } from "@arco-design/web-react/es/Carousel";
+
 export { default as Cascader } from "./cascader";
 export type { CascaderProps } from "./cascader";
 
