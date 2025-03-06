@@ -35,6 +35,7 @@ import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
 import TooltipSvg from "./svgs/tooltip-svg";
+import TourSvg from "./svgs/tour-svg";
 import TreeSvg from "./svgs/tree-svg";
 
 import CascaderSvg from "./svgs/cascader-svg";
@@ -226,6 +227,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "tooltip",
           svg: <TooltipSvg />,
           title: formatMessage({ defaultMessage: "文字气泡 Tooltip" }),
+        },
+        {
+          name: "tour",
+          svg: <TourSvg />,
+          title: formatMessage({ defaultMessage: "漫游式引导 Tour" }),
         },
         {
           name: "tree",
