@@ -34,6 +34,9 @@ export type { CascaderProps } from "./cascader";
 export { default as Collapse } from "@arco-design/web-react/es/Collapse";
 export type { CollapseProps } from "@arco-design/web-react/es/Collapse";
 
+export { default as Comment } from "@arco-design/web-react/es/Comment";
+export type { CommentProps } from "@arco-design/web-react/es/Comment";
+
 export {
   default as ConfigProvider,
   ConfigContext,
@@ -89,6 +92,9 @@ export { default as Layout } from "@arco-design/web-react/es/Layout";
 
 export { default as Link } from "@arco-design/web-react/es/Link";
 export type { LinkProps } from "@arco-design/web-react/es/Link";
+
+export { default as List } from "@arco-design/web-react/es/List";
+export type { ListProps } from "@arco-design/web-react/es/List";
 
 export { default as Menu } from "@arco-design/web-react/es/Menu";
 export type { MenuProps } from "@arco-design/web-react/es/Menu";
