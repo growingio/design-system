@@ -17,8 +17,8 @@
     "@rc-component/tour": "^2.0.0"
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@arco-iconbox/react-growingio": "1.0.0",
@@ -43,8 +43,8 @@
     "eslint-plugin-storybook": "^0.11.3",
     "globals": "^15.14.0",
     "lodash-es": "^4.17.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
     "react-intl": "^7.1.6",
     "react-resizable": "^3.0.5",
     "react-sticky": "^6.0.3",
