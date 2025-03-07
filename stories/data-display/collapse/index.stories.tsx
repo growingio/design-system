@@ -14,7 +14,7 @@ const { Item: CollapseItem } = Collapse;
 export const Default: Story = {
   args: {
     defaultActiveKey: ["1", "2"],
-    style: { maxWidth: 800 },
+    style: { width: 600, maxWidth: 800 },
   },
   render: (args) => (
     <Collapse {...args}>
@@ -49,7 +49,7 @@ export const Accordion: Story = {
   ...Default,
   args: {
     accordion: true,
-    style: { maxWidth: 800 },
+    style: { width: 600, maxWidth: 800 },
   },
 };
 

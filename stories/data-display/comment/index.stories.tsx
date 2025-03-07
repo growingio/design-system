@@ -62,28 +62,28 @@ export const Nested: Story = {
       <Comment
         actions={actions}
         author={"Socrates"}
-        avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp"
+        avatar="/demos/avatar.png"
         content={<div>Comment body content.</div>}
         datetime="1 hour"
       >
         <Comment
           actions={actions}
           author="Balzac"
-          avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/9eeb1800d9b78349b24682c3518ac4a3.png~tplv-uwbnlip3yd-webp.webp"
+          avatar="/demos/avatar-02.png"
           content={<div>Comment body content.</div>}
           datetime="1 hour"
         >
           <Comment
             actions={actions}
             author="Austen"
-            avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/8361eeb82904210b4f55fab888fe8416.png~tplv-uwbnlip3yd-webp.webp"
+            avatar="/demos/avatar-03.png"
             content={<div> Reply content </div>}
             datetime="1 hour"
           />
           <Comment
             actions={actions}
             author="Plato"
-            avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/3ee5f13fb09879ecb5185e440cef6eb9.png~tplv-uwbnlip3yd-webp.webp"
+            avatar="/demos/avatar-04.png"
             content={<div> Reply content </div>}
             datetime="1 hour"
           />
@@ -101,8 +101,7 @@ export const CommentList: Story = {
         author: "Socrates",
         like: 13,
         star: 3,
-        avatar:
-          "//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp",
+        avatar: "/demos/avatar.png",
         content: "Comment body content.",
         datetime: "1 hour",
       },
@@ -111,8 +110,7 @@ export const CommentList: Story = {
         author: "Balzac",
         like: 12,
         star: 1,
-        avatar:
-          "//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/9eeb1800d9b78349b24682c3518ac4a3.png~tplv-uwbnlip3yd-webp.webp",
+        avatar: "/demos/avatar-02.png",
         content: "Comment body content.",
         datetime: "2 hour",
       },
@@ -156,7 +154,7 @@ export const Reply: Story = {
         </span>
       }
       author="Balzac"
-      avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/9eeb1800d9b78349b24682c3518ac4a3.png~tplv-uwbnlip3yd-webp.webp"
+      avatar="/demos/avatar.png"
       content={
         <div>
           A design is a plan or specification for the construction of an object or system or for the
@@ -174,7 +172,7 @@ export const Reply: Story = {
             Reply
           </Button>,
         ]}
-        avatar="//p1-arco.byteimg.com/tos-cn-i-uwbnlip3yd/e278888093bef8910e829486fb45dd69.png~tplv-uwbnlip3yd-webp.webp"
+        avatar="/demos/avatar-02.png"
         content={
           <div>
             <Input.TextArea placeholder="Here is you content." />
