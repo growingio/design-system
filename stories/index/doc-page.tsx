@@ -33,6 +33,7 @@ import CommentSvg from "./svgs/comment-svg";
 import DescriptionsSvg from "./svgs/descriptions-svg";
 import EmptySvg from "./svgs/empty-svg";
 import ImageSvg from "./svgs/image-svg";
+import ListSvg from "./svgs/list-svg";
 import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
@@ -219,6 +220,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "image",
           svg: <ImageSvg />,
           title: formatMessage({ defaultMessage: "图片 Image" }),
+        },
+        {
+          name: "list",
+          svg: <ListSvg />,
+          title: formatMessage({ defaultMessage: "列表 List" }),
         },
         {
           name: "table",
