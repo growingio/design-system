@@ -54,6 +54,9 @@ export type {
   DateRangePickerProps,
 } from "./date-picker";
 
+export { default as Descriptions } from "@arco-design/web-react/es/Descriptions";
+export type { DescriptionsProps } from "@arco-design/web-react/es/Descriptions";
+
 export { default as Divider } from "@arco-design/web-react/es/Divider";
 export type { DividerProps } from "@arco-design/web-react/es/Divider";
 

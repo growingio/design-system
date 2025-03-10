@@ -30,6 +30,7 @@ import CardSvg from "./svgs/card-svg";
 import CarouselSvg from "./svgs/carousel-svg";
 import CollapseSvg from "./svgs/collapse-svg";
 import CommentSvg from "./svgs/comment-svg";
+import DescriptionsSvg from "./svgs/descriptions-svg";
 import EmptySvg from "./svgs/empty-svg";
 import ImageSvg from "./svgs/image-svg";
 import TableSvg from "./svgs/table-svg";
@@ -203,6 +204,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "comment",
           svg: <CommentSvg />,
           title: formatMessage({ defaultMessage: "评论 Comment" }),
+        },
+        {
+          name: "descriptions",
+          svg: <DescriptionsSvg />,
+          title: formatMessage({ defaultMessage: "描述列表 Descriptions" }),
         },
         {
           name: "empty",
