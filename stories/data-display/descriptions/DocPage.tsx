@@ -110,6 +110,16 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={Stories.Border} />
 
+      <Title heading={3} id="colon">
+        {formatMessage({ defaultMessage: "带冒号展示" })}
+      </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage: "通过 colon 可以将冒号换成其他符号。",
+        })}
+      </Paragraph>
+      <Canvas of={Stories.Colon} />
+
       <Title heading={3} id="layout">
         {formatMessage({ defaultMessage: "布局展示" })}
       </Title>
