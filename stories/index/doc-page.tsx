@@ -58,6 +58,7 @@ import ModalSvg from "./svgs/modal-svg";
 import ResultSvg from "./svgs/result-svg";
 
 import ConfigProviderSvg from "./svgs/config-provider-svg";
+import TriggerSvg from "./svgs/trigger-svg";
 
 import styles from "./doc-page.module.css";
 
@@ -347,6 +348,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "configprovider",
           svg: <ConfigProviderSvg />,
           title: formatMessage({ defaultMessage: "全局配置 ConfigProvider" }),
+        },
+        {
+          name: "trigger",
+          svg: <TriggerSvg />,
+          title: formatMessage({ defaultMessage: "触发器 Trigger" }),
         },
       ],
     },
