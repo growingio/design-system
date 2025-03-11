@@ -122,7 +122,7 @@ export const CloseInPopover: Story = {
             <span>
               <p style={{ margin: 0 }}>Here is the text content</p>
               <p style={{ margin: 0 }}>Here is the text content</p>
-              <p style={{ textAlign: "right", margin: 0 }}>
+              <p style={{ margin: "4px 0 0 0", textAlign: "right" }}>
                 <Link onClick={() => setVisible(false)}>Close</Link>
               </p>
             </span>
@@ -142,7 +142,7 @@ export const CloseInPopover: Story = {
             <span>
               <p style={{ margin: 0 }}>Here is the text content</p>
               <p style={{ margin: 0 }}>Here is the text content</p>
-              <p style={{ margin: 0, textAlign: "right" }}>
+              <p style={{ margin: "4px 0 0 0", textAlign: "right" }}>
                 <Link onClick={() => setVisible2(false)}>Close</Link>
               </p>
             </span>

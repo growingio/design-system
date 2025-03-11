@@ -138,8 +138,14 @@ export const Countdowns: Story = {
     return (
       <Space direction="vertical" size={40}>
         <Space size={60}>
-          <Countdown title="Countdown" value={now + 1000 * 60 * 60 * 2} now={now} />
           <Countdown
+            style={{ width: 90 }}
+            title="Countdown"
+            value={now + 1000 * 60 * 60 * 2}
+            now={now}
+          />
+          <Countdown
+            style={{ width: 170 }}
             value={now + 1000 * 60 * 60 * 2}
             now={now}
             renderFormat={(_diff, _value) => {
@@ -164,6 +170,7 @@ export const Countdowns: Story = {
         </Space>
         <Space align="start" size={40}>
           <Countdown
+            style={{ width: 220 }}
             title="Days"
             value={now + 1000 * 60 * 60 * 24 * 4}
             format="D 天 H 时 m 分 s 秒"
