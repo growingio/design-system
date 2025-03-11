@@ -41,7 +41,7 @@ export const Mini: Story = {
   render: (args) => <Tooltip {...args} mini content="123456789" />,
 };
 
-function getStyle(top, left) {
+function getStyle(top: number, left: number) {
   return {
     position: "absolute",
     width: 80,
@@ -52,6 +52,7 @@ function getStyle(top, left) {
 export const Position: Story = {
   args: {
     ...Basic.args,
+    trigger: "click",
   },
   render: (args) => (
     <div

@@ -116,7 +116,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
         })}
       </Paragraph>
       <Title heading={2}>{formatMessage({ defaultMessage: "示例" })}</Title>
-      ## Stories
+
       <Title heading={3} id="basic">
         {formatMessage({ defaultMessage: "基础用法" })}
       </Title>

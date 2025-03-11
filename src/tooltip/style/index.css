@@ -1,62 +1,68 @@
 .arco-tooltip-mini {
-  font-size: 12px;
-  line-height: 24px;
+    font-size: 12px;
+    line-height: 24px;
 }
 
-.arco-trigger-arrow {
-  transform: none;
-  width: 10px;
-  height: 5px;
-  clip-path: path(
-    'M10 0H0L4.37531 3.50024C4.74052 3.79242 5.25948 3.79242 5.62469 3.50024L10 0Z'
-  );
+.arco-tooltip .arco-trigger-arrow {
+    transform: none;
+    width: 10px;
+    height: 5px;
+    clip-path: path(
+        "M10 0H0L4.37531 3.50024C4.74052 3.79242 5.25948 3.79242 5.62469 3.50024L10 0Z"
+    );
 }
 
-.arco-trigger[trigger-placement='top'] .arco-trigger-arrow,
-.arco-trigger[trigger-placement='tl'] .arco-trigger-arrow,
-.arco-trigger[trigger-placement='tr'] .arco-trigger-arrow {
-  border-radius: 0;
+.arco-tooltip .arco-trigger[trigger-placement="top"] .arco-trigger-arrow,
+.arco-tooltip .arco-trigger[trigger-placement="tl"] .arco-trigger-arrow,
+.arco-tooltip .arco-trigger[trigger-placement="tr"] .arco-trigger-arrow {
+    border-radius: 0;
 }
 
-.arco-trigger[trigger-placement='bottom'] .arco-trigger-arrow,
-.arco-trigger[trigger-placement='bl'] .arco-trigger-arrow,
-.arco-trigger[trigger-placement='br'] .arco-trigger-arrow {
-  transform: rotate(180deg);
-  border-radius: 0;
+.arco-tooltip .arco-trigger[trigger-placement="bottom"] .arco-trigger-arrow,
+.arco-tooltip .arco-trigger[trigger-placement="bl"] .arco-trigger-arrow,
+.arco-tooltip .arco-trigger[trigger-placement="br"] .arco-trigger-arrow {
+    transform: rotate(180deg);
+    border-radius: 0;
 }
 
-.arco-trigger[trigger-placement='left']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow,
-.arco-trigger[trigger-placement='lt']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow,
-.arco-trigger[trigger-placement='lb']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow {
-  right: -5px;
-  transform-origin: bottom right;
-  transform: rotate(-90deg);
+.arco-tooltip
+    .arco-trigger[trigger-placement="left"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow,
+.arco-tooltip
+    .arco-trigger[trigger-placement="lt"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow,
+.arco-tooltip
+    .arco-trigger[trigger-placement="lb"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow {
+    right: -5px;
+    transform-origin: bottom right;
+    transform: rotate(-90deg);
 
-  margin-top: -10px;
+    margin-top: -10px;
 
-  border-radius: 0;
+    border-radius: 0;
 }
 
-.arco-trigger[trigger-placement='right']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow,
-.arco-trigger[trigger-placement='rt']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow,
-.arco-trigger[trigger-placement='rb']
-  > .arco-trigger-arrow-container
-  .arco-trigger-arrow {
-  left: 0;
-  transform-origin: top left;
-  transform: rotate(90deg);
+.arco-tooltip
+    .arco-trigger[trigger-placement="right"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow,
+.arco-tooltip
+    .arco-trigger[trigger-placement="rt"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow,
+.arco-tooltip
+    .arco-trigger[trigger-placement="rb"]
+    > .arco-trigger-arrow-container
+    .arco-trigger-arrow {
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(90deg);
 
-  margin-top: -5px;
+    margin-top: -5px;
 
-  border-radius: 0;
+    border-radius: 0;
 }
