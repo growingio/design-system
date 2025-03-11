@@ -5,7 +5,7 @@
       "name": "design-system",
       "dependencies": {
         "@arco-design/web-react": "2.65.0",
-        "@arco-themes/react-growingio": "0.5.0",
+        "@arco-themes/react-growingio": "0.6.0",
         "@rc-component/tour": "^2.0.0",
       },
       "devDependencies": {
@@ -59,7 +59,7 @@
 
     "@arco-iconbox/react-growingio": ["@arco-iconbox/react-growingio@1.0.0", "", {}, "sha512-xbm4ixj5/9eCun5lVAG3ufZ/ScMtt2KFgGRAEyWw3056AHQgyGtIxXjlQoyxyBcUwqOjWoooT31LqlrqhhMD6w=="],
 
-    "@arco-themes/react-growingio": ["@arco-themes/react-growingio@0.5.0", "", { "peerDependencies": { "@arco-design/web-react": "^2.65.0" } }, "sha512-a/9eTcsQ5bmyO2iYbDVI6+VFQ6fwZDUFbGmvPntFRtlnguP5pxAzNfSdKXcgRd2hQwR2rn/dHB1TpP9VR8fREA=="],
+    "@arco-themes/react-growingio": ["@arco-themes/react-growingio@0.6.0", "", { "peerDependencies": { "@arco-design/web-react": "^2.65.0" } }, "sha512-Y0QI7y0sFMtghCj/PhA2nnRaDhea6vLvF3XbSzRBDxxBrlnP6kTHWzdXBF1d3gl+5hUCMUciyiJjLPOrmrX1/Q=="],
 
     "@babel/code-frame": ["@babel/code-frame@7.26.2", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.25.9", "js-tokens": "^4.0.0", "picocolors": "^1.0.0" } }, "sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ=="],
 

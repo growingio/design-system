@@ -1,4 +1,4 @@
-import { Button, Link, Popover, Space, Typography } from "@/src";
+import { Button, Link, Popover, Space } from "@/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 
@@ -14,10 +14,10 @@ export const Default: Story = {
   args: {
     title: "Title",
     content: (
-      <Space direction="vertical">
-        <Typography.Text>This is the content.</Typography.Text>
-        <Typography.Text>This is the content.</Typography.Text>
-      </Space>
+      <>
+        <p style={{ margin: 0 }}>This is the content.</p>
+        <p style={{ margin: 0 }}>This is the content.</p>
+      </>
     ),
   },
   render: (args) => (
@@ -120,9 +120,9 @@ export const CloseInPopover: Story = {
           onVisibleChange={setVisible}
           content={
             <span>
-              <p>Here is the text content</p>
-              <p>Here is the text content</p>
-              <p style={{ textAlign: "right", marginTop: 4 }}>
+              <p style={{ margin: 0 }}>Here is the text content</p>
+              <p style={{ margin: 0 }}>Here is the text content</p>
+              <p style={{ textAlign: "right", margin: 0 }}>
                 <Link onClick={() => setVisible(false)}>Close</Link>
               </p>
             </span>
@@ -140,9 +140,9 @@ export const CloseInPopover: Story = {
           }}
           content={
             <span>
-              <p>Here is the text content</p>
-              <p>Here is the text content</p>
-              <p style={{ textAlign: "right", marginTop: 4 }}>
+              <p style={{ margin: 0 }}>Here is the text content</p>
+              <p style={{ margin: 0 }}>Here is the text content</p>
+              <p style={{ margin: 0, textAlign: "right" }}>
                 <Link onClick={() => setVisible2(false)}>Close</Link>
               </p>
             </span>
