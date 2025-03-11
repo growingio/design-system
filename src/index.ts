@@ -129,6 +129,9 @@ export type { SelectProps } from "./select";
 export { default as Space } from "@arco-design/web-react/es/Space";
 export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
 
+export { default as Statistic } from "@arco-design/web-react/es/Statistic";
+export type { StatisticProps } from "@arco-design/web-react/es/Statistic";
+
 export { default as Steps } from "@arco-design/web-react/es/Steps";
 export type { StepsProps } from "@arco-design/web-react/es/Steps";
 

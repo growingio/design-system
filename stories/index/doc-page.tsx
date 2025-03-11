@@ -35,6 +35,7 @@ import EmptySvg from "./svgs/empty-svg";
 import ImageSvg from "./svgs/image-svg";
 import ListSvg from "./svgs/list-svg";
 import PopoverSvg from "./svgs/popover-svg";
+import StatisticSvg from "./svgs/statistic-svg";
 import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
@@ -232,6 +233,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "popover",
           svg: <PopoverSvg />,
           title: formatMessage({ defaultMessage: "气泡卡片 Popover" }),
+        },
+        {
+          name: "statistic",
+          svg: <StatisticSvg />,
+          title: formatMessage({ defaultMessage: "统计数值 Statistic" }),
         },
         {
           name: "table",
