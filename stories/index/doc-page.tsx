@@ -39,6 +39,7 @@ import StatisticSvg from "./svgs/statistic-svg";
 import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
+import TimelineSvg from "./svgs/timeline-svg";
 import TooltipSvg from "./svgs/tooltip-svg";
 import TourSvg from "./svgs/tour-svg";
 import TreeSvg from "./svgs/tree-svg";
@@ -253,6 +254,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "tag",
           svg: <TagSvg />,
           title: formatMessage({ defaultMessage: "标签 Tag" }),
+        },
+        {
+          name: "timeline",
+          svg: <TimelineSvg />,
+          title: formatMessage({ defaultMessage: "时间轴 Timeline" }),
         },
         {
           name: "tooltip",

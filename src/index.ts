@@ -157,6 +157,9 @@ export type { BadgeTagProps } from "./tag/BadgeTag";
 export { default as TimePicker } from "./time-picker";
 export type { TimePickerProps, TimeRangePickerProps } from "./time-picker";
 
+export { default as Timeline } from "@arco-design/web-react/es/Timeline";
+export type { TimelineProps } from "@arco-design/web-react/es/Timeline";
+
 export { default as Tooltip } from "@arco-design/web-react/es/Tooltip";
 export type { TooltipProps } from "@arco-design/web-react/es/Tooltip";
 
