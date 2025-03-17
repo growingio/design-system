@@ -60,6 +60,7 @@ import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
 import ResultSvg from "./svgs/result-svg";
 
+import AffixSvg from "./svgs/affix-svg";
 import ConfigProviderSvg from "./svgs/config-provider-svg";
 import TriggerSvg from "./svgs/trigger-svg";
 
@@ -362,6 +363,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
     others: {
       title: formatMessage({ defaultMessage: "其他" }),
       components: [
+        {
+          name: "affix",
+          svg: <AffixSvg />,
+          title: formatMessage({ defaultMessage: "固钉 Affix" }),
+        },
         {
           name: "configprovider",
           svg: <ConfigProviderSvg />,

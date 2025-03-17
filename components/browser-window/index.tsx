@@ -17,18 +17,16 @@ export default function BrowserWindow({
   url = "https://growingio.design",
   style,
   bodyStyle,
-}: Props): JSX.Element {
+}: Props) {
   return (
-    <div className={styles.browserWindow} style={{ ...style, minHeight }}>
+    <div id="browser-window" className={styles.browserWindow} style={{ ...style, minHeight }}>
       <div className={styles.browserWindowHeader}>
         <div className={styles.buttons}>
           <span className={styles.dot} style={{ background: "#f25f58" }} />
           <span className={styles.dot} style={{ background: "#fbbe3c" }} />
           <span className={styles.dot} style={{ background: "#58cb42" }} />
         </div>
-        <div className={clsx(styles.browserWindowAddressBar, "text--truncate")}>
-          {url}
-        </div>
+        <div className={clsx(styles.browserWindowAddressBar, "text--truncate")}>{url}</div>
         <div className={styles.browserWindowMenuIcon}>
           <div>
             <span className={styles.bar} />
