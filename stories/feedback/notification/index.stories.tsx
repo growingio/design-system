@@ -123,7 +123,7 @@ export const Buttons: Story = {
     id,
     btn: (
       <Space>
-        <Button size="small" onClick={() => Notification.remove(id)} style={{ margin: "0 12px" }}>
+        <Button size="small" onClick={() => Notification.remove(id)}>
           Cancel
         </Button>
         <Button type="primary" size="small" onClick={() => Notification.remove(id)}>
