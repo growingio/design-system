@@ -120,6 +120,9 @@ export type { PageHeaderProps } from "@arco-design/web-react/es/PageHeader";
 export { default as Pagination } from "@arco-design/web-react/es/Pagination";
 export type { PaginationProps } from "@arco-design/web-react/es/Pagination";
 
+export { default as Popover } from "@arco-design/web-react/es/Popover";
+export type { PopoverProps } from "@arco-design/web-react/es/Popover";
+
 export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
 
@@ -210,6 +213,3 @@ export { default as useVerificationCode } from "@arco-design/web-react/es/_hooks
 
 export { default as Watermark } from "./watermark";
 export type { WatermarkProps } from "./watermark";
-
-export { default as Popover } from "@arco-design/web-react/es/Popover";
-export type { PopoverProps } from "@arco-design/web-react/es/Popover";
