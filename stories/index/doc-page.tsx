@@ -56,6 +56,7 @@ import UploadSvg from "./svgs/upload-svg";
 import VerificationCodeSvg from "./svgs/verification-code-svg";
 
 import AlertSvg from "./svgs/alert-svg";
+import DrawerSvg from "./svgs/drawer-svg";
 import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
 import ResultSvg from "./svgs/result-svg";
@@ -342,6 +343,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "alert",
           svg: <AlertSvg />,
           title: formatMessage({ defaultMessage: "警告提示 Alert" }),
+        },
+        {
+          name: "drawer",
+          svg: <DrawerSvg />,
+          title: formatMessage({ defaultMessage: "抽屉 Drawer" }),
         },
         {
           name: "message",

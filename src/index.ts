@@ -63,6 +63,9 @@ export type { DescriptionsProps } from "@arco-design/web-react/es/Descriptions";
 export { default as Divider } from "@arco-design/web-react/es/Divider";
 export type { DividerProps } from "@arco-design/web-react/es/Divider";
 
+export { default as Drawer } from "@arco-design/web-react/es/Drawer";
+export type { DrawerProps } from "@arco-design/web-react/es/Drawer";
+
 export { default as Dropdown } from "@arco-design/web-react/es/Dropdown";
 export type { DropdownProps } from "@arco-design/web-react/es/Dropdown";
 

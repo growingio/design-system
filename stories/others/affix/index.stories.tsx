@@ -21,8 +21,13 @@ export const Default: Story = {
   render: (args) => (
     <BrowserWindow bodyStyle={{ position: "relative" }}>
       <div id={`${args.id}-wraper`} className="demo-affix-container">
-        <div style={{ height: 400, padding: "80px 0", position: "relative" }}>
-          <Affix {...args}>
+        <div style={{ height: 400, position: "relative" }}>
+          <Affix
+            style={{
+              margin: "40px 0",
+            }}
+            {...args}
+          >
             <Button type="primary">Affix</Button>
           </Affix>
         </div>
