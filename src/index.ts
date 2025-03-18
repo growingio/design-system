@@ -114,6 +114,9 @@ export type { MessageProps } from "@arco-design/web-react/es/Message";
 export { default as Modal } from "./modal";
 export type { ModalProps, ModalHookReturnType } from "./modal";
 
+export { default as Notification } from "@arco-design/web-react/es/Notification";
+export type { NotificationProps } from "@arco-design/web-react/es/Notification";
+
 export { default as PageHeader } from "@arco-design/web-react/es/PageHeader";
 export type { PageHeaderProps } from "@arco-design/web-react/es/PageHeader";
 

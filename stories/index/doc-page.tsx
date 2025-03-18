@@ -59,6 +59,7 @@ import AlertSvg from "./svgs/alert-svg";
 import DrawerSvg from "./svgs/drawer-svg";
 import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
+import NotificationSvg from "./svgs/notification-svg";
 import ResultSvg from "./svgs/result-svg";
 
 import AffixSvg from "./svgs/affix-svg";
@@ -358,6 +359,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "modal",
           svg: <ModalSvg />,
           title: formatMessage({ defaultMessage: "对话框 Modal" }),
+        },
+        {
+          name: "notification",
+          svg: <NotificationSvg />,
+          title: formatMessage({ defaultMessage: "通知 Notification" }),
         },
         {
           name: "result",

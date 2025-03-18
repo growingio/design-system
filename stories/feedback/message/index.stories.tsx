@@ -1,13 +1,13 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { createContext } from "react";
-import { Button, Message, MessageProps, Space } from "../../../src";
+import { Button, Message, MessageProps, Space } from "@/src";
 import {
   IconCheck,
   IconClose,
   IconExclamation,
   IconFaceSmileFill,
   IconInfo,
-} from "@arco-iconbox/react-growingio";
+} from "@arco-iconbox/react-growingio/src";
+import type { Meta, StoryObj } from "@storybook/react";
+import { createContext } from "react";
 import "./index.css";
 
 const meta: Meta<MessageProps> = {
