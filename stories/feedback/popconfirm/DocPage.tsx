@@ -156,17 +156,6 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={Stories.Positions} />
 
-      <Title heading={3} id="positions">
-        {formatMessage({ defaultMessage: "位置" })}
-      </Title>
-      <Paragraph>
-        {formatMessage({
-          defaultMessage:
-            "Popconfirm 支持 12 个不同的方位。分别为：上左 上 上右 下左 下 下右 左上 左 左下 右上 右 右下。",
-        })}
-      </Paragraph>
-      <Canvas of={Stories.Positions} />
-
       <Title heading={3} id="icon">
         {formatMessage({ defaultMessage: "自定义图标" })}
       </Title>
