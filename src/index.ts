@@ -123,6 +123,9 @@ export type { PageHeaderProps } from "@arco-design/web-react/es/PageHeader";
 export { default as Pagination } from "@arco-design/web-react/es/Pagination";
 export type { PaginationProps } from "@arco-design/web-react/es/Pagination";
 
+export { default as Popconfirm } from "@arco-design/web-react/es/Popconfirm";
+export type { PopconfirmProps } from "@arco-design/web-react/es/Popconfirm";
+
 export { default as Popover } from "@arco-design/web-react/es/Popover";
 export type { PopoverProps } from "@arco-design/web-react/es/Popover";
 
