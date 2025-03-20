@@ -61,6 +61,7 @@ import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
 import NotificationSvg from "./svgs/notification-svg";
 import PopconfirmSvg from "./svgs/popconfirm-svg";
+import ProgressSvg from "./svgs/progress-svg";
 import ResultSvg from "./svgs/result-svg";
 
 import AffixSvg from "./svgs/affix-svg";
@@ -370,6 +371,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "popconfirm",
           svg: <PopconfirmSvg />,
           title: formatMessage({ defaultMessage: "气泡确认框 Popconfirm" }),
+        },
+        {
+          name: "progress",
+          svg: <ProgressSvg />,
+          title: formatMessage({ defaultMessage: "进度条 Progress" }),
         },
         {
           name: "result",

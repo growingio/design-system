@@ -129,6 +129,9 @@ export type { PopconfirmProps } from "@arco-design/web-react/es/Popconfirm";
 export { default as Popover } from "@arco-design/web-react/es/Popover";
 export type { PopoverProps } from "@arco-design/web-react/es/Popover";
 
+export { default as Progress } from "@arco-design/web-react/es/Progress";
+export type { ProgressProps } from "@arco-design/web-react/es/Progress";
+
 export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
 
