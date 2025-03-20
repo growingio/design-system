@@ -19,6 +19,7 @@ const meta: Meta<typeof Watermark> = {
   parameters: {
     layout: "padded",
   },
+  tags: ["new"],
 };
 
 export default meta;

@@ -144,6 +144,9 @@ export type { ResultProps } from "./result";
 export { default as Select } from "./select";
 export type { SelectProps } from "./select";
 
+export { default as Skeleton } from "@arco-design/web-react/es/Skeleton";
+export type { SkeletonProps } from "@arco-design/web-react/es/Skeleton";
+
 export { default as Space } from "@arco-design/web-react/es/Space";
 export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
 
@@ -194,9 +197,6 @@ export type { TypographyProps } from "@arco-design/web-react/es/Typography";
 
 export { default as Switch } from "@arco-design/web-react/es/Switch";
 export type { SwitchProps } from "@arco-design/web-react/es/Switch";
-
-export { default as Skeleton } from "@arco-design/web-react/es/Skeleton";
-export type { SkeletonProps } from "@arco-design/web-react/es/Skeleton";
 
 export { default as Spin } from "@arco-design/web-react/es/Spin";
 export type { SpinProps } from "@arco-design/web-react/es/Spin";
