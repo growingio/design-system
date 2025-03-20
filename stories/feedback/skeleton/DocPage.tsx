@@ -74,11 +74,10 @@ function DocPage({ intl }: { intl: IntlShape }) {
 
   return (
     <Unstyled>
-      <Title>{formatMessage({ defaultMessage: "进度条 Skeleton" })}</Title>
+      <Title>{formatMessage({ defaultMessage: "骨架屏 Skeleton" })}</Title>
       <Paragraph>
         {formatMessage({
-          defaultMessage:
-            "给予用户当前系统执行中任务运行状态的反馈，多用于运行一段时间的场景，有效减轻用户在等待中产生的焦虑感。",
+          defaultMessage: "将加载中的数据用灰色占位。",
         })}
       </Paragraph>
 
