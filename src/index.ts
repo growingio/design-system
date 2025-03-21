@@ -150,6 +150,9 @@ export type { SkeletonProps } from "@arco-design/web-react/es/Skeleton";
 export { default as Space } from "@arco-design/web-react/es/Space";
 export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
 
+export { default as Spin } from "@arco-design/web-react/es/Spin";
+export type { SpinProps } from "@arco-design/web-react/es/Spin";
+
 export { default as Statistic } from "@arco-design/web-react/es/Statistic";
 export type { StatisticProps } from "@arco-design/web-react/es/Statistic";
 
@@ -197,9 +200,6 @@ export type { TypographyProps } from "@arco-design/web-react/es/Typography";
 
 export { default as Switch } from "@arco-design/web-react/es/Switch";
 export type { SwitchProps } from "@arco-design/web-react/es/Switch";
-
-export { default as Spin } from "@arco-design/web-react/es/Spin";
-export type { SpinProps } from "@arco-design/web-react/es/Spin";
 
 export { default as Checkbox } from "@arco-design/web-react/es/Checkbox";
 export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";

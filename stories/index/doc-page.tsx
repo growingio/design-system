@@ -64,6 +64,7 @@ import PopconfirmSvg from "./svgs/popconfirm-svg";
 import ProgressSvg from "./svgs/progress-svg";
 import ResultSvg from "./svgs/result-svg";
 import SkeletonSvg from "./svgs/skeleton-svg";
+import SpinSvg from "./svgs/spin-svg";
 
 import AffixSvg from "./svgs/affix-svg";
 import ConfigProviderSvg from "./svgs/config-provider-svg";
@@ -387,6 +388,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "skeleton",
           svg: <SkeletonSvg />,
           title: formatMessage({ defaultMessage: "骨架屏 Skeleton" }),
+        },
+        {
+          name: "spin",
+          svg: <SpinSvg />,
+          title: formatMessage({ defaultMessage: "加载中 Spin" }),
         },
       ],
     },
