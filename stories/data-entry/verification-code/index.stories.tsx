@@ -1,18 +1,12 @@
+import { Button, Form, Space, Typography, VerificationCode, useVerificationCode } from "@/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import {
-  Button,
-  Form,
-  Space,
-  Typography,
-  VerificationCode,
-  useVerificationCode,
-} from "../../../src";
 import classes from "./index.module.css";
 
 const meta: Meta<typeof VerificationCode> = {
   component: VerificationCode,
   title: "Components/Data Entry/VerificationCode",
+  tags: ["new"],
 };
 
 export default meta;
@@ -153,7 +147,6 @@ export const Hooks: Story = {
               }}
               {...inputProps}
               onChange={(e) => {
-                // @ts-expect-error input event
                 inputProps.onChange?.(e.target?.value);
               }}
             />

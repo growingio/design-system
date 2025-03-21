@@ -44,6 +44,7 @@ import TooltipSvg from "./svgs/tooltip-svg";
 import TourSvg from "./svgs/tour-svg";
 import TreeSvg from "./svgs/tree-svg";
 
+import AutoCompleteSvg from "./svgs/auto-complete-svg";
 import CascaderSvg from "./svgs/cascader-svg";
 import DatePickerSvg from "./svgs/date-picker-svg";
 import InputSvg from "./svgs/input-svg";
@@ -287,6 +288,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
     ["data-entry"]: {
       title: formatMessage({ defaultMessage: "数据输入" }),
       components: [
+        {
+          name: "autocomplete",
+          svg: <AutoCompleteSvg />,
+          title: formatMessage({ defaultMessage: "自动补全 AutoComplete" }),
+        },
         {
           name: "cascader",
           svg: <CascaderSvg />,

@@ -1,10 +1,9 @@
+import { Alert, Button, DatePicker, Radio, Select, Space, Typography } from "@/src";
+import { SizeType } from "@/src/_core/types";
+import { IconInfoCircle } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
-import { useState } from "react";
 import dayjs from "dayjs";
-import { Button, DatePicker, Radio, Select, Space, Typography } from "../../../src";
-import { IconInfoCircle } from "@arco-iconbox/react-growingio";
-import { SizeType } from "../../../src/_core/types";
-import { Alert } from "@arco-design/web-react";
+import { useState } from "react";
 
 const meta: Meta<typeof DatePicker> = {
   component: DatePicker,

@@ -7,6 +7,9 @@ export type { AlertProps } from "@arco-design/web-react/es/Alert";
 export { default as Anchor } from "@arco-design/web-react/es/Anchor";
 export type { AnchorProps } from "@arco-design/web-react/es/Anchor";
 
+export { default as AutoComplete } from "@arco-design/web-react/es/AutoComplete";
+export type { AutoCompleteProps } from "@arco-design/web-react/es/AutoComplete";
+
 export { default as Avatar } from "@arco-design/web-react/es/Avatar";
 export type { AvatarProps } from "@arco-design/web-react/es/Avatar";
 

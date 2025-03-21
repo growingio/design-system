@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { useState } from "react";
-import { useIntl } from "react-intl";
+import { Divider, Input, Radio, Select, Space, Typography } from "@/src";
+import { SizeType } from "@/src/_core/types";
 import {
   IconClockCircle,
   IconInfoCircle,
+  IconMinus,
   IconSearch,
   IconUser,
-  IconMinus,
-} from "@arco-iconbox/react-growingio";
-import { Input, Space, Radio, Select, Typography, Divider } from "../../../src";
-import { SizeType } from "../../../src/_core/types";
+} from "@arco-iconbox/react-growingio/src";
+import type { Meta, StoryObj } from "@storybook/react";
+import { useState } from "react";
+import { useIntl } from "react-intl";
 
 const meta: Meta<typeof Input> = {
   component: Input,
@@ -299,7 +299,7 @@ export const Length: Story | TextAreaStory = {
   args: {
     showWordLimit: true,
   },
-  render: (args) => {
+  render: (args: any) => {
     const { formatMessage } = useIntl();
     return (
       <Space direction="vertical">
@@ -442,7 +442,7 @@ export const AutoWidth: Story = {
   render: (args, { intl: { formatMessage } }) => (
     <Space direction="vertical" style={{ width: "100%" }}>
       <Divider>
-        <Typography.Text code>{JSON.stringify(AutoWidth.args.autoWidth)}</Typography.Text>
+        <Typography.Text code>{JSON.stringify(args.autoWidth)}</Typography.Text>
       </Divider>
       <Input {...args} placeholder={formatMessage({ defaultMessage: "请输入" })} />
       <Input {...args} prefix="Prefix" placeholder={formatMessage({ defaultMessage: "请输入" })} />
