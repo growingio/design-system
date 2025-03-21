@@ -1,77 +1,70 @@
+import { Grid, Tag, Typography } from "@/src";
 import { Unstyled } from "@storybook/blocks";
 import { injectIntl, type IntlShape } from "react-intl";
-import { Typography, Grid, Tag } from "../../src";
+import styles from "./doc-page.module.css";
 import ListItem, { ListItemProps } from "./list-item";
-
-import ButtonSvg from "./svgs/button-svg";
-import IconSvg from "./svgs/icon-svg";
-import LinkSvg from "./svgs/link-svg";
-import TypographySvg from "./svgs/typography-svg";
-
-import DividerSvg from "./svgs/divider-svg";
-import GridSvg from "./svgs/grid-svg";
-import LayoutSvg from "./svgs/layout-svg";
-import SpaceSvg from "./svgs/space-svg";
-import ResizeBoxSvg from "./svgs/resize-box-svg";
-
+import AffixSvg from "./svgs/affix-svg";
+import AlertSvg from "./svgs/alert-svg";
 import AnchorSvg from "./svgs/anchor-svg";
-import BackTopSvg from "./svgs/back-top-svg";
-import BreadcrumbSvg from "./svgs/breadcrumb-svg";
-import DropdownSvg from "./svgs/dropdown-svg";
-import MenuSvg from "./svgs/menu-svg";
-import PageHeaderSvg from "./svgs/page-header-svg";
-import PaginationSvg from "./svgs/pagination-svg";
-import StepsSvg from "./svgs/steps-svg";
-
+import AutoCompleteSvg from "./svgs/auto-complete-svg";
 import AvatarSvg from "./svgs/avatar-svg";
+import BackTopSvg from "./svgs/back-top-svg";
 import BadgeSvg from "./svgs/badge-svg";
+import BreadcrumbSvg from "./svgs/breadcrumb-svg";
+import ButtonSvg from "./svgs/button-svg";
 import CalendarSvg from "./svgs/calendar-svg";
 import CardSvg from "./svgs/card-svg";
 import CarouselSvg from "./svgs/carousel-svg";
+import CascaderSvg from "./svgs/cascader-svg";
 import CollapseSvg from "./svgs/collapse-svg";
 import CommentSvg from "./svgs/comment-svg";
+import ConfigProviderSvg from "./svgs/config-provider-svg";
+import DatePickerSvg from "./svgs/date-picker-svg";
 import DescriptionsSvg from "./svgs/descriptions-svg";
+import DividerSvg from "./svgs/divider-svg";
+import DrawerSvg from "./svgs/drawer-svg";
+import DropdownSvg from "./svgs/dropdown-svg";
 import EmptySvg from "./svgs/empty-svg";
+import GridSvg from "./svgs/grid-svg";
+import IconSvg from "./svgs/icon-svg";
 import ImageSvg from "./svgs/image-svg";
+import InputNumberSvg from "./svgs/input-number-svg";
+import InputSvg from "./svgs/input-svg";
+import InputTagSvg from "./svgs/input-tag-svg";
+import LayoutSvg from "./svgs/layout-svg";
+import LinkSvg from "./svgs/link-svg";
 import ListSvg from "./svgs/list-svg";
+import MenuSvg from "./svgs/menu-svg";
+import MessageSvg from "./svgs/message-svg";
+import ModalSvg from "./svgs/modal-svg";
+import NotificationSvg from "./svgs/notification-svg";
+import PageHeaderSvg from "./svgs/page-header-svg";
+import PaginationSvg from "./svgs/pagination-svg";
+import PopconfirmSvg from "./svgs/popconfirm-svg";
 import PopoverSvg from "./svgs/popover-svg";
+import ProgressSvg from "./svgs/progress-svg";
+import RadioSvg from "./svgs/radio-svg";
+import ResizeBoxSvg from "./svgs/resize-box-svg";
+import ResultSvg from "./svgs/result-svg";
+import SelectSvg from "./svgs/select-svg";
+import SkeletonSvg from "./svgs/skeleton-svg";
+import SpaceSvg from "./svgs/space-svg";
+import SpinSvg from "./svgs/spin-svg";
 import StatisticSvg from "./svgs/statistic-svg";
+import StepsSvg from "./svgs/steps-svg";
 import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
+import TimePickerSvg from "./svgs/time-picker-svg";
 import TimelineSvg from "./svgs/timeline-svg";
 import TooltipSvg from "./svgs/tooltip-svg";
 import TourSvg from "./svgs/tour-svg";
 import TreeSvg from "./svgs/tree-svg";
-
-import AutoCompleteSvg from "./svgs/auto-complete-svg";
-import CascaderSvg from "./svgs/cascader-svg";
-import DatePickerSvg from "./svgs/date-picker-svg";
-import InputSvg from "./svgs/input-svg";
-import InputTagSvg from "./svgs/input-tag-svg";
-import InputNumberSvg from "./svgs/input-number-svg";
-import RadioSvg from "./svgs/radio-svg";
-import SelectSvg from "./svgs/select-svg";
-import TimePickerSvg from "./svgs/time-picker-svg";
+import TriggerSvg from "./svgs/trigger-svg";
+import TypographySvg from "./svgs/typography-svg";
 import UploadSvg from "./svgs/upload-svg";
 import VerificationCodeSvg from "./svgs/verification-code-svg";
-
-import AlertSvg from "./svgs/alert-svg";
-import DrawerSvg from "./svgs/drawer-svg";
-import MessageSvg from "./svgs/message-svg";
-import ModalSvg from "./svgs/modal-svg";
-import NotificationSvg from "./svgs/notification-svg";
-import PopconfirmSvg from "./svgs/popconfirm-svg";
-import ProgressSvg from "./svgs/progress-svg";
-import ResultSvg from "./svgs/result-svg";
-import SkeletonSvg from "./svgs/skeleton-svg";
-import SpinSvg from "./svgs/spin-svg";
-
-import AffixSvg from "./svgs/affix-svg";
-import ConfigProviderSvg from "./svgs/config-provider-svg";
-import TriggerSvg from "./svgs/trigger-svg";
-
-import styles from "./doc-page.module.css";
+import WatermarkSvg from "./svgs/watermark-svg";
 
 const { Title } = Typography;
 
@@ -399,6 +392,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "spin",
           svg: <SpinSvg />,
           title: formatMessage({ defaultMessage: "加载中 Spin" }),
+        },
+        {
+          name: "watermark",
+          svg: <WatermarkSvg />,
+          title: formatMessage({ defaultMessage: "水印 Watermark" }),
         },
       ],
     },

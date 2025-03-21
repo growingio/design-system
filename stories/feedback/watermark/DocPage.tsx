@@ -1,7 +1,7 @@
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import { Canvas, Source, Unstyled } from "@storybook/blocks";
 import { injectIntl, IntlShape } from "react-intl";
-import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
 import * as WatermarkStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
@@ -112,7 +112,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
 
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source
-        code={`import { Watermark, type WatermarkProps } from "growingio-design";`}
+        code={`import { Watermark, type WatermarkProps } from "@gio-design/react";`}
         language="tsx"
       />
 

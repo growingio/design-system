@@ -1,17 +1,7 @@
+import { Form, Grid, Input, InputNumber, Radio, Slider, Space, Typography, Watermark } from "@/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import React, { useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
-import {
-  Form,
-  Grid,
-  Input,
-  InputNumber,
-  Radio,
-  Slider,
-  Space,
-  Typography,
-  Watermark,
-} from "../../../src";
 
 const meta: Meta<typeof Watermark> = {
   component: Watermark,

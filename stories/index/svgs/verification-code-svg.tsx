@@ -1,7 +1,7 @@
 import { SVGProps, Ref, forwardRef } from "react";
 
 const SvgComponent = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={166} height={34} fill="none" ref={ref} {...props}>
+  <svg width={166} height={34} fill="none" ref={ref} {...props}>
     <rect width={32} height={32} x={1} y={1} fill="#E8EFFF" rx={2} />
     <rect width={32} height={32} x={1} y={1} stroke="#3D81F5" strokeWidth={2} rx={2} />
     <circle cx={17} cy={17} r={5} fill="#3D81F5" />
