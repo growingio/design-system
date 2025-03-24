@@ -1,7 +1,7 @@
+import { Button, Cascader, Radio, Space } from "@/src";
+import { SizeType } from "@/src/_core/types";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { Button, Cascader, Radio, Space } from "../../../src";
-import { SizeType } from "../../../src/_core/types";
 
 const meta: Meta<typeof Cascader> = {
   component: Cascader,

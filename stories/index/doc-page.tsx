@@ -16,6 +16,7 @@ import CalendarSvg from "./svgs/calendar-svg";
 import CardSvg from "./svgs/card-svg";
 import CarouselSvg from "./svgs/carousel-svg";
 import CascaderSvg from "./svgs/cascader-svg";
+import CheckboxSvg from "./svgs/checkbox-svg";
 import CollapseSvg from "./svgs/collapse-svg";
 import CommentSvg from "./svgs/comment-svg";
 import ConfigProviderSvg from "./svgs/config-provider-svg";
@@ -290,6 +291,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "cascader",
           svg: <CascaderSvg />,
           title: formatMessage({ defaultMessage: "级联选择 Cascader" }),
+        },
+        {
+          name: "checkbox",
+          svg: <CheckboxSvg />,
+          title: formatMessage({ defaultMessage: "多选框 Checkbox" }),
         },
         {
           name: "date-picker",

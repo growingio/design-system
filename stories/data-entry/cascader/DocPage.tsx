@@ -1,8 +1,8 @@
 import { injectIntl, IntlShape } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
-import * as CascaderStories from "./index.stories";
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import * as Stories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
@@ -371,12 +371,12 @@ function DocPage({ intl }: { intl: IntlShape }) {
         {formatMessage({ defaultMessage: "基础用法" })}
       </Title>
       <Paragraph>{formatMessage({ defaultMessage: "基础用法" })}</Paragraph>
-      <Canvas of={CascaderStories.Basic} />
+      <Canvas of={Stories.Basic} />
 
       <Title heading={3} id="status">
         {formatMessage({ defaultMessage: "不同状态" })}
       </Title>
-      <Canvas of={CascaderStories.Status} />
+      <Canvas of={Stories.Status} />
 
       <Title heading={3} id="expand-trigger">
         {formatMessage({ defaultMessage: "悬浮展开" })}
@@ -386,7 +386,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "通过 addBefore 可以设置 expandTrigger='hover' 来控制 hover 展开下一级。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.ExpandTrigger} />
+      <Canvas of={Stories.ExpandTrigger} />
 
       <Title heading={3} id="add-before">
         {formatMessage({ defaultMessage: "前置标签" })}
@@ -396,7 +396,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "通过 addBefore 设置前置标签。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.AddBefore} />
+      <Canvas of={Stories.AddBefore} />
 
       <Title heading={3} id="render-format">
         {formatMessage({ defaultMessage: "格式化展示选中值" })}
@@ -406,7 +406,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "利用 renderFormat 对显示的内容进行自定义处理。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.RenderFormat} />
+      <Canvas of={Stories.RenderFormat} />
 
       <Title heading={3} id="children">
         {formatMessage({ defaultMessage: "自定义选择框" })}
@@ -416,7 +416,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "children 会覆盖默认的选择框。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.Children} />
+      <Canvas of={Stories.Children} />
 
       <Title heading={3} id="change-on-select">
         {formatMessage({ defaultMessage: "选择即改变" })}
@@ -427,7 +427,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
             "设置属性 changeOnSelect，点击任何一级都可以选择。多选时将会解除父子节点的关联。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.ChangeOnSelect} />
+      <Canvas of={Stories.ChangeOnSelect} />
 
       <Title heading={3} id="show-search">
         {formatMessage({ defaultMessage: "允许搜索" })}
@@ -437,7 +437,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "指定 showSearch=true，可以输入文本对选项进行搜索。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.ShowSearch} />
+      <Canvas of={Stories.ShowSearch} />
 
       <Title heading={3} id="filter-option">
         {formatMessage({ defaultMessage: "自定义搜索" })}
@@ -447,7 +447,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "通过 filterOption 自定义搜索逻辑。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.FilterOption} />
+      <Canvas of={Stories.FilterOption} />
 
       <Title heading={3} id="load-more">
         {formatMessage({ defaultMessage: "动态加载" })}
@@ -457,7 +457,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "利用 loadMore 可以进行动态加载数据。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.LoadMore} />
+      <Canvas of={Stories.LoadMore} />
 
       <Title heading={3} id="disabled-option">
         {formatMessage({ defaultMessage: "选项禁用" })}
@@ -467,12 +467,12 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "指定 option 的 disabled 为 true，可以禁用该选项。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.DisabledOption} />
+      <Canvas of={Stories.DisabledOption} />
 
       <Title heading={3} id="size">
         {formatMessage({ defaultMessage: "不同尺寸" })}
       </Title>
-      <Canvas of={CascaderStories.Size} />
+      <Canvas of={Stories.Size} />
 
       <Title heading={3} id="render-option">
         {formatMessage({ defaultMessage: "自定义 Option" })}
@@ -482,7 +482,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "使用 renderOption，可以自定义渲染选项。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.RenderOption} />
+      <Canvas of={Stories.RenderOption} />
 
       <Title heading={3} id="render-footer">
         {formatMessage({ defaultMessage: "自定义 Footer" })}
@@ -492,7 +492,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "通过 renderFooter 可以自定义每一层级的 footer。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.RenderFooter} />
+      <Canvas of={Stories.RenderFooter} />
 
       <Title heading={3} id="show-empty-children">
         {formatMessage({ defaultMessage: "展示空数据" })}
@@ -502,7 +502,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "showEmptyChildren=true 时，当 children 为 [] 也会展示下一级空菜单。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.ShowEmptyChildren} />
+      <Canvas of={Stories.ShowEmptyChildren} />
 
       <Title heading={3} id="drag-to-sort">
         {formatMessage({ defaultMessage: "拖拽排序" })}
@@ -512,7 +512,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           defaultMessage: "多选时，指定 dragToSort 属性以允许对已输入的值进行拖拽排序。",
         })}
       </Paragraph>
-      <Canvas of={CascaderStories.DragToSort} />
+      <Canvas of={Stories.DragToSort} />
 
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source

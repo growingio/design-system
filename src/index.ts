@@ -37,6 +37,9 @@ export type { CarouselProps } from "@arco-design/web-react/es/Carousel";
 export { default as Cascader } from "./cascader";
 export type { CascaderProps } from "./cascader";
 
+export { default as Checkbox } from "@arco-design/web-react/es/Checkbox";
+export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";
+
 export { default as Collapse } from "@arco-design/web-react/es/Collapse";
 export type { CollapseProps } from "@arco-design/web-react/es/Collapse";
 
@@ -203,9 +206,6 @@ export type { TypographyProps } from "@arco-design/web-react/es/Typography";
 
 export { default as Switch } from "@arco-design/web-react/es/Switch";
 export type { SwitchProps } from "@arco-design/web-react/es/Switch";
-
-export { default as Checkbox } from "@arco-design/web-react/es/Checkbox";
-export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";
 
 export { default as Rate } from "@arco-design/web-react/es/Rate";
 export type { RateProps } from "@arco-design/web-react/es/Rate";
