@@ -18,6 +18,7 @@ import CarouselSvg from "./svgs/carousel-svg";
 import CascaderSvg from "./svgs/cascader-svg";
 import CheckboxSvg from "./svgs/checkbox-svg";
 import CollapseSvg from "./svgs/collapse-svg";
+import ColorPickerSvg from "./svgs/color-picker-svg";
 import CommentSvg from "./svgs/comment-svg";
 import ConfigProviderSvg from "./svgs/config-provider-svg";
 import DatePickerSvg from "./svgs/date-picker-svg";
@@ -296,6 +297,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "checkbox",
           svg: <CheckboxSvg />,
           title: formatMessage({ defaultMessage: "多选框 Checkbox" }),
+        },
+        {
+          name: "colorpicker",
+          svg: <ColorPickerSvg />,
+          title: formatMessage({ defaultMessage: "颜色选择器 ColorPicker" }),
         },
         {
           name: "date-picker",

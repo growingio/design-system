@@ -43,6 +43,9 @@ export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";
 export { default as Collapse } from "@arco-design/web-react/es/Collapse";
 export type { CollapseProps } from "@arco-design/web-react/es/Collapse";
 
+export { default as ColorPicker } from "@arco-design/web-react/es/ColorPicker";
+export type { ColorPickerProps } from "@arco-design/web-react/es/ColorPicker";
+
 export { default as Comment } from "@arco-design/web-react/es/Comment";
 export type { CommentProps } from "@arco-design/web-react/es/Comment";
 
