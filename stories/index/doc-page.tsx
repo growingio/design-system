@@ -36,6 +36,7 @@ import InputTagSvg from "./svgs/input-tag-svg";
 import LayoutSvg from "./svgs/layout-svg";
 import LinkSvg from "./svgs/link-svg";
 import ListSvg from "./svgs/list-svg";
+import MentionsSvg from "./svgs/mentions-svg";
 import MenuSvg from "./svgs/menu-svg";
 import MessageSvg from "./svgs/message-svg";
 import ModalSvg from "./svgs/modal-svg";
@@ -322,6 +323,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "input-tag",
           svg: <InputTagSvg />,
           title: formatMessage({ defaultMessage: "标签输入框 InputTag" }),
+        },
+        {
+          name: "mentions",
+          svg: <MentionsSvg />,
+          title: formatMessage({ defaultMessage: "提及 Mentions" }),
         },
         {
           name: "radio",

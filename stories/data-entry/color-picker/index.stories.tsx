@@ -5,6 +5,7 @@ import { useState } from "react";
 const meta: Meta<typeof ColorPicker> = {
   component: ColorPicker,
   title: "Components/Data Entry/ColorPicker",
+  tags: ["new"],
 };
 
 export default meta;

@@ -114,6 +114,9 @@ export type { LinkProps } from "@arco-design/web-react/es/Link";
 export { default as List } from "@arco-design/web-react/es/List";
 export type { ListProps } from "@arco-design/web-react/es/List";
 
+export { default as Mentions } from "@arco-design/web-react/es/Mentions";
+export type { MentionsProps } from "@arco-design/web-react/es/Mentions";
+
 export { default as Menu } from "@arco-design/web-react/es/Menu";
 export type { MenuProps } from "@arco-design/web-react/es/Menu";
 
