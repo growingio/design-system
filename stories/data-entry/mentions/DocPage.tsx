@@ -189,11 +189,21 @@ function DocPage({ intl }: { intl: IntlShape }) {
       <Title heading={3} id="allow-clear">
         {formatMessage({ defaultMessage: "允许清除" })}
       </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage: "设置 allowClear 来允许清除。",
+        })}
+      </Paragraph>
       <Canvas of={Stories.AllowClear} />
 
       <Title heading={3} id="disabled-options">
         {formatMessage({ defaultMessage: "禁用选项" })}
       </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage: "通过设置 option.disabled 来禁用选项。",
+        })}
+      </Paragraph>
       <Canvas of={Stories.DisabledOptions} />
 
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
