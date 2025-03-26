@@ -12,29 +12,26 @@
     );
 }
 
-.arco-tooltip .arco-trigger[trigger-placement="top"] .arco-trigger-arrow,
-.arco-tooltip .arco-trigger[trigger-placement="tl"] .arco-trigger-arrow,
-.arco-tooltip .arco-trigger[trigger-placement="tr"] .arco-trigger-arrow {
+.arco-tooltip.arco-trigger[trigger-placement="top"] .arco-trigger-arrow,
+.arco-tooltip.arco-trigger[trigger-placement="tl"] .arco-trigger-arrow,
+.arco-tooltip.arco-trigger[trigger-placement="tr"] .arco-trigger-arrow {
     border-radius: 0;
 }
 
-.arco-tooltip .arco-trigger[trigger-placement="bottom"] .arco-trigger-arrow,
-.arco-tooltip .arco-trigger[trigger-placement="bl"] .arco-trigger-arrow,
-.arco-tooltip .arco-trigger[trigger-placement="br"] .arco-trigger-arrow {
+.arco-tooltip.arco-trigger[trigger-placement="bottom"] .arco-trigger-arrow,
+.arco-tooltip.arco-trigger[trigger-placement="bl"] .arco-trigger-arrow,
+.arco-tooltip.arco-trigger[trigger-placement="br"] .arco-trigger-arrow {
     transform: rotate(180deg);
     border-radius: 0;
 }
 
-.arco-tooltip
-    .arco-trigger[trigger-placement="left"]
+.arco-tooltip.arco-trigger[trigger-placement="left"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow,
-.arco-tooltip
-    .arco-trigger[trigger-placement="lt"]
+.arco-tooltip.arco-trigger[trigger-placement="lt"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow,
-.arco-tooltip
-    .arco-trigger[trigger-placement="lb"]
+.arco-tooltip.arco-trigger[trigger-placement="lb"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow {
     right: -5px;
@@ -46,16 +43,13 @@
     border-radius: 0;
 }
 
-.arco-tooltip
-    .arco-trigger[trigger-placement="right"]
+.arco-tooltip.arco-trigger[trigger-placement="right"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow,
-.arco-tooltip
-    .arco-trigger[trigger-placement="rt"]
+.arco-tooltip.arco-trigger[trigger-placement="rt"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow,
-.arco-tooltip
-    .arco-trigger[trigger-placement="rb"]
+.arco-tooltip.arco-trigger[trigger-placement="rb"]
     > .arco-trigger-arrow-container
     .arco-trigger-arrow {
     left: 0;

@@ -162,6 +162,9 @@ export type { SelectProps } from "./select";
 export { default as Skeleton } from "@arco-design/web-react/es/Skeleton";
 export type { SkeletonProps } from "@arco-design/web-react/es/Skeleton";
 
+export { default as Slider } from "@arco-design/web-react/es/Slider";
+export type { SliderProps } from "@arco-design/web-react/es/Slider";
+
 export { default as Space } from "@arco-design/web-react/es/Space";
 export type { SpaceProps, SpaceSize } from "@arco-design/web-react/es/Space";
 
@@ -215,9 +218,6 @@ export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
 
 export { default as Typography } from "@arco-design/web-react/es/Typography";
 export type { TypographyProps } from "@arco-design/web-react/es/Typography";
-
-export { default as Slider } from "@arco-design/web-react/es/Slider";
-export type { SliderProps } from "@arco-design/web-react/es/Slider";
 
 export { default as TreeSelect } from "@arco-design/web-react/es/TreeSelect";
 export type { TreeSelectProps } from "@arco-design/web-react/es/TreeSelect";

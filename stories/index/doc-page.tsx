@@ -52,6 +52,7 @@ import ResizeBoxSvg from "./svgs/resize-box-svg";
 import ResultSvg from "./svgs/result-svg";
 import SelectSvg from "./svgs/select-svg";
 import SkeletonSvg from "./svgs/skeleton-svg";
+import SliderSvg from "./svgs/slider-svg";
 import SpaceSvg from "./svgs/space-svg";
 import SpinSvg from "./svgs/spin-svg";
 import StatisticSvg from "./svgs/statistic-svg";
@@ -347,12 +348,17 @@ function DocPage({ intl }: { intl: IntlShape }) {
           title: formatMessage({ defaultMessage: "选择器 Select" }),
         },
         {
+          name: "slider",
+          svg: <SliderSvg />,
+          title: formatMessage({ defaultMessage: "滑动条 Slider" }),
+        },
+        {
           name: "switch",
           svg: <SwitchSvg />,
           title: formatMessage({ defaultMessage: "开关 Switch" }),
         },
         {
-          name: "time-picker",
+          name: "timepicker",
           svg: <TimePickerSvg />,
           title: formatMessage({ defaultMessage: "时间选择器 TimePicker" }),
         },
