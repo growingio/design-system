@@ -56,6 +56,7 @@ import SpaceSvg from "./svgs/space-svg";
 import SpinSvg from "./svgs/spin-svg";
 import StatisticSvg from "./svgs/statistic-svg";
 import StepsSvg from "./svgs/steps-svg";
+import SwitchSvg from "./svgs/switch-svg";
 import TableSvg from "./svgs/table-svg";
 import TabsSvg from "./svgs/tabs-svg";
 import TagSvg from "./svgs/tag-svg";
@@ -344,6 +345,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "select",
           svg: <SelectSvg />,
           title: formatMessage({ defaultMessage: "选择器 Select" }),
+        },
+        {
+          name: "switch",
+          svg: <SwitchSvg />,
+          title: formatMessage({ defaultMessage: "开关 Switch" }),
         },
         {
           name: "time-picker",

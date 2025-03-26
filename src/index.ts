@@ -174,6 +174,9 @@ export type { StatisticProps } from "@arco-design/web-react/es/Statistic";
 export { default as Steps } from "@arco-design/web-react/es/Steps";
 export type { StepsProps } from "@arco-design/web-react/es/Steps";
 
+export { default as Switch } from "@arco-design/web-react/es/Switch";
+export type { SwitchProps } from "@arco-design/web-react/es/Switch";
+
 export { default as Table } from "./table";
 export type {
   TableProps,
@@ -212,9 +215,6 @@ export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
 
 export { default as Typography } from "@arco-design/web-react/es/Typography";
 export type { TypographyProps } from "@arco-design/web-react/es/Typography";
-
-export { default as Switch } from "@arco-design/web-react/es/Switch";
-export type { SwitchProps } from "@arco-design/web-react/es/Switch";
 
 export { default as Slider } from "@arco-design/web-react/es/Slider";
 export type { SliderProps } from "@arco-design/web-react/es/Slider";
