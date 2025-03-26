@@ -47,6 +47,7 @@ import PopconfirmSvg from "./svgs/popconfirm-svg";
 import PopoverSvg from "./svgs/popover-svg";
 import ProgressSvg from "./svgs/progress-svg";
 import RadioSvg from "./svgs/radio-svg";
+import RateSvg from "./svgs/rate-svg";
 import ResizeBoxSvg from "./svgs/resize-box-svg";
 import ResultSvg from "./svgs/result-svg";
 import SelectSvg from "./svgs/select-svg";
@@ -333,6 +334,11 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "radio",
           svg: <RadioSvg />,
           title: formatMessage({ defaultMessage: "单选框 Radio" }),
+        },
+        {
+          name: "rate",
+          svg: <RateSvg />,
+          title: formatMessage({ defaultMessage: "评分 Rate" }),
         },
         {
           name: "select",

@@ -147,6 +147,9 @@ export type { ProgressProps } from "@arco-design/web-react/es/Progress";
 export { default as Radio } from "@arco-design/web-react/es/Radio";
 export type { RadioProps } from "@arco-design/web-react/es/Radio";
 
+export { default as Rate } from "@arco-design/web-react/es/Rate";
+export type { RateProps } from "@arco-design/web-react/es/Rate";
+
 export { default as ResizeBox } from "@arco-design/web-react/es/ResizeBox";
 export type { ResizeBoxProps } from "@arco-design/web-react/es/ResizeBox";
 
@@ -212,9 +215,6 @@ export type { TypographyProps } from "@arco-design/web-react/es/Typography";
 
 export { default as Switch } from "@arco-design/web-react/es/Switch";
 export type { SwitchProps } from "@arco-design/web-react/es/Switch";
-
-export { default as Rate } from "@arco-design/web-react/es/Rate";
-export type { RateProps } from "@arco-design/web-react/es/Rate";
 
 export { default as Slider } from "@arco-design/web-react/es/Slider";
 export type { SliderProps } from "@arco-design/web-react/es/Slider";
