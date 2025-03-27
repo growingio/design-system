@@ -1,7 +1,7 @@
-import { injectIntl, IntlShape } from "react-intl";
-import { Canvas, Source, Unstyled } from "@storybook/blocks";
-import { Typography } from "@/src";
 import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import { Canvas, Source, Unstyled } from "@storybook/blocks";
+import { injectIntl, IntlShape } from "react-intl";
 import * as Stories from "./index.stories";
 
 const { Title } = Typography;
@@ -12,9 +12,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
 
   return (
     <Unstyled>
-      <Title>
-        {formatMessage({ defaultMessage: "过去周期选择器 PastPeriodPicker" })}
-      </Title>
+      <Title>{formatMessage({ defaultMessage: "过去周期选择器 PastPeriodPicker" })}</Title>
 
       <Title heading={2}>{formatMessage({ defaultMessage: "示例" })}</Title>
 

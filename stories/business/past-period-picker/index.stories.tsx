@@ -1,10 +1,10 @@
+import PastPeriodPicker from "@/src/past-peroid-picker";
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import PastPeriodPicker from "@/src/past-peroid-picker";
 
 const meta: Meta<typeof PastPeriodPicker> = {
   component: PastPeriodPicker,
-  title: "Components/Data Entry/PastPeroidPicker",
+  title: "Components/Business/PastPeriodPicker",
   args: {
     onChange: fn(),
   },
@@ -26,9 +26,7 @@ export const Default: Story = {
 
 export const Shortcuts: Story = {
   args: {},
-  render: (args) => (
-    <PastPeriodPicker {...args} timeRange="day:8,1" defaultValue="period:2,1" />
-  ),
+  render: (args) => <PastPeriodPicker {...args} timeRange="day:8,1" defaultValue="period:2,1" />,
 };
 
 export const Absolute: Story = {

@@ -210,6 +210,9 @@ export type { TooltipProps } from "@arco-design/web-react/es/Tooltip";
 
 export { default as Tour, type TourProps, type TourStepProps } from "./tour";
 
+export { default as Transfer } from "@arco-design/web-react/es/Transfer";
+export type { TransferProps } from "@arco-design/web-react/es/Transfer";
+
 export { default as Tree } from "@arco-design/web-react/es/Tree";
 export type { TreeProps } from "@arco-design/web-react/es/Tree";
 

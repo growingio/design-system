@@ -141,6 +141,7 @@ const preview: Preview = {
             "Data Entry",
             "Feedback",
             "Others",
+            "Business",
           ],
         ],
       },

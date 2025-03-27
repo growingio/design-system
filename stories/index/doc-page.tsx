@@ -65,6 +65,8 @@ import TimePickerSvg from "./svgs/time-picker-svg";
 import TimelineSvg from "./svgs/timeline-svg";
 import TooltipSvg from "./svgs/tooltip-svg";
 import TourSvg from "./svgs/tour-svg";
+import TransferSvg from "./svgs/transfer-svg";
+import TreeSelectSvg from "./svgs/tree-select-svg";
 import TreeSvg from "./svgs/tree-svg";
 import TriggerSvg from "./svgs/trigger-svg";
 import TypographySvg from "./svgs/typography-svg";
@@ -361,6 +363,16 @@ function DocPage({ intl }: { intl: IntlShape }) {
           name: "timepicker",
           svg: <TimePickerSvg />,
           title: formatMessage({ defaultMessage: "时间选择器 TimePicker" }),
+        },
+        {
+          name: "transfer",
+          svg: <TransferSvg />,
+          title: formatMessage({ defaultMessage: "穿梭框 Transfer" }),
+        },
+        {
+          name: "treeselect",
+          svg: <TreeSelectSvg />,
+          title: formatMessage({ defaultMessage: "树选择器 TreeSelect" }),
         },
         {
           name: "upload",
