@@ -216,14 +216,14 @@ export type { TransferProps } from "@arco-design/web-react/es/Transfer";
 export { default as Tree } from "@arco-design/web-react/es/Tree";
 export type { TreeProps } from "@arco-design/web-react/es/Tree";
 
+export { default as TreeSelect } from "@arco-design/web-react/es/TreeSelect";
+export type { TreeSelectProps } from "@arco-design/web-react/es/TreeSelect";
+
 export { default as Trigger } from "@arco-design/web-react/es/Trigger";
 export type { TriggerProps } from "@arco-design/web-react/es/Trigger";
 
 export { default as Typography } from "@arco-design/web-react/es/Typography";
 export type { TypographyProps } from "@arco-design/web-react/es/Typography";
-
-export { default as TreeSelect } from "@arco-design/web-react/es/TreeSelect";
-export type { TreeSelectProps } from "@arco-design/web-react/es/TreeSelect";
 
 export { default as Upload } from "@arco-design/web-react/es/Upload";
 export type { UploadProps } from "@arco-design/web-react/es/Upload";
