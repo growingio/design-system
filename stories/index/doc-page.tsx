@@ -27,6 +27,7 @@ import DividerSvg from "./svgs/divider-svg";
 import DrawerSvg from "./svgs/drawer-svg";
 import DropdownSvg from "./svgs/dropdown-svg";
 import EmptySvg from "./svgs/empty-svg";
+import FormSvg from "./svgs/form-svg";
 import GridSvg from "./svgs/grid-svg";
 import IconSvg from "./svgs/icon-svg";
 import ImageSvg from "./svgs/image-svg";
@@ -310,9 +311,14 @@ function DocPage({ intl }: { intl: IntlShape }) {
           title: formatMessage({ defaultMessage: "颜色选择器 ColorPicker" }),
         },
         {
-          name: "date-picker",
+          name: "datepicker",
           svg: <DatePickerSvg />,
           title: formatMessage({ defaultMessage: "日期选择器 DatePicker" }),
+        },
+        {
+          name: "form",
+          svg: <FormSvg />,
+          title: formatMessage({ defaultMessage: "表单 Form" }),
         },
         {
           name: "input",
@@ -320,12 +326,12 @@ function DocPage({ intl }: { intl: IntlShape }) {
           title: formatMessage({ defaultMessage: "输入框 Input" }),
         },
         {
-          name: "input-number",
+          name: "inputnumber",
           svg: <InputNumberSvg />,
           title: formatMessage({ defaultMessage: "数字输入框 InputNumber" }),
         },
         {
-          name: "input-tag",
+          name: "inputtag",
           svg: <InputTagSvg />,
           title: formatMessage({ defaultMessage: "标签输入框 InputTag" }),
         },
@@ -380,7 +386,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
           title: formatMessage({ defaultMessage: "上传 Upload" }),
         },
         {
-          name: "verification-code",
+          name: "verificationcode",
           svg: <VerificationCodeSvg />,
           title: formatMessage({
             defaultMessage: "验证码 VerificationCode",

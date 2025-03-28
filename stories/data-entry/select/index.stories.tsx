@@ -1,26 +1,16 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { useEffect, useState } from "react";
-import debounce from "lodash-es/debounce";
-import {
-  Avatar,
-  Button,
-  Divider,
-  Input,
-  Radio,
-  Select,
-  Space,
-  Tag,
-  Typography,
-} from "../../../src";
+import { Avatar, Button, Divider, Input, Radio, Select, Space, Tag, Typography } from "@/src";
+import colors from "@/src/_core/colors";
+import { SizeType } from "@/src/_core/types";
 import {
   IconDelete,
   IconLocation,
   IconPlus,
   IconStar,
   IconUser,
-} from "@arco-iconbox/react-growingio";
-import { SizeType } from "../../../src/_core/types";
-import colors from "../../../src/_core/colors";
+} from "@arco-iconbox/react-growingio/src";
+import type { Meta, StoryObj } from "@storybook/react";
+import debounce from "lodash-es/debounce";
+import { useEffect, useState } from "react";
 
 const meta: Meta<typeof Select> = {
   component: Select,
@@ -30,15 +20,7 @@ const meta: Meta<typeof Select> = {
 export default meta;
 type Story = StoryObj<typeof Select>;
 
-export const options = [
-  "Beijing",
-  "Shanghai",
-  "Guangzhou",
-  "Disabled",
-  "Shenzhen",
-  "Chengdu",
-  "Wuhan",
-];
+const options = ["Beijing", "Shanghai", "Guangzhou", "Disabled", "Shenzhen", "Chengdu", "Wuhan"];
 
 export const Basic: Story = {
   args: {
@@ -191,7 +173,7 @@ export const Search: Story = {
       <Select
         {...args}
         placeholder={formatMessage({ defaultMessage: "过滤选项" })}
-        filterOption={(inputValue, option) =>
+        filterOption={(inputValue, option: any) =>
           option.props.value.toLowerCase().indexOf(inputValue.toLowerCase()) >= 0 ||
           option.props.children.toLowerCase().indexOf(inputValue.toLowerCase()) >= 0
         }
@@ -242,7 +224,7 @@ export const RemoteSearch: Story = {
         fetch("https://randomuser.me/api/?results=5")
           .then((res) => res.json())
           .then((data) => {
-            const newOptions = data.results.map((user) => ({
+            const newOptions = data.results.map((user: any) => ({
               label: (
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <Avatar size={16} style={{ marginLeft: 4, marginRight: 4 }}>
@@ -399,7 +381,7 @@ export const RenderFormat: Story = {
   ),
 };
 
-const provinces = {
+const provinces: Record<string, string[]> = {
   Beijing: ["Beijing"],
   Shanghai: ["Shanghai"],
   Guangdong: ["Guangzhou", "Shenzhen"],
@@ -413,7 +395,7 @@ export const Group: Story = {
     <Select {...args} placeholder={formatMessage({ defaultMessage: "请选择" })}>
       {Object.keys(provinces).map((province) => (
         <Select.OptGroup label={province} key={province}>
-          {provinces[province].map((city) => (
+          {provinces[province].map((city: string) => (
             <Select.Option key={city} value={city}>
               {city}
             </Select.Option>
@@ -457,7 +439,7 @@ export const OnPopupScroll: Story = {
         fetch("https://randomuser.me/api/?results=10")
           .then((res) => res.json())
           .then((data) => {
-            const newOptions = data.results.map((user) => ({
+            const newOptions = data.results.map((user: any) => ({
               label: (
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <Avatar size={24} style={{ marginLeft: 6, marginRight: 12 }}>
@@ -474,7 +456,7 @@ export const OnPopupScroll: Story = {
       }
     }, 500);
 
-    const onPopupScroll = (element) => {
+    const onPopupScroll = (element: any) => {
       const { scrollTop, scrollHeight, clientHeight } = element;
       const scrollBottom = scrollHeight - (scrollTop + clientHeight);
 
@@ -606,7 +588,7 @@ export const Cascader: Story = {
   },
   render: (args, { intl: { formatMessage } }) => {
     const [province, setProvince] = useState("");
-    const [cities, setCities] = useState([]);
+    const [cities, setCities] = useState<string[]>([]);
     const [city, setCity] = useState();
 
     useEffect(() => {

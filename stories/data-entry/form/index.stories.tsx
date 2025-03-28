@@ -1,6 +1,3 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { useRef, useState } from "react";
-import { FormattedMessage } from "react-intl";
 import {
   Button,
   Cascader,
@@ -8,22 +5,24 @@ import {
   DatePicker,
   Form,
   FormInstance,
+  FormProps,
   Input,
   InputNumber,
   InputTag,
   Radio,
+  Rate,
   Select,
+  Slider,
   Space,
   Switch,
-  Rate,
-  Slider,
+  TimePicker,
   TreeSelect,
   Upload,
-  TimePicker,
-} from "../../../src";
-import { options as cascaderOptions } from "../cascader/index.stories";
-import { options as selectOptions } from "../select/index.stories";
-import { SizeType } from "../../../src/_core/types";
+} from "@/src";
+import { SizeType } from "@/src/_core/types";
+import type { Meta, StoryObj } from "@storybook/react";
+import { useRef, useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 const meta: Meta<typeof Form> = {
   component: Form,
@@ -35,6 +34,91 @@ type Story = StoryObj<typeof Form>;
 
 const FormItem = Form.Item;
 
+const selectOptions = [
+  "Beijing",
+  "Shanghai",
+  "Guangzhou",
+  "Disabled",
+  "Shenzhen",
+  "Chengdu",
+  "Wuhan",
+];
+const cascaderOptions = [
+  {
+    value: "beijing",
+    label: "Beijing",
+    children: [
+      {
+        value: "beijing",
+        label: "Beijing",
+        children: [
+          {
+            value: "chaoyang",
+            label: "Chaoyang",
+            children: [
+              {
+                value: "datunli",
+                label: "Datunli",
+              },
+            ],
+          },
+          {
+            value: "dongcheng",
+            label: "Dongcheng",
+          },
+          {
+            value: "xicheng",
+            label: "Xicheng",
+          },
+          {
+            value: "haidian",
+            label: "Haidian",
+          },
+          {
+            value: "fengtai",
+            label: "fengtai",
+          },
+          {
+            value: "shijingshan",
+            label: "Shijingshan",
+          },
+          {
+            value: "mentougou",
+            label: "Mentougou",
+          },
+          {
+            value: "fangshan",
+            label: "Fangshan",
+          },
+          {
+            value: "tongzhou",
+            label: "Tongzhou",
+          },
+          {
+            value: "shunyi",
+            label: "Shunyi",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    value: "shanghai",
+    label: "Shanghai",
+    children: [
+      {
+        value: "shanghai",
+        label: "Shanghai",
+        children: [
+          {
+            value: "huangpu",
+            label: "Huangpu",
+          },
+        ],
+      },
+    ],
+  },
+];
 export const Basic: Story = {
   args: {
     style: { minWidth: 500 },
@@ -178,7 +262,7 @@ export const Layout: Story = {
 
 export const ScrollToField: Story = {
   render: () => {
-    const formRef = useRef<FormInstance>();
+    const formRef = useRef<FormInstance>(null);
 
     return (
       <Space direction="vertical">
@@ -221,7 +305,7 @@ export const ScrollToField: Story = {
   },
 };
 
-const commonRender = (args) => (
+const commonRender = (args: FormProps) => (
   <Form {...args}>
     <FormItem wrapperCol={{ offset: 5 }}>
       <Checkbox>Checkbox</Checkbox>
@@ -266,9 +350,9 @@ const commonRender = (args) => (
     <FormItem label="TimePicker">
       <TimePicker />
     </FormItem>
-    {/* <FormItem label="TreeSelect">
+    <FormItem label="TreeSelect">
       <TreeSelect />
-    </FormItem> */}
+    </FormItem>
     <FormItem label="Upload">
       <Upload />
     </FormItem>
