@@ -12,7 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@arco-design/web-react": "2.65.0",
+    "@arco-design/web-react": "2.66.0",
     "@arco-themes/react-growingio": "0.6.0",
     "@rc-component/tour": "^2.0.0"
   },
