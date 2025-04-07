@@ -15,6 +15,7 @@ import {
 import { IconFilter, IconSearch } from "@arco-iconbox/react-growingio/src";
 import { Resizable } from "react-resizable";
 import { StickyContainer, Sticky } from "react-sticky";
+import { action } from "@storybook/addon-actions";
 
 import "./index.css";
 
@@ -1390,4 +1391,36 @@ export const Summary: Story = {
       </Space>
     );
   },
+};
+
+const { RowActions } = Table;
+export const RowActionsColumn: Story = {
+  render: () => (
+    <Table
+      data={data}
+      columns={columns.concat({
+        title: "Actions",
+        render: (_, item, index) => (
+          <RowActions
+            actions={
+              index < 2
+                ? [
+                    { key: "view", label: "View" },
+                    { key: "edit", label: "Edit" },
+                  ]
+                : [
+                    { key: "view", label: "View" },
+                    { key: "edit", label: "Edit" },
+                    { key: "save-as", label: "Save as" },
+                    { key: "delete", label: "Delete" },
+                  ]
+            }
+            onClick={(key: string) => {
+              action(key)(`item ${item.key}`);
+            }}
+          />
+        ),
+      })}
+    />
+  ),
 };

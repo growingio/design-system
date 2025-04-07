@@ -788,8 +788,23 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Title>
       <Canvas of={TableStories.Summary} />
 
+      <Title heading={3} id="row-actions-column">
+        {formatMessage({ defaultMessage: "表格操作列 2+1" })}
+      </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage:
+            "当表格中操作列内容过多时，建议使用 2+1 原则，即只透出 2 项常用操作，其它操作通过查看“更多” 展示。",
+        })}
+      </Paragraph>
+      <Canvas of={TableStories.RowActionsColumn} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
-      <Source code={`import { Table, type TableProps } from "growingio-design";`} language="tsx" />
+      <Source
+        code={`import { Table, type TableProps } from "growingio-design";
+const { RowAtions, Summary } = Table;`}
+        language="tsx"
+      />
 
       <Title id="table-props" heading={3}>
         TableProps
