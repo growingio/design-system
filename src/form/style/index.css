@@ -1,13 +1,11 @@
 .arco-form-item {
-  margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .arco-form-message:last-child {
-  margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 
-.arco-form-label-item {
-  .arco-form-item-tooltip {
+.arco-form-label-item .arco-form-item-tooltip {
     color: var(--color-text-3);
-  }
 }
