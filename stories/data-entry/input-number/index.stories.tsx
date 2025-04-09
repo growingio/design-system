@@ -1,7 +1,7 @@
+import { InputNumber, Radio, Space } from "@/src";
+import { SizeType } from "@/src/_core/types";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
-import { InputNumber, Space, Radio } from "../../../src";
-import { SizeType } from "../../../src/_core/types";
 
 const meta: Meta<typeof InputNumber> = {
   component: InputNumber,
@@ -178,4 +178,19 @@ export const StrictMode: Story = {
     step: 1e19,
     min: 0,
   },
+};
+
+export const ReadOnly: Story = {
+  args: {
+    defaultValue: 50,
+    readOnly: true,
+  },
+  render: (args) => (
+    <Space direction="vertical" size={"medium"}>
+      <InputNumber {...args} />
+      <InputNumber {...args} mode="button" />
+      <InputNumber {...args} prefix="Prefix" suffix="Suffix" />
+      <InputNumber {...args} mode="button" prefix="Prefix" suffix="Suffix" />
+    </Space>
+  ),
 };

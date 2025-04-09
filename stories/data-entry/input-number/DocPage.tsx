@@ -1,7 +1,7 @@
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import { Canvas, Source, Unstyled } from "@storybook/blocks";
 import { IntlShape, injectIntl } from "react-intl";
-import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
 import * as InputNumberStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
@@ -228,8 +228,18 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={InputNumberStories.StrictMode} />
 
+      <Title heading={3} id="readonly">
+        {formatMessage({ defaultMessage: "只读" })}
+      </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage: "只读状态主要应用于详情展示场景。",
+        })}
+      </Paragraph>
+      <Canvas of={InputNumberStories.ReadOnly} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
-      <Source code={`import { InputNumber } from 'growingio-design';`} language="tsx" />
+      <Source code={`import { InputNumber } from '@gio-design/react';`} language="tsx" />
 
       <Title id="dropdown-props" heading={3}>
         InputNumber Props

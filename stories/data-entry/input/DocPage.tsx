@@ -265,6 +265,7 @@ function DocPage({ intl: { formatMessage } }: { intl: IntlShape }) {
         })}
       </Paragraph>
       <Canvas of={InputStories.NormalizeValue} />
+
       <Title heading={3} id="auto-width">
         {formatMessage({ defaultMessage: "宽度自适应" })}
       </Title>
@@ -275,10 +276,25 @@ function DocPage({ intl: { formatMessage } }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={InputStories.AutoWidth} />
 
+      <Title heading={3} id="readonly">
+        {formatMessage({ defaultMessage: "只读" })}
+      </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage: "只读状态主要应用于详情展示场景。",
+        })}
+      </Paragraph>
+      <Canvas of={InputStories.ReadOnly} />
+
       <Title heading={2}>
         <FormattedMessage defaultMessage="用法" />
       </Title>
-      <Source code={`import { Input } from 'growingio-design';`} language="tsx" />
+      <Source
+        code={`import { Input } from '@gio-design/react';
+const { Search, TextArea, Password } = Input;`}
+        language="tsx"
+      />
+
       <Title id="input-props" heading={3}>
         InputProps
       </Title>

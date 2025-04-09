@@ -1,43 +1,58 @@
 .arco-input-group {
-  .arco-input-group-addbefore
-    .arco-select.arco-select-single
-    .arco-select-view {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-  }
+    .arco-input-group-addbefore .arco-select.arco-select-single .arco-select-view {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
 
-  .arco-input-group-addafter .arco-select.arco-select-single .arco-select-view {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-  }
+    .arco-input-group-addafter .arco-select.arco-select-single .arco-select-view {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
 
-  .arco-input-group-addbefore + .arco-input-inner-wrapper-focus {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
+    .arco-input-group-addbefore + .arco-input-inner-wrapper-focus {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
-  .arco-input-inner-wrapper-focus:has(+ .arco-input-group-addafter) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+    .arco-input-inner-wrapper-focus:has(+ .arco-input-group-addafter) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 
 .arco-input-inner-wrapper-has-prefix > .arco-input-clear-wrapper .arco-input,
 .arco-input-inner-wrapper-has-prefix > .arco-input {
-  padding-left: 8px;
+    padding-left: 8px;
 }
 
-/* .arco-input-group.arco-input-group-compact > .arco-select .arco-select-view, */
-
-/* .arco-input-group.arco-input-group-compact > *, */
-
-/* .arco-input-group.arco-input-group-compact > * .arco-input-group > :last-child, */
 .arco-input-group.arco-input-group-compact > :first-child > .arco-select-view {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .arco-input-group.arco-input-group-compact > :last-child > .arco-select-view {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.arco-input[readonly],
+.arco-input[readonly]:hover,
+.arco-input[readonly]:focus,
+.arco-input[readonly].arco-input-focus,
+.arco-input-inner-wrapper:has(.arco-input[readonly]) {
+    background-color: var(--color-fill-2);
+    border-color: var(--color-fill-2);
+    box-shadow: none;
+}
+
+.arco-input-group:has(.arco-input[readonly]) > .arco-input-group-addbefore,
+.arco-input-group:has(.arco-input[readonly])
+    > .arco-input-group-addbefore
+    > .arco-input-number-step-button,
+.arco-input-group:has(.arco-input[readonly]) > .arco-input-group-addafter,
+.arco-input-group:has(.arco-input[readonly])
+    > .arco-input-group-addafter
+    > .arco-input-number-step-button {
+    background-color: var(--color-fill-3);
+    border-color: var(--color-fill-3);
 }

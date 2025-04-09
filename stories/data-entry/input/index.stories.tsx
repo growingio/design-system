@@ -455,3 +455,17 @@ export const AutoWidth: Story = {
     </Space>
   ),
 };
+
+export const ReadOnly: Story = {
+  args: {
+    defaultValue: "GrowingIO Design",
+    readOnly: true,
+  },
+  render: (args) => (
+    <Space direction="vertical" size={"medium"}>
+      <Input {...args} />
+      <Input {...args} addBefore="Before" addAfter="After" />
+      <Input {...args} addBefore="Before" addAfter="After" prefix="Prefix" suffix="Suffix" />
+    </Space>
+  ),
+};
