@@ -614,9 +614,14 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Title>
       <Canvas of={DatePickerStories.DateYearPicker} />
 
+      <Title heading={3} id="readonly">
+        {formatMessage({ defaultMessage: "只读模式" })}
+      </Title>
+      <Canvas of={DatePickerStories.ReadOnly} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source
-        code={`import { DatePicker, type DatePickerProps } from "growingio-design";`}
+        code={`import { DatePicker, type DatePickerProps } from "@gio-design/react";`}
         language="tsx"
       />
 

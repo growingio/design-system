@@ -1,17 +1,26 @@
-import { Alert, Button, DatePicker, Radio, Select, Space, Typography } from "@/src";
+import {
+  Alert,
+  Button,
+  DatePicker,
+  DatePickerProps,
+  Radio,
+  Select,
+  Space,
+  Typography,
+} from "@/src";
 import { SizeType } from "@/src/_core/types";
 import { IconInfoCircle } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import dayjs from "dayjs";
 import { useState } from "react";
 
-const meta: Meta<typeof DatePicker> = {
+const meta: Meta<DatePickerProps> = {
   component: DatePicker,
   title: "Components/Data Entry/DatePicker",
 };
 
 export default meta;
-type Story = StoryObj<typeof DatePicker>;
+type Story = StoryObj<DatePickerProps>;
 
 export const Basic: Story = {
   args: {
@@ -560,6 +569,23 @@ export const DateYearPicker: YearPickerStory = {
       <Space>
         <YearPicker {...args} triggerElement={null} style={{}} />
       </Space>
+    </Space>
+  ),
+};
+
+export const ReadOnly = {
+  args: {
+    readOnly: true,
+    defaultValue: dayjs(),
+  },
+  render: (args: any) => (
+    <Space direction="vertical" size={"medium"}>
+      <DatePicker {...args} />
+      <WeekPicker {...args} />
+      <MonthPicker {...args} />
+      <QuarterPicker {...args} />
+      <YearPicker {...args} />
+      <RangePicker {...args} defaultValue={[dayjs().subtract(7, "days"), dayjs()]} />
     </Space>
   ),
 };

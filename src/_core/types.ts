@@ -22,6 +22,11 @@ export interface InputCommonProps {
    * @en_US Whether the textarea is error.
    */
   error?: boolean;
+  /**
+   * @zh_CN 只读状态。
+   * @en_US Whether read only.
+   */
+  readOnly?: boolean;
 }
 
 export type DropdownPositionType = "bl" | "bottom" | "br" | "tl" | "top" | "tr";

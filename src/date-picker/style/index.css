@@ -1,4 +1,17 @@
 .arco-picker-week-list-item {
-  font-size: 12px;
-  color: var(--color-text-2);
+    font-size: 12px;
+    color: var(--color-text-2);
+}
+
+.gio-picker-readonly.arco-picker-disabled,
+.gio-picker-readonly.arco-picker-disabled:hover {
+    cursor: initial;
+    border-color: var(--color-fill-2);
+}
+
+.gio-picker-readonly.arco-picker-disabled input[disabled],
+.gio-picker-readonly.arco-picker-disabled:hover input[disabled] {
+    cursor: initial;
+    color: var(--color-text-1);
+    -webkit-text-fill-color: var(--color-text-1);
 }
