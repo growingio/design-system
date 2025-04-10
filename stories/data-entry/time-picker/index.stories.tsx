@@ -1,8 +1,9 @@
+import { Alert, Radio, Select, Space, TimePicker, Typography } from "@/src";
+import { SizeType } from "@/src/_core/types";
+import { IconInfoCircle } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
+import dayjs from "dayjs";
 import { useState } from "react";
-import { Alert, Radio, Select, Space, TimePicker, Typography } from "../../../src";
-import { IconInfoCircle } from "@arco-iconbox/react-growingio";
-import { SizeType } from "../../../src/_core/types";
 
 const meta: Meta<typeof TimePicker> = {
   component: TimePicker,
@@ -267,6 +268,19 @@ export const TimeRangePicker: RangePickerStory = {
         ]}
         error
       />
+    </Space>
+  ),
+};
+
+export const ReadOnly = {
+  args: {
+    readOnly: true,
+    defaultValue: dayjs(),
+  },
+  render: (args: any) => (
+    <Space direction="vertical" size={"medium"}>
+      <TimePicker {...args} />
+      <RangePicker {...args} defaultValue={[dayjs().subtract(1, "hour"), dayjs()]} />
     </Space>
   ),
 };

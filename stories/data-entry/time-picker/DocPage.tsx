@@ -1,6 +1,6 @@
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Canvas, Source, Unstyled } from "@storybook/blocks";
 import { injectIntl, IntlShape } from "react-intl";
-import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
 import { Typography } from "../../../src";
 import * as TimePickerStories from "./index.stories";
 
@@ -353,9 +353,14 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Title>
       <Canvas of={TimePickerStories.TimeRangePicker} />
 
+      <Title heading={3} id="readonly">
+        {formatMessage({ defaultMessage: "只读模式" })}
+      </Title>
+      <Canvas of={TimePickerStories.ReadOnly} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source
-        code={`import { TimePicker, type TimePickerProps } from "growingio-design";`}
+        code={`import { TimePicker, type TimePickerProps } from "@gio-design/react";`}
         language="tsx"
       />
 
@@ -382,7 +387,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
       <Title id="calendar-value" heading={3}>
         CalendarValue
       </Title>
-      <Source code={`export type CalendarValue = Dayjs | Date | string | number;`} language="ts" />
+      <Source code={`export type CalendarValue = Dayjs | Date | string | number;`} language="tsx" />
     </Unstyled>
   );
 }
