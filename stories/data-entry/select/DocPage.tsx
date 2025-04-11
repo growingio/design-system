@@ -1,7 +1,7 @@
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
+import { Canvas, Source, Unstyled } from "@storybook/blocks";
 import { injectIntl, IntlShape } from "react-intl";
-import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
 import * as SelectStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
@@ -693,9 +693,14 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={SelectStories.AutoWidth} />
 
+      <Title heading={3} id="read-only">
+        {formatMessage({ defaultMessage: "只读" })}
+      </Title>
+      <Canvas of={SelectStories.ReadOnly} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source
-        code={`import { Select, type SelectProps } from "growingio-design";`}
+        code={`import { Select, type SelectProps } from "@gio-design/react";`}
         language="tsx"
       />
 

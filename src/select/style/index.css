@@ -1,50 +1,67 @@
 .arco-select-addbefore {
-  border-color: var(--color-border-3);
-  border-right-width: 0;
+    border-color: var(--color-border-3);
+    border-right-width: 0;
 }
 
 .arco-select-option-wrapper {
-  &:hover {
-    background-color: var(--color-fill-2);
-    border-radius: 4px;
-  }
+    &:hover {
+        background-color: var(--color-fill-2);
+        border-radius: 4px;
+    }
 
-  &:active {
-    background-color: transparent;
-  }
+    &:active {
+        background-color: transparent;
+    }
 
-  .arco-select-option {
-    background-color: transparent;
-  }
+    .arco-select-option {
+        background-color: transparent;
+    }
 }
 
 .arco-select-popup-multiple {
-  .arco-select-option-hover {
-    background-color: transparent;
-  }
+    .arco-select-option-hover {
+        background-color: transparent;
+    }
 }
 
 .arco-select-popup {
-  .arco-select-popup-inner {
-    scrollbar-gutter: auto;
-  }
+    .arco-select-popup-inner {
+        scrollbar-gutter: auto;
+    }
 
-  .arco-select-option-selected {
-    color: rgb(var(--primary-6));
-  }
+    .arco-select-option-selected {
+        color: rgb(var(--primary-6));
+    }
 }
 
 .arco-select-popup.arco-select-popup-multiple {
-  .arco-select-option-selected {
-    color: var(--color-text-1);
-  }
+    .arco-select-option-selected {
+        color: var(--color-text-1);
+    }
 }
 
 .arco-select-wrapper .arco-select:not(:first-child) .arco-select-view {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .arco-select-prefix {
-  margin-right: 8px;
+    margin-right: 8px;
+}
+
+.gio-select-readonly.arco-select-disabled,
+.gio-select-readonly.arco-select-wrapper .arco-select-disabled {
+    cursor: initial;
+}
+
+.gio-select-readonly.arco-select-disabled .arco-select-view,
+.gio-select-readonly.arco-select-wrapper .arco-select-disabled .arco-select-view {
+    color: var(--color-text-1);
+    background-color: var(--color-fill-2);
+    border-color: var(--color-fill-2);
+}
+
+.gio-select-readonly .arco-select-addbefore {
+    background-color: var(--color-fill-3);
+    border-color: var(--color-fill-3);
 }

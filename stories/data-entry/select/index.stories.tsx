@@ -2,6 +2,7 @@ import { Avatar, Button, Divider, Input, Radio, Select, Space, Tag, Typography }
 import colors from "@/src/_core/colors";
 import { SizeType } from "@/src/_core/types";
 import {
+  IconCursor,
   IconDelete,
   IconLocation,
   IconPlus,
@@ -664,4 +665,20 @@ export const AutoWidth: Story = {
       </Space>
     );
   },
+};
+
+export const ReadOnly: Story = {
+  args: {
+    readOnly: true,
+    options,
+    defaultValue: "Beijing",
+    style: { width: 300 },
+  },
+  render: (args) => (
+    <Space direction="vertical" size={"medium"}>
+      <Select {...args} />
+      <Select {...args} prefix={<IconCursor />} />
+      <Select {...args} addBefore="Select city" />
+    </Space>
+  ),
 };
