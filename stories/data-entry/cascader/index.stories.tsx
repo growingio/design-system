@@ -1,5 +1,6 @@
 import { Button, Cascader, Radio, Space } from "@/src";
 import { SizeType } from "@/src/_core/types";
+import { IconCursor } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useState } from "react";
 
@@ -394,4 +395,19 @@ export const DragToSort: Story = {
     ],
     dragToSort: true,
   },
+};
+
+export const ReadOnly: Story = {
+  args: {
+    readOnly: true,
+    options,
+    defaultValue: ["shanghai", "shanghai", "huangpu"],
+  },
+  render: (args) => (
+    <Space direction="vertical" size={"medium"}>
+      <Cascader {...args} />
+      <Cascader {...args} prefix={<IconCursor />} />
+      <Cascader {...args} addBefore="Select city" />
+    </Space>
+  ),
 };

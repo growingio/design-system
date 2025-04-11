@@ -514,9 +514,14 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={Stories.DragToSort} />
 
+      <Title heading={3} id="readonly">
+        {formatMessage({ defaultMessage: "只读" })}
+      </Title>
+      <Canvas of={Stories.ReadOnly} />
+
       <Title heading={2}>{formatMessage({ defaultMessage: "用法" })}</Title>
       <Source
-        code={`import { Cascader, type CascaderProps } from "growingio-design";`}
+        code={`import { Cascader, type CascaderProps } from "@gio-design/react";`}
         language="tsx"
       />
 

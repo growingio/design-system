@@ -127,7 +127,6 @@ export const VerticalCard: Story = {
     animation: "card",
     showArrow: "never",
     indicatorType: "line",
-    // @ts-expect-error error type
     indicatorPosition: "outer-right",
     direction: "vertical",
     style: { height: 300, width: 600 },

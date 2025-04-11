@@ -1,21 +1,38 @@
 .arco-cascader-wrapper .arco-cascader:not(:first-child) .arco-cascader-view {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .arco-cascader-addbefore {
-  border-color: var(--color-border-3);
-  border-right-width: 0;
+    border-color: var(--color-border-3);
+    border-right-width: 0;
 }
 
 .arco-cascader-list-item,
 .arco-cascader-list-search-item {
-  margin: 0 4px;
-  border-radius: 4px;
+    margin: 0 4px;
+    border-radius: 4px;
 }
 
 .arco-cascader-list:overflowing {
-  .arco-cascader-list-item {
-    margin-right: 0;
-  }
+    .arco-cascader-list-item {
+        margin-right: 0;
+    }
+}
+
+.gio-cascader-readonly.arco-cascader-disabled,
+.gio-cascader-readonly.arco-cascader-wrapper .arco-cascader-disabled {
+    cursor: initial;
+}
+
+.gio-cascader-readonly.arco-cascader-disabled .arco-cascader-view,
+.gio-cascader-readonly.arco-cascader-wrapper .arco-cascader-disabled .arco-cascader-view {
+    color: var(--color-text-1);
+    background-color: var(--color-fill-2);
+    border-color: var(--color-fill-2);
+}
+
+.gio-cascader-readonly .arco-cascader-addbefore {
+    background-color: var(--color-fill-3);
+    border-color: var(--color-fill-3);
 }
