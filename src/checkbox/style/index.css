@@ -1,0 +1,7 @@
+.gio-checkbox-readonly.arco-checkbox.arco-checkbox-disabled {
+    cursor: initial;
+}
+
+.gio-checkbox-readonly.arco-checkbox-disabled .arco-checkbox-text {
+    color: var(--color-text-1);
+}

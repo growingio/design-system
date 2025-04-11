@@ -37,8 +37,8 @@ export type { CarouselProps } from "@arco-design/web-react/es/Carousel";
 export { default as Cascader } from "./cascader";
 export type { CascaderProps } from "./cascader";
 
-export { default as Checkbox } from "@arco-design/web-react/es/Checkbox";
-export type { CheckboxProps } from "@arco-design/web-react/es/Checkbox";
+export { default as Checkbox } from "./checkbox";
+export type { CheckboxProps } from "./checkbox";
 
 export { default as Collapse } from "@arco-design/web-react/es/Collapse";
 export type { CollapseProps } from "@arco-design/web-react/es/Collapse";
@@ -144,8 +144,8 @@ export type { PopoverProps } from "@arco-design/web-react/es/Popover";
 export { default as Progress } from "@arco-design/web-react/es/Progress";
 export type { ProgressProps } from "@arco-design/web-react/es/Progress";
 
-export { default as Radio } from "@arco-design/web-react/es/Radio";
-export type { RadioProps } from "@arco-design/web-react/es/Radio";
+export { default as Radio } from "./radio";
+export type { RadioProps } from "./radio";
 
 export { default as Rate } from "@arco-design/web-react/es/Rate";
 export type { RateProps } from "@arco-design/web-react/es/Rate";

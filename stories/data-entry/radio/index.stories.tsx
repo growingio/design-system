@@ -101,3 +101,29 @@ export const Sizes: GroupStory = {
     </Space>
   ),
 };
+
+export const ReadOnly: Story = {
+  args: {
+    readOnly: true,
+  },
+  render: (args) => (
+    <Space direction="vertical" size={"medium"}>
+      <RadioGroup defaultValue={"offline"}>
+        <Radio {...args} value={"offline"}>
+          Offline
+        </Radio>
+        <Radio {...args} value={"realtime"}>
+          Realtime
+        </Radio>
+      </RadioGroup>
+      <RadioGroup type="button" defaultValue={"offline"}>
+        <Radio {...args} value={"offline"}>
+          Offline
+        </Radio>
+        <Radio {...args} value={"realtime"}>
+          Realtime
+        </Radio>
+      </RadioGroup>
+    </Space>
+  ),
+};

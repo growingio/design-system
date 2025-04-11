@@ -1,0 +1,18 @@
+.gio-radio-readonly.arco-radio.arco-radio-disabled {
+    cursor: initial;
+}
+
+.gio-radio-readonly.arco-radio-disabled .arco-radio-text {
+    color: var(--color-text-1);
+}
+
+.gio-radio-readonly.arco-radio-button.arco-radio-disabled.arco-radio-checked {
+    color: var(--color-text-1);
+    background-color: var(--color-bg-white);
+}
+
+.gio-radio-readonly.arco-radio-button.arco-radio-disabled {
+    cursor: initial;
+    color: var(--color-text-4);
+    background-color: var(--color-fill-2);
+}

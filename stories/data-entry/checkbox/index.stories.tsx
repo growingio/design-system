@@ -1,14 +1,14 @@
-import { Button, Checkbox, Space, Tag } from "@/src";
+import { Button, Checkbox, CheckboxProps, Space, Tag } from "@/src";
 import { IconAt } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof Checkbox> = {
+const meta: Meta<CheckboxProps> = {
   component: Checkbox,
   title: "Components/Data Entry/Checkbox",
 };
 
 export default meta;
-type Story = StoryObj<typeof Checkbox>;
+type Story = StoryObj<CheckboxProps>;
 
 export const Default: Story = {
   args: {
@@ -128,5 +128,18 @@ export const Children: GroupStory = {
         </Checkbox>
       ))}
     </Checkbox.Group>
+  ),
+};
+
+export const ReadOnly: Story = {
+  args: {
+    readOnly: true,
+    children: "Checkbox",
+  },
+  render: (args) => (
+    <Space size={20}>
+      <Checkbox {...args} checked />
+      <Checkbox {...args} />
+    </Space>
   ),
 };
