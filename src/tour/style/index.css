@@ -1,337 +1,331 @@
 .gio-tour-target-placeholder {
-  border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-large);
 }
 
 .gio-tour {
-  position: absolute;
+    position: absolute;
 
-  display: block;
+    display: block;
 
-  min-width: 248px;
-  max-width: 600px;
-  min-height: 120px;
+    min-width: 248px;
+    max-width: 600px;
+    min-height: 120px;
 
-  visibility: visible;
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+    visibility: visible;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
 }
 
-.gio-tour-primary {
-  .gio-tour-inner {
+.gio-tour-primary .gio-tour-inner {
     background-color: rgb(var(--primary-6));
-  }
+}
 
-  &.gio-tour-placement-top .gio-tour-arrow,
-  &.gio-tour-placement-topLeft .gio-tour-arrow,
-  &.gio-tour-placement-topRight .gio-tour-arrow {
+.gio-tour-primary.gio-tour-placement-top .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-topLeft .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-topRight .gio-tour-arrow {
     border-top-color: rgb(var(--primary-6));
-  }
+}
 
-  &.gio-tour-placement-right .gio-tour-arrow,
-  &.gio-tour-placement-rightTop .gio-tour-arrow,
-  &.gio-tour-placement-rightBottom .gio-tour-arrow {
+.gio-tour-primary.gio-tour-placement-right .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-rightTop .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-rightBottom .gio-tour-arrow {
     border-right-color: rgb(var(--primary-6));
-  }
+}
 
-  &.gio-tour-placement-left .gio-tour-arrow,
-  &.gio-tour-placement-leftTop .gio-tour-arrow,
-  &.gio-tour-placement-leftBottom .gio-tour-arrow {
+.gio-tour-primary.gio-tour-placement-left .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-leftTop .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-leftBottom .gio-tour-arrow {
     border-left-color: rgb(var(--primary-6));
-  }
+}
 
-  &.gio-tour-placement-bottom .gio-tour-arrow,
-  &.gio-tour-placement-bottomLeft .gio-tour-arrow,
-  &.gio-tour-placement-bottomRight .gio-tour-arrow {
+.gio-tour-primary.gio-tour-placement-bottom .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-bottomLeft .gio-tour-arrow,
+.gio-tour-primary.gio-tour-placement-bottomRight .gio-tour-arrow {
     border-bottom-color: rgb(var(--primary-6));
-  }
+}
 
-  .gio-tour-close {
+.gio-tour-primary .gio-tour-close {
     color: var(--color-text-5);
+}
+.gio-tour-primary .gio-tour-close:hover,
+.gio-tour-primary .gio-tour-close:active {
+    background-color: rgb(255 255 255 / 15%);
+}
 
-    &:hover,
-    &:active {
-      background-color: rgb(255 255 255 / 15%);
-    }
-  }
-
-  .gio-tour-header,
-  .gio-tour-description {
+.gio-tour-primary .gio-tour-header,
+.gio-tour-primary .gio-tour-description {
     color: var(--color-white);
-  }
+}
 
-  .gio-tour-indicator-number {
+.gio-tour-primary .gio-tour-indicator-number {
     color: rgb(255 255 255 / 50%);
-  }
+}
 
-  .gio-tour-indicator {
+.gio-tour-primary .gio-tour-indicator {
     opacity: 0.5;
     background-color: var(--color-white);
-  }
+}
 
-  .gio-tour-indicator-active {
+.gio-tour-primary .gio-tour-indicator-active {
     opacity: 1;
-  }
+}
 
-  .gio-tour-prev-btn:not(.arco-btn-disabled, .arco-btn-loading) {
+.gio-tour-primary .gio-tour-prev-btn:not(.arco-btn-disabled, .arco-btn-loading) {
     color: var(--color-white);
     background-color: rgb(var(--primary-6));
     border-color: rgb(255 255 255 / 15%);
+}
+.gio-tour-primary .gio-tour-prev-btn:not(.arco-btn-disabled, .arco-btn-loading):hover,
+.gio-tour-primary .gio-tour-prev-btn:not(.arco-btn-disabled, .arco-btn-loading):active {
+    color: var(--color-white);
+    background-color: rgb(255 255 255 / 15%);
+}
 
-    &:hover,
-    &:active {
-      background-color: rgb(255 255 255 / 15%);
-    }
-  }
-
-  .gio-tour-next-btn:not(.arco-btn-disabled, .arco-btn-loading) {
+.gio-tour-primary .gio-tour-next-btn:not(.arco-btn-disabled, .arco-btn-loading) {
     color: rgb(var(--primary-6));
     background-color: var(--color-white);
-
-    &:hover,
-    &:active {
-      background-color: var(--color-fill-2);
-    }
-  }
+}
+.gio-tour-primary .gio-tour-next-btn:not(.arco-btn-disabled, .arco-btn-loading):hover,
+.gio-tour-primary .gio-tour-next-btn:not(.arco-btn-disabled, .arco-btn-loading):active {
+    background-color: var(--color-fill-2);
 }
 
 .gio-tour-hidden {
-  display: none;
+    display: none;
 }
 
 .gio-tour-wrap {
-  position: fixed;
-  z-index: 1050;
-  inset: 0;
+    position: fixed;
+    z-index: 1050;
+    inset: 0;
 
-  overflow: auto;
+    overflow: auto;
 
-  outline: 0;
+    outline: 0;
 
-  -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 .gio-tour-arrow {
-  position: absolute;
+    position: absolute;
 
-  width: 0;
-  height: 0;
+    width: 0;
+    height: 0;
 
-  border-color: transparent;
-  border-style: solid;
+    border-color: transparent;
+    border-style: solid;
 }
 
 .gio-tour-inner {
-  position: relative;
+    position: relative;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-  padding: 16px;
+    padding: 16px;
 
-  font-size: 14px;
-  line-height: 22px;
+    font-size: 14px;
+    line-height: 22px;
 
-  background: var(--color-bg-5);
-  border: none;
-  border-radius: var(--border-radius-large);
+    background: var(--color-bg-5);
+    border: none;
+    border-radius: var(--border-radius-large);
 }
 
 .gio-tour-close {
-  cursor: pointer;
+    cursor: pointer;
 
-  position: absolute;
-  top: 16px;
-  right: 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
 
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 
-  font-size: 16px;
-  color: var(--color-text-2);
+    font-size: 16px;
+    color: var(--color-text-2);
 
-  background: transparent;
-  border: 0;
-  border-radius: var(--border-radius-circle);
-
-  &:hover {
+    background: transparent;
+    border: 0;
+    border-radius: var(--border-radius-circle);
+}
+.gio-tour-close:hover {
     background-color: var(--color-fill-2);
-  }
-
-  &:active {
+}
+.gio-tour-close:active {
     background-color: var(--color-fill-3);
-  }
 }
 
 .gio-tour-header {
-  font-weight: 500;
-  color: var(--color-text-1);
+    font-weight: 500;
+    color: var(--color-text-1);
 }
 
 .gio-tour-description {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 
-  margin-top: 4px;
+    margin-top: 4px;
 
-  color: var(--color-text-2);
-  word-wrap: break-word;
+    color: var(--color-text-2);
+    word-wrap: break-word;
 }
 
 .gio-tour-footer {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-  width: 100%;
-  margin-top: 16px;
+    width: 100%;
+    margin-top: 16px;
 }
 
 .gio-tour-indicators {
-  display: flex;
-  flex: 1;
-  gap: 6px;
+    display: flex;
+    flex: 1;
+    gap: 6px;
 }
 
 .gio-tour-indicator-number {
-  font-size: 12px;
-  line-height: 20px;
-  color: rgb(5 16 37 / 36%);
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(5 16 37 / 36%);
 }
 
 .gio-tour-indicator {
-  display: inline-flex;
+    display: inline-flex;
 
-  box-sizing: border-box;
-  width: 6px;
-  height: 6px;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
 
-  background-color: var(--color-fill-3);
-  border-radius: var(--border-radius-circle);
+    background-color: var(--color-fill-3);
+    border-radius: var(--border-radius-circle);
 }
 
 .gio-tour-indicator-active {
-  background-color: rgb(var(--primary-6));
+    background-color: rgb(var(--primary-6));
 }
 
 .gio-tour-buttons {
-  display: flex;
-  gap: 8px;
-  margin-left: 24px;
+    display: flex;
+    gap: 8px;
+    margin-left: 24px;
 }
 
 .gio-tour-placement-top,
 .gio-tour-placement-topLeft,
 .gio-tour-placement-topRight {
-  padding: 5px 0;
+    padding: 0 0 5px 0;
 }
 
 .gio-tour-placement-right,
 .gio-tour-placement-rightTop,
 .gio-tour-placement-rightBottom {
-  padding: 0 5px;
+    padding: 0 0 0 5px;
 }
 
 .gio-tour-placement-bottom,
 .gio-tour-placement-bottomLeft,
 .gio-tour-placement-bottomRight {
-  padding: 5px 0;
+    padding: 5px 0 0 0;
 }
 
 .gio-tour-placement-left,
 .gio-tour-placement-leftTop,
 .gio-tour-placement-leftBottom {
-  padding: 0 5px;
+    padding: 0 5px 0 0;
 }
 
 .gio-tour-placement-top .gio-tour-arrow,
 .gio-tour-placement-topLeft .gio-tour-arrow,
 .gio-tour-placement-topRight .gio-tour-arrow {
-  bottom: 0;
-  margin-left: -5px;
-  border-width: 5px 5px 0;
-  border-top-color: #fff;
+    bottom: 0;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #fff;
 }
 
 .gio-tour-placement-top .gio-tour-arrow {
-  left: 50%;
+    left: 50%;
 }
 
 .gio-tour-placement-topLeft .gio-tour-arrow {
-  left: 15%;
+    left: 15%;
 }
 
 .gio-tour-placement-topRight .gio-tour-arrow {
-  right: 15%;
+    right: 15%;
 }
 
 .gio-tour-placement-right .gio-tour-arrow,
 .gio-tour-placement-rightTop .gio-tour-arrow,
 .gio-tour-placement-rightBottom .gio-tour-arrow {
-  left: 0;
-  margin-top: -5px;
-  border-width: 5px 5px 5px 0;
-  border-right-color: #fff;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #fff;
 }
 
 .gio-tour-placement-right .gio-tour-arrow {
-  top: 50%;
+    top: 50%;
 }
 
 .gio-tour-placement-rightTop .gio-tour-arrow {
-  top: 15%;
-  margin-top: 0;
+    top: 15%;
+    margin-top: 0;
 }
 
 .gio-tour-placement-rightBottom .gio-tour-arrow {
-  bottom: 15%;
+    bottom: 15%;
 }
 
 .gio-tour-placement-left .gio-tour-arrow,
 .gio-tour-placement-leftTop .gio-tour-arrow,
 .gio-tour-placement-leftBottom .gio-tour-arrow {
-  right: 0;
-  margin-top: -5px;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #fff;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #fff;
 }
 
 .gio-tour-placement-left .gio-tour-arrow {
-  top: 50%;
+    top: 50%;
 }
 
 .gio-tour-placement-leftTop .gio-tour-arrow {
-  top: 15%;
-  margin-top: 0;
+    top: 15%;
+    margin-top: 0;
 }
 
 .gio-tour-placement-leftBottom .gio-tour-arrow {
-  bottom: 15%;
+    bottom: 15%;
 }
 
 .gio-tour-placement-bottom .gio-tour-arrow,
 .gio-tour-placement-bottomLeft .gio-tour-arrow,
 .gio-tour-placement-bottomRight .gio-tour-arrow {
-  top: 0;
-  margin-left: -5px;
-  border-width: 0 5px 5px;
-  border-bottom-color: #fff;
+    top: 0;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #fff;
 }
 
 .gio-tour-placement-bottom .gio-tour-arrow {
-  left: 50%;
+    left: 50%;
 }
 
 .gio-tour-placement-bottomLeft .gio-tour-arrow {
-  left: 15%;
+    left: 15%;
 }
 
 .gio-tour-placement-bottomRight .gio-tour-arrow {
-  right: 15%;
+    right: 15%;
 }

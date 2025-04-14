@@ -1,7 +1,7 @@
+import { Button, Divider, Space, Tour, type TourProps } from "@/src";
+import { IconMore } from "@arco-iconbox/react-growingio/src";
 import type { Meta, StoryObj } from "@storybook/react";
 import { useRef, useState } from "react";
-import { IconMore } from "@arco-iconbox/react-growingio/src";
-import { Button, Divider, Space, Tour, type TourProps } from "../../../src";
 
 const meta: Meta<typeof Tour> = {
   component: Tour,
