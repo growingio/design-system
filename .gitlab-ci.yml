@@ -1,0 +1,21 @@
+include:
+  - project: "growing/frontend/ci-templates"
+    ref: main
+    file:
+      - "/i18n.gitlab-ci.yml"
+download_files:
+  stage: preparing
+  ariables:
+    CI_DEBUG_TRACE: "true"
+  rules:
+    - when: manual
+  image: uhub.service.ucloud.cn/growing_public/aws-cli:latest
+  script:
+    - aws s3 cp s3://$BUCKET/snapshot/llm/models/gemma-3-4b-it-q4_0.gguf .
+    - aws s3 cp s3://$BUCKET/snapshot/i18n-translate/main/i18n-translate .
+  cache:
+    - key: "i18n-files-$CI_COMMIT_SHORT_SHA-$CI_PIPELINE_ID"
+      policy: push
+      paths:
+        - gemma-3-4b-it-q4_0.gguf
+        - i18n-translate
