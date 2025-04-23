@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "formatjs-extract": "formatjs extract 'stories/**/*.ts*' --ignore '**/*.d.ts' --out-file locales/zh-CN.json --format locales/formatter.js"
   },
   "dependencies": {
     "@arco-design/web-react": "2.66.1",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@arco-iconbox/react-growingio": "1.0.0",
     "@eslint/js": "^9.19.0",
+    "@formatjs/cli": "^6.6.4",
     "@happy-dom/global-registrator": "^17.1.8",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
