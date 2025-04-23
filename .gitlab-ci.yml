@@ -1,0 +1,5 @@
+include:
+  - project: "growing/frontend/ci-templates"
+    ref: main
+    file:
+      - "/i18n.gitlab-ci.yml"
