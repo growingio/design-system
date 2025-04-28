@@ -12,7 +12,7 @@
         "@arco-iconbox/react-growingio": "1.0.0",
         "@eslint/js": "^9.19.0",
         "@formatjs/cli": "^6.6.4",
-        "@happy-dom/global-registrator": "^17.1.8",
+        "@happy-dom/global-registrator": "^17.4.4",
         "@storybook/addon-essentials": "^8.6.12",
         "@storybook/blocks": "^8.6.12",
         "@storybook/react": "^8.6.12",
@@ -185,7 +185,7 @@
 
     "@formatjs/ts-transformer": ["@formatjs/ts-transformer@3.13.34", "", { "dependencies": { "@formatjs/icu-messageformat-parser": "2.11.2", "@types/json-stable-stringify": "^1.1.0", "@types/node": "^22.0.0", "chalk": "^4.1.2", "json-stable-stringify": "^1.1.1", "tslib": "^2.8.0", "typescript": "^5.6.0" }, "peerDependencies": { "ts-jest": "^29" }, "optionalPeers": ["ts-jest"] }, "sha512-N1n7dA+6dfHn/LDQXrUPOC90Z+7dsDB5cQIJeIysVwGhk8PRyYo2eaotDszZMjQp8+hvs98kJyekn1X7mK1yHQ=="],
 
-    "@happy-dom/global-registrator": ["@happy-dom/global-registrator@17.3.0", "", { "dependencies": { "happy-dom": "^17.3.0" } }, "sha512-0InzPego4klbD/MLYO4X4h1hF7a98lZqpBDezXFbHnZLJLYn+KUg7c7O3pMVOXo0kQn2diaX5eEJYEvUFTGE1Q=="],
+    "@happy-dom/global-registrator": ["@happy-dom/global-registrator@17.4.4", "", { "dependencies": { "happy-dom": "^17.4.4" } }, "sha512-njrU74GrYVHO43upIJr96f7pEmUG7YLZbHCGiHALBECeVnDKpepzL9kVc7KIl8S2nQOkPA0rAA1EyC3xASb54w=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 
@@ -585,7 +585,7 @@
 
     "graphemer": ["graphemer@1.4.0", "", {}, "sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag=="],
 
-    "happy-dom": ["happy-dom@17.3.0", "", { "dependencies": { "webidl-conversions": "^7.0.0", "whatwg-mimetype": "^3.0.0" } }, "sha512-dTwlpUHrhE0usQOd1Df9k461SOYQUWNl0G31mXCDj+N9//oPcDb+cchrSJzrXN6qxZ5sZSrLf5AfY702Zvddfw=="],
+    "happy-dom": ["happy-dom@17.4.4", "", { "dependencies": { "webidl-conversions": "^7.0.0", "whatwg-mimetype": "^3.0.0" } }, "sha512-/Pb0ctk3HTZ5xEL3BZ0hK1AqDSAUuRQitOmROPHhfUYEWpmTImwfD8vFDGADmMAX0JYgbcgxWoLFKtsWhcpuVA=="],
 
     "has-flag": ["has-flag@4.0.0", "", {}, "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ=="],
 
