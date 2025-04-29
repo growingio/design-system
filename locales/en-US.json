@@ -1,0 +1,23 @@
+{
+  "+/7PZ5": "Automatic overflow truncation (only works with strings).  Refer to [EllipsisConfig](#ellipsisconfig) for detailed parameter configuration. We don't recommend using this feature; instead, consider using `Typography.Ellipsis`.",
+  "+/lCJA": "Retrieve the 'input' attribute and add it to the input element.",
+  "+1yNkA": "You can nest children within the 'columns' property to create grouped headers.",
+  "+2/QAV": "Allows you to select the month view and year view for date selection.",
+  "+2NUhK": "Supports scrolling with a wheel or trackpad.",
+  "+30Lkw": "Use predefined or custom sizes.  When the type is an array, it represents the horizontal and vertical spacing respectively.",
+  "+9/Yrz": "Indicates whether an item is selected.",
+  "+9X9Ip": "Top navigation bar",
+  "+AArs9": "The function to be executed when the button is clicked.",
+  "+BSH96": "Method used to expand the next level of content.",
+  "+FZ1h7": "Read-only and cannot be selected.",
+  "+GCGjc": "You can pass the image URL using the imgSrc parameter.",
+  "+HsmQ0": "Set `closable` to `true` to enable a close button.",
+  "+JSCy/": "The CSS class for the table rows.",
+  "+MsJoU": "Whether to destroy the DOM elements after hiding. Defaults to `true`. If loading dynamically, it defaults to `false`.",
+  "+OwtSi": "Specifies the order of the grid columns.",
+  "+PhK3e": "Important: When using multi-column sorting with `sortOrder`, to ensure consistency, all columns that have a sorter should also specify `sortOrder` (which can be `undefined`) and be aware of any conflicts between columns.",
+  "+PirfD": "Disable popups.",
+  "+QafHw": "Validation message template.",
+  "+Xv7UP": "There are five types of buttons: primary, default, dashed, linear, and text buttons.",
+  "+ZdRC4": "Badge count"
+}
