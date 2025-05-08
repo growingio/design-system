@@ -69,14 +69,14 @@ export default function ColorPalettePage() {
               <ColorItem
                 title={colorMessages[color]}
                 subtitle={color}
-                colors={{ [`${color}`]: `--${color}-6` }}
+                colors={{ [`${color}`]: `rgb(var(--${color}-6))` }}
               />
               <ColorItem
                 title=""
                 subtitle=""
                 colors={Array.from(Array(5).keys()).reduce((acc, cur) => {
                   const i = cur + 1;
-                  acc[`${color}-${i}`] = `--${color}-${i}`;
+                  acc[`${color}-${i}`] = `rgb(var(--${color}-${i}))`;
                   return acc;
                 }, {} as ColorMap)}
               />
@@ -85,7 +85,7 @@ export default function ColorPalettePage() {
                 subtitle=""
                 colors={Array.from(Array(5).keys()).reduce((acc, cur) => {
                   const i = cur + 6;
-                  acc[`${color}-${i}`] = `--${color}-${i}`;
+                  acc[`${color}-${i}`] = `rgb(var(--${color}-${i}))`;
                   return acc;
                 }, {} as ColorMap)}
               />
