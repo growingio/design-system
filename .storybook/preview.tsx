@@ -5,8 +5,10 @@ import { DocsContainer } from "@storybook/blocks";
 import { IntlProvider, injectIntl } from "react-intl";
 import { ConfigProvider } from "../src";
 import zhCN from "@arco-design/web-react/es/locale/zh-CN";
+import zhTW from "@arco-design/web-react/es/locale/zh-TW";
 import enUS from "@arco-design/web-react/es/locale/en-US";
 import zhCNMessages from "../locales/zh-CN.json";
+import zhTWMessages from "../locales/zh-TW.json";
 import enUSMessages from "../locales/en-US.json";
 
 import "../src/index.css";
@@ -15,6 +17,8 @@ const getComponentLocale = (locale: string) => {
   switch (locale) {
     case "en-US":
       return enUS;
+    case "zh-TW":
+      return zhTW;
     case "zh-CN":
     default:
       return zhCN;
@@ -24,6 +28,8 @@ const getDocsLocale = (locale: string) => {
   switch (locale) {
     case "en-US":
       return enUSMessages;
+    case "zh-TW":
+      return zhTWMessages;
     case "zh-CN":
     default:
       return zhCNMessages;
@@ -94,6 +100,7 @@ const preview: Preview = {
         items: [
           { value: "en-US", right: "🇺🇸", title: "English (United States)" },
           { value: "zh-CN", right: "🇨🇳", title: "简体中文" },
+          { value: "zh-TW", right: "🇨🇳", title: "繁體中文 (中國臺灣)" },
         ],
         dynamicTitle: true,
       },
