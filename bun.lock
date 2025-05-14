@@ -11,7 +11,7 @@
       "devDependencies": {
         "@arco-iconbox/react-growingio": "1.0.0",
         "@eslint/js": "^9.25.1",
-        "@formatjs/cli": "^6.6.4",
+        "@formatjs/cli": "^6.7.1",
         "@happy-dom/global-registrator": "^17.4.7",
         "@storybook/addon-essentials": "^8.6.12",
         "@storybook/blocks": "^8.6.12",
@@ -169,7 +169,7 @@
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.2.8", "", { "dependencies": { "@eslint/core": "^0.13.0", "levn": "^0.4.1" } }, "sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA=="],
 
-    "@formatjs/cli": ["@formatjs/cli@6.6.4", "", { "peerDependencies": { "@glimmer/env": "^0.1.7", "@glimmer/reference": "^0.94.0", "@glimmer/syntax": "^0.94.9", "@glimmer/validator": "^0.94.0", "@vue/compiler-core": "^3.5.12", "content-tag": "^3.0.0", "ember-template-recast": "^6.1.5", "vue": "^3.5.12" }, "optionalPeers": ["@glimmer/env", "@glimmer/reference", "@glimmer/syntax", "@glimmer/validator", "@vue/compiler-core", "content-tag", "ember-template-recast", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-VSDPsT7AO/mtth1rEBwl97Us5dMgqZpI8v7QJXakB4f90pDJsqHBdBeTbjHYrlFr2WvBLVo3/6mGPw9DeX7PUg=="],
+    "@formatjs/cli": ["@formatjs/cli@6.7.1", "", { "peerDependencies": { "@glimmer/env": "^0.1.7", "@glimmer/reference": "^0.94.0", "@glimmer/syntax": "^0.94.9", "@glimmer/validator": "^0.94.0", "@vue/compiler-core": "^3.5.12", "content-tag": "^3.0.0", "ember-template-recast": "^6.1.5", "vue": "^3.5.12" }, "optionalPeers": ["@glimmer/env", "@glimmer/reference", "@glimmer/syntax", "@glimmer/validator", "@vue/compiler-core", "content-tag", "ember-template-recast", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-ULiXbLkbuTyd8f0qaByu1Nuc+jbAOLH1qRAtHZ7waIABQGPBB93OQ2FFtQPgoYoupKOKyNr+PZXR6pOT45E4EQ=="],
 
     "@formatjs/ecma402-abstract": ["@formatjs/ecma402-abstract@2.3.4", "", { "dependencies": { "@formatjs/fast-memoize": "2.2.7", "@formatjs/intl-localematcher": "0.6.1", "decimal.js": "^10.4.3", "tslib": "^2.8.0" } }, "sha512-qrycXDeaORzIqNhBOx0btnhpD1c+/qFIHAN9znofuMJX6QBwtbrmlpWfD4oiUUD2vJUOIYFA/gYtg2KAMGG7sA=="],
 
