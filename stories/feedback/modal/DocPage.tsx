@@ -1,7 +1,7 @@
 import { injectIntl, IntlShape } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/blocks";
-import PropsTable, { type PropsTableData } from "../../../components/props-table";
-import { Typography } from "../../../src";
+import PropsTable, { type PropsTableData } from "@/components/props-table";
+import { Typography } from "@/src";
 import * as ModalStories from "./index.stories";
 
 const { Title, Paragraph, Text } = Typography;
@@ -285,6 +285,22 @@ function DocPage({ intl }: { intl: IntlShape }) {
       </Paragraph>
       <Canvas of={ModalStories.Position} />
 
+      <Title heading={3} id="scroll-content">
+        {formatMessage({ defaultMessage: "常规文本不溢出" })}
+      </Title>
+      <Paragraph>
+        {formatMessage({
+          defaultMessage:
+            "当出现过长的弹窗（页面内容无法在浏览器窗口展示），则弹窗保持与页面顶部、底部48px间距，弹窗中的内容区域滚动。",
+        })}
+      </Paragraph>
+      <Canvas of={ModalStories.ScrollContent} />
+
+      <Title heading={3} id="long-content">
+        {formatMessage({ defaultMessage: "文本溢出" })}
+      </Title>
+      <Canvas of={ModalStories.LongContent} />
+
       <Title heading={3} id="fullscreen">
         {formatMessage({ defaultMessage: "全屏模式" })}
       </Title>
@@ -358,7 +374,7 @@ function DocPage({ intl }: { intl: IntlShape }) {
         code={`const info = Modal.info({ title: 'Info' });
 info.update({ title: 'Updated Title' });
 info.close();`}
-        language="ts"
+        language="typescript"
       />
       <Paragraph>
         {formatMessage({
@@ -397,7 +413,7 @@ info.close();`}
   // 是否静态方法以简洁样式展示信息
   simple: true
 });`}
-        language="ts"
+        language="typescript"
       />
 
       <Title id="modal-destroy-all" heading={3}>

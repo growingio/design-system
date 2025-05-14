@@ -1,7 +1,3 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { createContext, useState } from "react";
-import { FormattedMessage } from "react-intl";
-import Draggable from "react-draggable";
 import {
   Alert,
   Button,
@@ -13,8 +9,12 @@ import {
   Steps,
   Table,
   Typography,
-} from "../../../src";
-import { IconCheckCircleFill, IconInfoCircleFill } from "@arco-iconbox/react-growingio";
+} from "@/src";
+import { IconCheckCircleFill, IconInfoCircleFill } from "@arco-iconbox/react-growingio/src";
+import type { Meta, StoryObj } from "@storybook/react";
+import { createContext, useState } from "react";
+import Draggable from "react-draggable";
+import { FormattedMessage } from "react-intl";
 
 const { Paragraph } = Typography;
 
@@ -174,7 +174,7 @@ export const Confirm: Story = {
         okButtonProps: {
           status: "danger",
         },
-        onOk: () => {
+        onOk: async () => {
           return new Promise((resolve, reject) => {
             setTimeout(Math.random() > 0.5 ? resolve : reject, 1000);
           }).catch(() => {
@@ -317,6 +317,36 @@ export const Position: Story = {
   },
 };
 
+export const ScrollContent: Story = {
+  ...Basic,
+  args: {
+    ...Basic.args,
+    children: (
+      <div style={{ overflowY: "auto", maxHeight: "calc(100vh - 248px)" }}>
+        {Array.from({ length: 20 }).map((_, index) => (
+          <Paragraph key={index}>
+            This is very long content... Paragraph {index + 1}. Please ensure the modal can scroll
+            properly to display all content.
+          </Paragraph>
+        ))}
+      </div>
+    ),
+  },
+};
+
+export const LongContent: Story = {
+  ...Basic,
+  args: {
+    ...Basic.args,
+    children: Array.from({ length: 20 }).map((_, index) => (
+      <Paragraph key={index}>
+        This is very long content... Paragraph {index + 1}. Please ensure the modal can scroll
+        properly to display all content.
+      </Paragraph>
+    )),
+  },
+};
+
 export const Fullscreen: Story = {
   ...Basic,
   args: {
@@ -329,12 +359,12 @@ const tableColumns = [
   {
     title: "Name",
     dataIndex: "name",
-    sorter: (a, b) => a.name.length - b.name.length,
+    sorter: (a: any, b: any) => a.name.length - b.name.length,
   },
   {
     title: "Version",
     dataIndex: "version",
-    sorter: (a, b) => {
+    sorter: (a: any, b: any) => {
       const aVersion = a.version.split(".");
       const bVersion = b.version.split(".");
 
@@ -349,7 +379,7 @@ const tableColumns = [
   {
     title: "Author",
     dataIndex: "author",
-    sorter: (a, b) => a.author.length - b.author.length,
+    sorter: (a: any, b: any) => a.author.length - b.author.length,
   },
 ];
 
@@ -391,7 +421,7 @@ export const Loading: Story = {
 
     function loadData() {
       setLoading(true);
-      getDataFromServer().then((res: unknown[]) => {
+      getDataFromServer().then((res: any) => {
         setData(res);
         setLoading(false);
       });
@@ -459,7 +489,7 @@ export const ModalWithAlert: Story = {
           closable
           content={<FormattedMessage defaultMessage="这条消息只展示一次。" />}
         />
-        {Basic.args.children}
+        {Basic.args?.children}
       </>
     ),
   },
@@ -476,7 +506,7 @@ export const ModalWithSteps: Story = {
           <Steps.Step title={<FormattedMessage defaultMessage="处理中" />} />
           <Steps.Step title={<FormattedMessage defaultMessage="待处理" />} />
         </Steps>
-        {Basic.args.children}
+        {Basic.args?.children}
       </>
     ),
   },
@@ -500,8 +530,8 @@ export const Hooks: Story = {
       title: <FormattedMessage defaultMessage="简介" />,
       content: (
         <ConfigContext.Consumer>
-          {(name: string) => (
-            <FormattedMessage defaultMessage="当前用户：{name}" values={{ name }} />
+          {(value: any) => (
+            <FormattedMessage defaultMessage="当前用户：{name}" values={{ name: value }} />
           )}
         </ConfigContext.Consumer>
       ),
@@ -510,11 +540,11 @@ export const Hooks: Story = {
       <ConfigContext.Provider value="GrowingIO">
         {contextHolder}
         <Space>
-          <Button onClick={() => modal.confirm(config)}>Confirm</Button>
-          <Button onClick={() => modal.info(config)}>Info</Button>
-          <Button onClick={() => modal.success(config)}>Success</Button>
-          <Button onClick={() => modal.warning(config)}>Warning</Button>
-          <Button onClick={() => modal.error(config)}>Error</Button>
+          <Button onClick={() => modal.confirm?.(config)}>Confirm</Button>
+          <Button onClick={() => modal.info?.(config)}>Info</Button>
+          <Button onClick={() => modal.success?.(config)}>Success</Button>
+          <Button onClick={() => modal.warning?.(config)}>Warning</Button>
+          <Button onClick={() => modal.error?.(config)}>Error</Button>
           <Button onClick={() => Modal.confirm(config)} type="outline" status="danger">
             Can't get context
           </Button>
