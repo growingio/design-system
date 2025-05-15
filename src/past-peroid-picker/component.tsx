@@ -1,14 +1,15 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import PastTimeShortcuts from "../_past-time-shortcuts";
 import PastTimeTrigger from "../_past-time-trigger/component";
 import PickerMenu from "../_picker-menu";
 import { Trigger } from "..";
-import { ConfigContext } from "../config-provider/context";
+import { ConfigContext } from "@arco-design/web-react/es/ConfigProvider";
 import DateRangePanel from "./date-range-panel";
 import dayjs, { Dayjs } from "dayjs";
 import { parsePeriodRange } from "../utils/time-range";
 import { PastTimeTriggerProps } from "../_past-time-trigger/interface";
 import { CommonProps } from "../_core/types";
+import { Locale } from "../locale/interface";
 
 export interface PastPeriodPickerProps
   extends CommonProps,
@@ -35,7 +36,7 @@ function parseMode(value?: string): PanelMode {
   return "custom";
 }
 
-function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
+function parseTimeRange(timeRange?: string): [Dayjs, Dayjs] | undefined {
   const now = dayjs().startOf("day");
   if (!timeRange) return [now, now];
 
@@ -57,17 +58,17 @@ function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
 
 export default function PastPeroidPicker(props: PastPeriodPickerProps) {
   const { timeRange, defaultValue, value, onChange, placeholder } = props;
-  const [periodStart, periodEnd] = parseTimeRange(timeRange);
+  const [periodStart, periodEnd] = parseTimeRange(timeRange) ?? [dayjs(), dayjs()];
 
   const [controlledVisible, setControlledVisible] = useState(false);
   const [controlledValue, setControlledValue] = useState(value ?? defaultValue);
   const [mode, setMode] = useState<string>(parseMode(controlledValue));
   const [comparisonPeriod, setComparisonPeriod] = useState(
-    parsePeriodRange(controlledValue, timeRange)
+    parsePeriodRange(controlledValue, timeRange),
   );
 
   const { locale } = useContext(ConfigContext);
-  const LOCALE = locale.PastPeriodPicker;
+  const LOCALE = (locale as Locale).PastPeriodPicker;
   const clsPrefix = "gio-past-period-picker";
 
   function disabledDate(current: Dayjs) {

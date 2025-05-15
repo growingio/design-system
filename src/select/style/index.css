@@ -3,41 +3,33 @@
     border-right-width: 0;
 }
 
-.arco-select-option-wrapper {
-    &:hover {
-        background-color: var(--color-fill-2);
-        border-radius: 4px;
-    }
-
-    &:active {
-        background-color: transparent;
-    }
-
-    .arco-select-option {
-        background-color: transparent;
-    }
+.arco-select-option-wrapper:hover {
+    background-color: var(--color-fill-2);
+    border-radius: 4px;
 }
 
-.arco-select-popup-multiple {
-    .arco-select-option-hover {
-        background-color: transparent;
-    }
+.arco-select-option-wrapper:active {
+    background-color: transparent;
 }
 
-.arco-select-popup {
-    .arco-select-popup-inner {
-        scrollbar-gutter: auto;
-    }
-
-    .arco-select-option-selected {
-        color: rgb(var(--primary-6));
-    }
+.arco-select-option-wrapper .arco-select-option {
+    background-color: transparent;
 }
 
-.arco-select-popup.arco-select-popup-multiple {
-    .arco-select-option-selected {
-        color: var(--color-text-1);
-    }
+.arco-select-popup-multiple .arco-select-option-hover {
+    background-color: transparent;
+}
+
+.arco-select-popup .arco-select-popup-inner {
+    scrollbar-gutter: auto;
+}
+
+.arco-select-popup .arco-select-option-selected {
+    color: rgb(var(--primary-6));
+}
+
+.arco-select-popup.arco-select-popup-multiple .arco-select-option-selected {
+    color: var(--color-text-1);
 }
 
 .arco-select-wrapper .arco-select:not(:first-child) .arco-select-view {

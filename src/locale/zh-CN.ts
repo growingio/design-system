@@ -3,6 +3,10 @@ import { Locale } from "./interface";
 
 export default {
   ...locale,
+  MultipleSelect: {
+    selectAll: "全部",
+    selected: "已选",
+  },
   Tour: {
     previous: "上一步",
     next: "下一步",

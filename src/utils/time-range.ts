@@ -9,7 +9,7 @@ const REGEX = /([\w-]+):(\d+),(\d*)/;
  * @param timeRange time range
  * @returns start date and end date
  */
-export function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
+export function parseTimeRange(timeRange?: string): [Dayjs, Dayjs] | undefined {
   const now = dayjs().startOf("day");
   if (!timeRange) return [now, now];
 
@@ -18,10 +18,7 @@ export function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
     throw new Error(`Invalid time range: ${timeRange}`);
   }
   const [, prefix, startString, endString] = matches;
-  const [start, end] = [
-    parseInt(startString),
-    endString.length === 0 ? 0 : parseInt(endString),
-  ];
+  const [start, end] = [parseInt(startString), endString.length === 0 ? 0 : parseInt(endString)];
 
   switch (prefix) {
     case "abs":
@@ -41,7 +38,7 @@ export function parseTimeRange(timeRange: string): [Dayjs, Dayjs] {
  * @param timeRange time range
  * @returns start date and end date
  */
-export function parsePeriodRange(periodRange: string, timeRange: string) {
+export function parsePeriodRange(periodRange?: string, timeRange?: string) {
   const [currentStart, currentEnd] = parseTimeRange(timeRange);
   if (!periodRange) {
     return [currentStart, currentEnd];
@@ -59,10 +56,7 @@ export function parsePeriodRange(periodRange: string, timeRange: string) {
   switch (prefix) {
     case "period":
       if (start === 2 && end === 1) {
-        return [
-          currentStart.subtract(duration, "day"),
-          currentEnd.subtract(duration, "day"),
-        ];
+        return [currentStart.subtract(duration, "day"), currentEnd.subtract(duration, "day")];
       } else {
         return [currentStart, currentEnd];
       }
