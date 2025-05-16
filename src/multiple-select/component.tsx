@@ -1,22 +1,37 @@
 import clsx from "clsx";
-import { useState, useContext, useMemo } from "react";
+import { useState, useContext, useMemo, ReactElement } from "react";
 import { Checkbox, ConfigContext, Divider, Select } from "../";
 import { Locale } from "../locale/interface";
 import { MultipleSelectProps } from "./interface";
 
-type ValueType = MultipleSelectProps["value"];
+type ValueType = string[] | number[];
 const CLASS_NAME = "gio-multiple-select";
+
+function filter(query: string, option: { label?: string; value: string | number }) {
+  const lowerCaseQuery = query.trim().toLowerCase();
+  const { label, value } = option;
+  if (
+    label?.toLowerCase().includes(lowerCaseQuery) ||
+    `${value}`.toLowerCase().includes(lowerCaseQuery)
+  ) {
+    return true;
+  }
+  return false;
+}
 
 export default function MultipleSelect(props: MultipleSelectProps) {
   const { className, defaultValue, value, onChange, options, ...rest } = props;
-  const [controlledValue, setControlledValue] = useState<ValueType>(value ?? defaultValue ?? []);
-
-  const { locale } = useContext(ConfigContext);
-  const selectLocale = (locale as Locale)?.MultipleSelect;
   const realOptions = useMemo<MultipleSelectProps["options"]>(
-    () => (options ?? []).filter((o: any) => !Object.hasOwn(o, "disable")),
+    () => (options ?? []).filter((o) => !o.disabled),
     [options],
   );
+  const memoAllValue = useMemo(() => realOptions.map((o) => o.value), [realOptions]);
+  const [controlledValue, setControlledValue] = useState<ValueType>(value ?? defaultValue ?? []);
+  const [allValue, setAllValue] = useState<ValueType>([]);
+  const { locale } = useContext(ConfigContext);
+
+  const selectLocale = (locale as Locale)?.MultipleSelect;
+
   const selectPart =
     !!realOptions &&
     !!controlledValue &&
@@ -32,6 +47,7 @@ export default function MultipleSelect(props: MultipleSelectProps) {
   return (
     <Select
       {...rest}
+      allowClear
       dropdownMenuClassName={`${CLASS_NAME}-popup-inner`}
       mode={"multiple"}
       className={classPrefix}
@@ -41,6 +57,22 @@ export default function MultipleSelect(props: MultipleSelectProps) {
         onChange?.(value, option);
       }}
       options={options}
+      onSearch={(value: string) => {
+        if (value.length === 0) {
+          setAllValue(realOptions.map((o) => o.value) as ValueType);
+        } else {
+          setAllValue(realOptions.filter((o) => filter(value, o)).map((o) => o.value) as ValueType);
+        }
+      }}
+      filterOption={(inputValue: string, option: ReactElement) => {
+        const {
+          props: { value, children },
+        } = option as { props: { value: string | number; children: string } };
+        if (controlledValue.includes(props.value as never)) {
+          return false;
+        }
+        return filter(inputValue, { value, label: children });
+      }}
       dropdownRender={(dropdown) => (
         <>
           {dropdown}
@@ -50,7 +82,10 @@ export default function MultipleSelect(props: MultipleSelectProps) {
               checked={selectAll}
               onChange={(checked) => {
                 if (checked) {
-                  const value = options?.map((o: any) => (Object.hasOwn(o, "value") ? o.value : o));
+                  const value = [
+                    ...controlledValue,
+                    ...(allValue.length === 0 ? memoAllValue : allValue),
+                  ] as ValueType;
                   setControlledValue(value);
                   onChange?.(value, []);
                 } else {
