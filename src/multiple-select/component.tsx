@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { useState, useContext, useMemo, ReactElement } from "react";
+import { ReactElement, useContext, useMemo, useState } from "react";
 import { Checkbox, ConfigContext, Divider, Select } from "../";
 import { Locale } from "../locale/interface";
 import { MultipleSelectProps } from "./interface";
@@ -61,14 +61,18 @@ export default function MultipleSelect(props: MultipleSelectProps) {
         if (value.length === 0) {
           setAllValue(realOptions.map((o) => o.value) as ValueType);
         } else {
-          setAllValue(realOptions.filter((o) => filter(value, o)).map((o) => o.value) as ValueType);
+          setAllValue(
+            realOptions
+              .filter((o) => !controlledValue.includes(o.value as never) && filter(value, o))
+              .map((o) => o.value) as ValueType,
+          );
         }
       }}
       filterOption={(inputValue: string, option: ReactElement) => {
         const {
           props: { value, children },
         } = option as { props: { value: string | number; children: string } };
-        if (controlledValue.includes(props.value as never)) {
+        if (controlledValue.includes(value as never)) {
           return false;
         }
         return filter(inputValue, { value, label: children });
@@ -82,10 +86,12 @@ export default function MultipleSelect(props: MultipleSelectProps) {
               checked={selectAll}
               onChange={(checked) => {
                 if (checked) {
-                  const value = [
-                    ...controlledValue,
-                    ...(allValue.length === 0 ? memoAllValue : allValue),
-                  ] as ValueType;
+                  const value = Array.from(
+                    new Set([
+                      ...controlledValue,
+                      ...(allValue.length === 0 ? memoAllValue : allValue),
+                    ]),
+                  ) as ValueType;
                   setControlledValue(value);
                   onChange?.(value, []);
                 } else {
