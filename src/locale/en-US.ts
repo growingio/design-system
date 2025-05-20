@@ -9,5 +9,6 @@ export default {
   Tour: {
     previous: "Previous",
     next: "Next",
+    finish: "Finish",
   },
 };

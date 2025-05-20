@@ -1,9 +1,12 @@
-import { ReactNode, useMemo } from "react";
-import clsx from "clsx";
 import { default as RcTour, TourProps as RcTourProps } from "@rc-component/tour";
-export type { TourStepProps } from "./interface";
+import clsx from "clsx";
+import { ReactNode, useContext, useMemo } from "react";
+import { ConfigContext } from "../";
+import { default as defaultLocale } from "../locale/default";
+import { Locale } from "../locale/interface";
 import TourPanel from "./TourPanel";
 import { TourStepProps } from "./interface";
+export type { TourStepProps } from "./interface";
 
 export interface TourProps extends Omit<RcTourProps, "renderPanel" | "prefixCls"> {
   indicatorsRender?: (current: number, total: number) => ReactNode;
@@ -14,6 +17,8 @@ export interface TourProps extends Omit<RcTourProps, "renderPanel" | "prefixCls"
 
 function Tour(props: TourProps) {
   const { type = "default", indicatorType = "number", steps, ...restProps } = props;
+  const { locale = defaultLocale } = useContext(ConfigContext);
+  const tourLocale = (locale as Locale).Tour;
   const prefixCls = "gio-tour";
   const mergedSteps = useMemo(
     () =>
@@ -28,6 +33,7 @@ function Tour(props: TourProps) {
 
   const renderPanel = (stepProps: TourStepProps, stepCurrent: number) => (
     <TourPanel
+      locale={tourLocale}
       type={type}
       indicatorType={indicatorType}
       stepProps={stepProps}

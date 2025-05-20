@@ -10,6 +10,7 @@ export default {
   Tour: {
     previous: "上一步",
     next: "下一步",
+    finish: "结束导览",
   },
   PastPeriodPicker: {
     shortcuts: "常用时间",

@@ -3,10 +3,7 @@ import classNames from "clsx";
 import { type ReactNode, FC } from "react";
 import type { ButtonProps } from "../button";
 import Button from "../button";
-// import { useLocale } from '../locale';
-// import defaultLocale from '../locale/default';
-import type { TourStepProps } from "./interface";
-// import useClosable from '../_util/hooks/useClosable';
+import type { TourLocale, TourStepProps } from "./interface";
 
 function isValidNode(node: ReactNode): boolean {
   return node !== undefined && node !== null;
@@ -18,9 +15,17 @@ interface TourPanelProps {
   type: TourStepProps["type"];
   indicatorType?: "number" | "dot";
   closeIcon?: ReactNode;
+  locale: TourLocale;
 }
 
-const TourPanel: FC<TourPanelProps> = ({ stepProps, current, type, indicatorType, closeIcon }) => {
+const TourPanel: FC<TourPanelProps> = ({
+  stepProps,
+  current,
+  type,
+  indicatorType,
+  closeIcon,
+  locale,
+}) => {
   const {
     prefixCls,
     total = 1,
@@ -96,8 +101,6 @@ const TourPanel: FC<TourPanelProps> = ({ stepProps, current, type, indicatorType
     type: mergedType === "primary" ? "outline" : "default",
   };
 
-  // const [contextLocale] = useLocale('Tour', defaultLocale.Tour);
-
   return (
     <div className={`${prefixCls}-content`}>
       <div className={`${prefixCls}-inner`}>
@@ -120,8 +123,7 @@ const TourPanel: FC<TourPanelProps> = ({ stepProps, current, type, indicatorType
                 size="mini"
                 className={classNames(`${prefixCls}-prev-btn`, prevButtonProps?.className)}
               >
-                {/* {prevButtonProps?.children ?? contextLocale?.Previous} */}
-                Previous
+                {prevButtonProps?.children ?? locale?.previous}
               </Button>
             ) : null}
             <Button
@@ -131,9 +133,7 @@ const TourPanel: FC<TourPanelProps> = ({ stepProps, current, type, indicatorType
               size="mini"
               className={classNames(`${prefixCls}-next-btn`, nextButtonProps?.className)}
             >
-              {/* {nextButtonProps?.children ??
-                (isLastStep ? contextLocale?.Finish : contextLocale?.Next)} */}
-              Next
+              {nextButtonProps?.children ?? (isLastStep ? locale?.finish : locale?.next)}
             </Button>
           </div>
         </div>
