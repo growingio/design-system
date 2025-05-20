@@ -27,6 +27,7 @@ export default function MultipleSelect(props: MultipleSelectProps) {
   );
   const memoAllValue = useMemo(() => realOptions.map((o) => o.value), [realOptions]);
   const [controlledValue, setControlledValue] = useState<ValueType>(value ?? defaultValue ?? []);
+  const [inputValue, setInputValue] = useState<string>();
   const [allValue, setAllValue] = useState<ValueType>([]);
   const { locale } = useContext(ConfigContext);
 
@@ -51,12 +52,19 @@ export default function MultipleSelect(props: MultipleSelectProps) {
       dropdownMenuClassName={`${CLASS_NAME}-popup-inner`}
       mode={"multiple"}
       className={classPrefix}
+      inputValue={inputValue}
+      onInputValueChange={(value) => {
+        setInputValue(value);
+      }}
       value={controlledValue}
       onChange={(value, option) => {
         setControlledValue(value);
         onChange?.(value, option);
       }}
       options={options}
+      onSelect={() => {
+        setAllValue([]);
+      }}
       onSearch={(value: string) => {
         if (value.length === 0) {
           setAllValue(realOptions.map((o) => o.value) as ValueType);
@@ -93,11 +101,13 @@ export default function MultipleSelect(props: MultipleSelectProps) {
                     ]),
                   ) as ValueType;
                   setControlledValue(value);
+                  setInputValue("");
                   onChange?.(value, []);
                 } else {
                   setControlledValue([]);
                   onChange?.([], []);
                 }
+                setAllValue([]);
               }}
             >
               {selectLocale.selectAll}
