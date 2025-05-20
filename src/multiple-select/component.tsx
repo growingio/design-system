@@ -112,11 +112,17 @@ export default function MultipleSelect(props: MultipleSelectProps) {
             >
               {selectLocale.selectAll}
             </Checkbox>
-            <Divider type="vertical" />
-            <span className={`${CLASS_NAME}-popup-selected-label`}>{selectLocale.selected}</span>
-            <span className={`${CLASS_NAME}-popup-selected-text`}>
-              {controlledValue?.length ?? 0}
-            </span>
+            {!inputValue && (
+              <>
+                <Divider type="vertical" />
+                <span className={`${CLASS_NAME}-popup-selected-label`}>
+                  {selectLocale.selected}
+                </span>
+                <span className={`${CLASS_NAME}-popup-selected-text`}>
+                  {controlledValue?.length ?? 0}
+                </span>
+              </>
+            )}
           </div>
         </>
       )}
