@@ -1,7 +1,7 @@
 import { Alert, Radio, Select, Space, TimePicker, Typography } from "@/src";
 import { SizeType } from "@/src/_core/types";
 import { IconInfoCircle } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import dayjs from "dayjs";
 import { useState } from "react";
 

@@ -1,5 +1,5 @@
 import { Button, Form, Space, Typography, VerificationCode, useVerificationCode } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import React from "react";
 import classes from "./index.module.css";
 

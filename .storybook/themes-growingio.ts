@@ -1,4 +1,4 @@
-import { create } from "@storybook/theming/create";
+import { create } from "storybook/theming/create";
 
 const baseTheme = {
   fontBase: '"PingFang SC", sans-serif',

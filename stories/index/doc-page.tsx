@@ -1,5 +1,5 @@
 import { Grid, Tag, Typography } from "@/src";
-import { Unstyled } from "@storybook/blocks";
+import { Unstyled } from "@storybook/addon-docs/blocks";
 import { injectIntl, type IntlShape } from "react-intl";
 import styles from "./doc-page.module.css";
 import ListItem, { ListItemProps } from "./list-item";

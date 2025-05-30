@@ -1,6 +1,6 @@
 import { Button, Notification, NotificationProps, Space } from "@/src";
 import { IconInfoCircle } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<NotificationProps> = {
   component: Notification,

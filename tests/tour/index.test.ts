@@ -1,6 +1,6 @@
 import { test, expect } from "bun:test";
 import { fireEvent, screen } from "@testing-library/react";
-import { composeStories } from "@storybook/react";
+import { composeStories } from "@storybook/react-vite";
 import * as stories from "../../stories/data-display/tour/index.stories";
 
 const { Basic } = composeStories(stories);

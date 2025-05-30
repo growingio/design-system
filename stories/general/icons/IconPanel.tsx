@@ -1,5 +1,5 @@
 import React from "react";
-import { IconGallery, IconItem } from "@storybook/blocks";
+import { IconGallery, IconItem } from "@storybook/addon-docs/blocks";
 import { FormattedMessage, useIntl } from "react-intl";
 import * as Icon from "@arco-iconbox/react-growingio";
 import { Radio } from "@/src";

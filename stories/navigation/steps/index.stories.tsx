@@ -6,7 +6,7 @@ import {
   IconRight,
   IconThumbUp,
 } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ReactNode, useState } from "react";
 
 const meta: Meta<typeof Steps> = {

@@ -6,7 +6,7 @@ import {
   IconFaceSmileFill,
   IconInfo,
 } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { createContext } from "react";
 import "./index.css";
 

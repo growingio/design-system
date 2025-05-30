@@ -1,5 +1,5 @@
 import { Descriptions, DescriptionsProps, Radio, Space } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 
 const { Group: RadioGroup } = Radio;

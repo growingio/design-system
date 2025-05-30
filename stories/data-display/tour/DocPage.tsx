@@ -1,6 +1,6 @@
 import PropsTable, { type PropsTableData } from "@/components/props-table";
 import { Typography } from "@/src";
-import { Canvas, Source, Unstyled } from "@storybook/blocks";
+import { Canvas, Source, Unstyled } from "@storybook/addon-docs/blocks";
 import { injectIntl, IntlShape } from "react-intl";
 import * as TourStories from "./index.stories";
 

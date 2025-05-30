@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Markdown } from "@storybook/blocks";
+import { Markdown } from "@storybook/addon-docs/blocks";
 import { IntlShape, injectIntl } from "react-intl";
 import { Table, type TableColumnProps, Typography } from "../../src";
 

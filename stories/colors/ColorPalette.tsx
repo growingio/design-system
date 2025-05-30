@@ -1,5 +1,5 @@
 import colors from "@/src/_core/colors";
-import { ColorItem, ColorPalette, Title } from "@storybook/blocks";
+import { ColorItem, ColorPalette, Title } from "@storybook/addon-docs/blocks";
 import { useIntl } from "react-intl";
 
 type ColorMap = { [key: string]: string };

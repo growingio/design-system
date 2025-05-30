@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import PickerMenu from "@/src/_picker-menu";
 
 const meta: Meta<typeof PickerMenu> = {

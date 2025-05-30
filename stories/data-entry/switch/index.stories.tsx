@@ -1,7 +1,7 @@
 import { Space, Switch } from "@/src";
 import { IconCheck, IconClose } from "@arco-iconbox/react-growingio/src";
-import { action } from "@storybook/addon-actions";
-import type { Meta, StoryObj } from "@storybook/react";
+import { action } from "storybook/actions";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof Switch> = {
   component: Switch,

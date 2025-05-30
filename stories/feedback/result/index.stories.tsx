@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { FormattedMessage } from "react-intl";
 import { IconFaceSmileFill } from "@arco-iconbox/react-growingio";
 import { Space, Button, Link, Result } from "../../../src";

@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { Avatar, Card, Grid, Link, Space, Switch, Typography, Skeleton, Tabs } from "../../../src";
 import classes from "./index.module.css";

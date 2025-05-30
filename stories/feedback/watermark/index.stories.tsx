@@ -1,5 +1,5 @@
 import { Form, Grid, Input, InputNumber, Radio, Slider, Space, Typography, Watermark } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import React, { useMemo, useState } from "react";
 import { FormattedMessage } from "react-intl";
 

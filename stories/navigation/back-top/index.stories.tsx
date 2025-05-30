@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { BackTop, Button, InputNumber, Select, Space, Typography } from "@/src";
 import BrowserWindow from "@/components/browser-window";

@@ -1,5 +1,5 @@
 import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
-import { Canvas, Unstyled, Source, Markdown } from "@storybook/blocks";
+import { Canvas, Unstyled, Source, Markdown } from "@storybook/addon-docs/blocks";
 import PropsTable, { type PropsTableData } from "../../../components/props-table";
 import { Typography } from "../../../src";
 import * as ResultStories from "./index.stories";

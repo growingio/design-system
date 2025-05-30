@@ -1,6 +1,6 @@
 import { Collapse, Divider } from "@/src";
 import { IconMoreVertical } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof Collapse> = {
   component: Collapse,

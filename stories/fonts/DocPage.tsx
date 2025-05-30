@@ -1,5 +1,5 @@
 import { injectIntl, IntlShape } from "react-intl";
-import { Unstyled, Typeset } from "@storybook/blocks";
+import { Unstyled, Typeset } from "@storybook/addon-docs/blocks";
 import { Typography, Grid } from "../../src";
 import React from "react";
 

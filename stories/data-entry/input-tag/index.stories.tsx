@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { InputTag, Message, Radio, Space, Tag, Typography } from "../../../src";
 import { IconSearch } from "@arco-iconbox/react-growingio";

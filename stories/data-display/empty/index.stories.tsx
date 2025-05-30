@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { IntlShape } from "react-intl";
 import { Space, Table, TableColumnProps } from "@arco-design/web-react";
 import { IconExclamation } from "@arco-iconbox/react-growingio";

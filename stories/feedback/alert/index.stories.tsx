@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Alert, Button, Grid, Space } from "@/src";
 import { IconCheck } from "@arco-iconbox/react-growingio";
 import BrowserWindow from "@/components/browser-window";

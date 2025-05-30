@@ -1,6 +1,6 @@
 import { Button, Checkbox, CheckboxProps, Space, Tag } from "@/src";
 import { IconAt } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<CheckboxProps> = {
   component: Checkbox,

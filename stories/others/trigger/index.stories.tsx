@@ -1,5 +1,5 @@
 // @ts-nocheck
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { Trigger } from "@arco-design/web-react";
 import { Button, TriggerProps, Tooltip, Typography, Skeleton, Space, Input, Radio } from "@/src";

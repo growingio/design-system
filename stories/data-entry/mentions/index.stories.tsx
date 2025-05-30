@@ -1,6 +1,6 @@
 import { Mentions } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { action } from "storybook/actions";
 
 const meta: Meta<typeof Mentions> = {
   component: Mentions,

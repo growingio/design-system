@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { forwardRef, useRef, useState } from "react";
 import {
   Button,
@@ -15,7 +15,7 @@ import {
 import { IconFilter, IconSearch } from "@arco-iconbox/react-growingio/src";
 import { Resizable } from "react-resizable";
 import { StickyContainer, Sticky } from "react-sticky";
-import { action } from "@storybook/addon-actions";
+import { action } from "storybook/actions";
 
 import "./index.css";
 

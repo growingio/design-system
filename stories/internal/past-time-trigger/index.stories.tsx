@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import dayjs from "dayjs";
 import quarterOfYear from "dayjs/plugin/quarterOfYear";
 import { Select, Space } from "@/src";

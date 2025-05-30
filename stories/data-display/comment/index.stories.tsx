@@ -1,6 +1,6 @@
 import { Comment, Avatar, Button, Typography, Input, List } from "@/src";
 import { IconHeart, IconMessage, IconStar } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta: Meta<typeof Comment> = {
   component: Comment,

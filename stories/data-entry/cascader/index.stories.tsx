@@ -1,7 +1,7 @@
 import { Button, Cascader, Radio, Space } from "@/src";
 import { SizeType } from "@/src/_core/types";
 import { IconCursor } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 
 const meta: Meta<typeof Cascader> = {

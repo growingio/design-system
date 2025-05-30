@@ -1,6 +1,6 @@
 import { Form, InputNumber, Slider, Space, Switch, Typography } from "@/src";
-import { action } from "@storybook/addon-actions";
-import type { Meta, StoryObj } from "@storybook/react";
+import { action } from "storybook/actions";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 
 const meta: Meta<typeof Slider> = {

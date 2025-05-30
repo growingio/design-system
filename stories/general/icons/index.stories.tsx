@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Space } from "@/src";
 import { IconProps, IconStar, IconSync } from "@arco-iconbox/react-growingio";
 

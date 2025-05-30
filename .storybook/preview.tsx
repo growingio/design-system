@@ -1,7 +1,7 @@
-import type { Preview } from "@storybook/react";
-import React, { useEffect } from "react";
-import { themes } from "@storybook/theming";
-import { DocsContainer } from "@storybook/blocks";
+import type { Preview } from "@storybook/react-vite";
+import { useEffect } from "react";
+import { themes } from "storybook/theming";
+import { DocsContainer } from "@storybook/addon-docs/blocks";
 import { IntlProvider, injectIntl } from "react-intl";
 import { ConfigProvider } from "../src";
 import enUS from "../src/locale/en-US";

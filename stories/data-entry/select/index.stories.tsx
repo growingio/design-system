@@ -9,7 +9,7 @@ import {
   IconStar,
   IconUser,
 } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import debounce from "lodash-es/debounce";
 import { useEffect, useState } from "react";
 

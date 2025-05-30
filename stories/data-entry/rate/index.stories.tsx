@@ -1,6 +1,6 @@
 import { Rate, Space } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { action } from "storybook/actions";
 import { IconHeartFill } from "@arco-iconbox/react-growingio/src";
 
 const meta: Meta<typeof Rate> = {

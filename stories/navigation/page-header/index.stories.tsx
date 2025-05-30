@@ -1,5 +1,5 @@
 import { PageHeader, Space, Button, Divider, Typography } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { defaultArticle } from "../../general/typography/index.stories";
 import "./index.css";
 

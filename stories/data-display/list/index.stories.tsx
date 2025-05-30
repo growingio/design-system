@@ -1,6 +1,6 @@
 import { Avatar, Button, Image, List, Spin } from "@/src";
 import { IconHeart, IconMessage, IconStar } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ReactNode, useEffect, useState } from "react";
 
 const meta: Meta<typeof List> = {

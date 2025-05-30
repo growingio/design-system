@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 import { Button, ConfigProvider, DatePicker, Modal, Radio, TimePicker } from "../../../src";
 import zhCN from "../../../src/locale/zh-CN";

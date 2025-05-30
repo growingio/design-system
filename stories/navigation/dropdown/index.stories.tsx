@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import React, { ReactElement, ReactNode, useState, useRef } from "react";
 import { Dropdown, Button, Divider, Menu, Space, Tooltip } from "../../../src";
 import { IconDown } from "@arco-iconbox/react-growingio";

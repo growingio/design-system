@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@/src";
 import { IconCheckCircleFill, IconInfoCircleFill } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { createContext, useState } from "react";
 import Draggable from "react-draggable";
 import { FormattedMessage } from "react-intl";

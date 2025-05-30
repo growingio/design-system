@@ -1,5 +1,5 @@
 import { Affix, AffixProps, Button, Message } from "@/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import "./index.css";
 import BrowserWindow from "@/components/browser-window";
 

@@ -1,6 +1,6 @@
 import { Radio, Tabs, Typography, Space, TabsProps, Button } from "@/src";
 import { IconCalendar, IconClockCircle, IconUser } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 
 const meta: Meta<typeof Tabs> = {

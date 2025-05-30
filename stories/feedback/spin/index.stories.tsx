@@ -1,6 +1,6 @@
 import { Button, Card, Link, Space, Spin } from "@/src";
 import { IconLoop } from "@arco-iconbox/react-growingio/src";
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { useState } from "react";
 
 const meta: Meta<typeof Spin> = {

@@ -1,5 +1,5 @@
 import { injectIntl, IntlShape } from "react-intl";
-import { Canvas, Unstyled, Source } from "@storybook/blocks";
+import { Canvas, Unstyled, Source } from "@storybook/addon-docs/blocks";
 import PropsTable from "@/components/props-table";
 import { Typography } from "@/src";
 import * as BadgeStories from "./index.stories";
