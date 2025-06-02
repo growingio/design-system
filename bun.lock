@@ -25,7 +25,7 @@
         "clsx": "^2.1.1",
         "eslint": "^9.26.0",
         "eslint-plugin-react-refresh": "^0.4.20",
-        "eslint-plugin-storybook": "^9.0.1",
+        "eslint-plugin-storybook": "^9.0.4",
         "globals": "^16.2.0",
         "lodash-es": "^4.17.21",
         "react": "^18.3.0",
@@ -502,7 +502,7 @@
 
     "eslint-plugin-react-refresh": ["eslint-plugin-react-refresh@0.4.20", "", { "peerDependencies": { "eslint": ">=8.40" } }, "sha512-XpbHQ2q5gUF8BGOX4dHe+71qoirYMhApEPZ7sfhF/dNnOF1UXnCMGZf79SFTBO7Bz5YEIT4TMieSlJBWhP9WBA=="],
 
-    "eslint-plugin-storybook": ["eslint-plugin-storybook@9.0.1", "", { "dependencies": { "@typescript-eslint/utils": "^8.8.1" }, "peerDependencies": { "eslint": ">=8", "storybook": "^9.0.1" } }, "sha512-8WHL0K9c2SY3Ks4jEELQGu1jOJT311NqCN+8ppiKxNogzUUrEe0duaeSKCj6QA+IPtzXgHgbW7vVVk/mu3Nkqg=="],
+    "eslint-plugin-storybook": ["eslint-plugin-storybook@9.0.4", "", { "dependencies": { "@typescript-eslint/utils": "^8.8.1" }, "peerDependencies": { "eslint": ">=8", "storybook": "^9.0.4" } }, "sha512-HdwbfgPkZKsWG859RQk4iROH8D4zGsXxH2C3/7RlqELoT+nZYtc1BzVWzDeMAHadSXRasX3J+O1/4HNyuPXpJw=="],
 
     "eslint-scope": ["eslint-scope@8.3.0", "", { "dependencies": { "esrecurse": "^4.3.0", "estraverse": "^5.2.0" } }, "sha512-pUNxi75F8MJ/GdeKtVLSbYg4ZI34J6C0C7sbL4YOp2exGwen7ZsuBqKzUhXd0qMQ362yET3z+uPwKeg/0C2XCQ=="],
 
