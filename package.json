@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@arco-iconbox/react-growingio": "1.0.0",
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.30.0",
     "@formatjs/cli": "^6.7.1",
     "@happy-dom/global-registrator": "^18.0.1",
     "@storybook/addon-docs": "^9.0.13",
