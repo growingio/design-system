@@ -27,7 +27,7 @@
     "@formatjs/cli": "^6.7.1",
     "@happy-dom/global-registrator": "^18.0.1",
     "@storybook/addon-docs": "^9.0.16",
-    "@storybook/react-vite": "^9.0.16",
+    "@storybook/react-vite": "^9.1.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
