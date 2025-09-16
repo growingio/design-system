@@ -9,3 +9,16 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    groups:
+      react:
+        patterns:
+          - react
+          - react-dom
+      storybook:
+        patterns:
+          - storybook
+          - eslint-plugin-storybook
+          - "@storybook/*"
+      testing-library:
+        patterns:
+          - "@testing-library/*"
