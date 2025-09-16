@@ -33,7 +33,7 @@
         "react-intl": "^7.1.11",
         "react-resizable": "^3.0.5",
         "react-sticky": "^6.0.3",
-        "storybook": "^9.1.5",
+        "storybook": "^9.1.6",
         "storybook-addon-tag-badges": "^2.0.2",
         "typescript": "~5.9.2",
         "typescript-eslint": "^8.42.0",
@@ -778,7 +778,7 @@
 
     "source-map-js": ["source-map-js@1.2.1", "", {}, "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="],
 
-    "storybook": ["storybook@9.1.5", "", { "dependencies": { "@storybook/global": "^5.0.0", "@testing-library/jest-dom": "^6.6.3", "@testing-library/user-event": "^14.6.1", "@vitest/expect": "3.2.4", "@vitest/mocker": "3.2.4", "@vitest/spy": "3.2.4", "better-opn": "^3.0.2", "esbuild": "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0", "esbuild-register": "^3.5.0", "recast": "^0.23.5", "semver": "^7.6.2", "ws": "^8.18.0" }, "peerDependencies": { "prettier": "^2 || ^3" }, "optionalPeers": ["prettier"], "bin": "./bin/index.cjs" }, "sha512-cGwJ2AE6nxlwqQlOiI+HKX5qa7+FOV7Ha7Qa+GoASBIQSSnLfbY6UldgAxHCJGJOFtgW/wuqfDtNvni6sj1/OQ=="],
+    "storybook": ["storybook@9.1.6", "", { "dependencies": { "@storybook/global": "^5.0.0", "@testing-library/jest-dom": "^6.6.3", "@testing-library/user-event": "^14.6.1", "@vitest/expect": "3.2.4", "@vitest/mocker": "3.2.4", "@vitest/spy": "3.2.4", "better-opn": "^3.0.2", "esbuild": "^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0", "esbuild-register": "^3.5.0", "recast": "^0.23.5", "semver": "^7.6.2", "ws": "^8.18.0" }, "peerDependencies": { "prettier": "^2 || ^3" }, "optionalPeers": ["prettier"], "bin": "./bin/index.cjs" }, "sha512-iIcMaDKkjR5nN+JYBy9hhoxZhjX4TXhyJgUBed+toJOlfrl+QvxpBjImAi7qKyLR3hng3uoigEP0P8+vYtXpOg=="],
 
     "storybook-addon-tag-badges": ["storybook-addon-tag-badges@2.0.2", "", { "dependencies": { "@storybook/icons": "^1.4.0" }, "peerDependencies": { "storybook": "^9.0.0" } }, "sha512-vttxTOAg6p6jdcPQ/6egJMPEwG40j4AY6eyMjpID1UaDLl2o99k8wHR2UJT6E6DWeEvVx8x5nMIlcr1mBXvT2w=="],
 
