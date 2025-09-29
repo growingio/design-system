@@ -6,7 +6,7 @@
       "dependencies": {
         "@arco-design/web-react": "2.66.5",
         "@arco-themes/react-growingio": "0.6.0",
-        "@rc-component/tour": "^2.1.7",
+        "@rc-component/tour": "^2.2.0",
       },
       "devDependencies": {
         "@arco-iconbox/react-growingio": "1.0.0",
@@ -226,7 +226,7 @@
 
     "@rc-component/resize-observer": ["@rc-component/resize-observer@1.0.0", "", { "dependencies": { "@rc-component/util": "^1.2.0", "classnames": "^2.2.1" }, "peerDependencies": { "react": ">=16.9.0", "react-dom": ">=16.9.0" } }, "sha512-inR8Ka87OOwtrDJzdVp2VuEVlc5nK20lHolvkwFUnXwV50p+nLhKny1NvNTCKvBmS/pi/rTn/1Hvsw10sRRnXA=="],
 
-    "@rc-component/tour": ["@rc-component/tour@2.1.7", "", { "dependencies": { "@rc-component/portal": "^2.0.0", "@rc-component/trigger": "^3.0.0", "@rc-component/util": "^1.3.0", "classnames": "^2.3.2" }, "peerDependencies": { "react": ">=16.9.0", "react-dom": ">=16.9.0" } }, "sha512-1QIDQJIW8JO72Fb1dgGM26u1x8xORFgWl2h+9ZAYxn1PaXDEwOI8lEp5lfPOdq+NonE8jZNkMBwAZlW2/qzCFg=="],
+    "@rc-component/tour": ["@rc-component/tour@2.2.0", "", { "dependencies": { "@rc-component/portal": "^2.0.0", "@rc-component/trigger": "^3.0.0", "@rc-component/util": "^1.3.0", "classnames": "^2.3.2" }, "peerDependencies": { "react": ">=16.9.0", "react-dom": ">=16.9.0" } }, "sha512-9WF944DcDJaUZMB0gxbDgrVYkPyrxib2WketvUBHy2nqiAQDXZ0tSMTEDlis+rVYJmxF56JjT1SvkQsYcJTaOg=="],
 
     "@rc-component/trigger": ["@rc-component/trigger@3.1.0", "", { "dependencies": { "@rc-component/motion": "^1.1.4", "@rc-component/portal": "^2.0.0", "@rc-component/resize-observer": "^1.0.0", "@rc-component/util": "^1.2.1", "classnames": "^2.3.2" }, "peerDependencies": { "react": ">=16.9.0", "react-dom": ">=16.9.0" } }, "sha512-ZqVZMDaFIl2KQzVMYsr+DY+9hTUNLroSxdKWr1rQJ3DXmwhW9bzs8dNGVr0hZ4rUoKq35gimwP1LX0CGKIeFOQ=="],
 
