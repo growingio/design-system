@@ -15,7 +15,7 @@
   "dependencies": {
     "@arco-design/web-react": "2.66.8",
     "@arco-themes/react-growingio": "0.6.0",
-    "@rc-component/tour": "^2.2.0"
+    "@rc-component/tour": "^2.2.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
