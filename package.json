@@ -37,7 +37,7 @@
     "babel-plugin-formatjs": "^10.5.41",
     "clsx": "^2.1.1",
     "eslint": "^9.39.2",
-    "eslint-plugin-react-refresh": "^0.4.24",
+    "eslint-plugin-react-refresh": "^0.4.25",
     "eslint-plugin-storybook": "^10.1.8",
     "globals": "^16.5.0",
     "lodash-es": "^4.17.21",
