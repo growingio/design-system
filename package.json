@@ -40,7 +40,7 @@
     "eslint-plugin-react-refresh": "^0.4.25",
     "eslint-plugin-storybook": "^10.1.10",
     "globals": "^16.5.0",
-    "lodash-es": "^4.17.21",
+    "lodash-es": "^4.17.22",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-intl": "^7.1.14",
