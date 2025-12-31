@@ -12,7 +12,7 @@
       "devDependencies": {
         "@arco-iconbox/react-growingio": "1.0.0",
         "@eslint/js": "^9.39.2",
-        "@formatjs/cli": "^6.7.4",
+        "@formatjs/cli": "^6.8.8",
         "@happy-dom/global-registrator": "^20.0.11",
         "@storybook/addon-docs": "^10.1.10",
         "@storybook/react-vite": "^10.1.10",
@@ -169,7 +169,7 @@
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.4.1", "", { "dependencies": { "@eslint/core": "^0.17.0", "levn": "^0.4.1" } }, "sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA=="],
 
-    "@formatjs/cli": ["@formatjs/cli@6.7.4", "", { "peerDependencies": { "@glimmer/syntax": "^0.95.0", "@vue/compiler-core": "^3.5.12", "content-tag": "^3.0.0", "ember-template-recast": "^6.1.5", "vue": "^3.5.12" }, "optionalPeers": ["@glimmer/syntax", "@vue/compiler-core", "content-tag", "ember-template-recast", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-k6uqdeZDAjDd7iKKQ8yFYizFpbi5Y9H9NkV+hoIhmxaMSGvWRnRusQJaIQ+2rI14MH6knW6fx7tnO15C+ijDiw=="],
+    "@formatjs/cli": ["@formatjs/cli@6.8.8", "", { "peerDependencies": { "@glimmer/syntax": "^0.95.0", "@vue/compiler-core": "^3.5.12", "content-tag": "4", "ember-template-recast": "^6.1.5", "vue": "^3.5.12" }, "optionalPeers": ["@glimmer/syntax", "@vue/compiler-core", "content-tag", "ember-template-recast", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-YTN8BO0z8dZAMJyXxjpYRxAKuxbfVH0oBKger593/8Ql6+q691YI23yt8DP0L+6b9JzlYOoIa1ghTzd8vaukPw=="],
 
     "@formatjs/ecma402-abstract": ["@formatjs/ecma402-abstract@3.0.6", "", { "dependencies": { "@formatjs/fast-memoize": "3.0.1", "@formatjs/intl-localematcher": "0.7.3", "decimal.js": "^10.4.3", "tslib": "^2.8.0" } }, "sha512-fIOujvbua2wbKk8et+ftvUvRiW8RQDAwix7ZZNjq7GbCh0npeqsLpRyBmDQ2w3tLT9PwcBwDepfJukByz8nbSA=="],
 
