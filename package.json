@@ -34,7 +34,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^5.1.2",
-    "babel-plugin-formatjs": "^10.5.41",
+    "babel-plugin-formatjs": "^11.0.8",
     "clsx": "^2.1.1",
     "eslint": "^9.39.2",
     "eslint-plugin-react-refresh": "^0.4.26",
