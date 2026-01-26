@@ -5,7 +5,7 @@
     "": {
       "name": "design-system",
       "dependencies": {
-        "@arco-design/web-react": "2.66.9",
+        "@arco-design/web-react": "2.66.10",
         "@arco-themes/react-growingio": "0.6.0",
         "@rc-component/tour": "^2.3.0",
       },
@@ -51,7 +51,7 @@
 
     "@arco-design/color": ["@arco-design/color@0.4.0", "", { "dependencies": { "color": "^3.1.3" } }, "sha512-s7p9MSwJgHeL8DwcATaXvWT3m2SigKpxx4JA1BGPHL4gfvaQsmQfrLBDpjOJFJuJ2jG2dMt3R3P8Pm9E65q18g=="],
 
-    "@arco-design/web-react": ["@arco-design/web-react@2.66.9", "", { "dependencies": { "@arco-design/color": "^0.4.0", "@babel/runtime": "^7.5.5", "b-tween": "^0.3.3", "b-validate": "^1.4.2", "compute-scroll-into-view": "^1.0.17", "dayjs": "^1.10.5", "lodash": "^4.17.21", "number-precision": "^1.3.1", "react-focus-lock": "^2.13.2", "react-is": "^18.2.0", "react-transition-group": "^4.3.0", "resize-observer-polyfill": "^1.5.1", "scroll-into-view-if-needed": "^2.2.20", "shallowequal": "^1.1.0" }, "peerDependencies": { "react": ">=16", "react-dom": ">=16" } }, "sha512-OfSpgiIw72qquXCO6DtkoQir01PKki8aJQMM5Eoit8xt4we3wHfffUKIuDlvYHgyzKyXC84t5q+GIbcU5g4Irw=="],
+    "@arco-design/web-react": ["@arco-design/web-react@2.66.10", "", { "dependencies": { "@arco-design/color": "^0.4.0", "@babel/runtime": "^7.5.5", "b-tween": "^0.3.3", "b-validate": "^1.4.2", "compute-scroll-into-view": "^1.0.17", "dayjs": "^1.10.5", "lodash": "^4.17.21", "number-precision": "^1.3.1", "react-focus-lock": "^2.13.2", "react-is": "^18.2.0", "react-transition-group": "^4.3.0", "resize-observer-polyfill": "^1.5.1", "scroll-into-view-if-needed": "^2.2.20", "shallowequal": "^1.1.0" }, "peerDependencies": { "react": ">=16", "react-dom": ">=16" } }, "sha512-+RVARr5FBLnK/im/hlhhzKcPmOJclMSif29cK83eamGvsiAi7KuGg9+WHoXHe5Nhj73htc2aEX+t5+Ko945kxw=="],
 
     "@arco-iconbox/react-growingio": ["@arco-iconbox/react-growingio@1.0.0", "", {}, "sha512-xbm4ixj5/9eCun5lVAG3ufZ/ScMtt2KFgGRAEyWw3056AHQgyGtIxXjlQoyxyBcUwqOjWoooT31LqlrqhhMD6w=="],
 
