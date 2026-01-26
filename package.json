@@ -13,7 +13,7 @@
     "formatjs-extract": "formatjs extract 'stories/**/*.ts*' --ignore '**/*.d.ts' --out-file locales/zh-CN.json --format locales/formatter.js"
   },
   "dependencies": {
-    "@arco-design/web-react": "2.66.9",
+    "@arco-design/web-react": "2.66.10",
     "@arco-themes/react-growingio": "0.6.0",
     "@rc-component/tour": "^2.3.0"
   },
