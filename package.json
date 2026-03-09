@@ -24,7 +24,7 @@
   "devDependencies": {
     "@arco-iconbox/react-growingio": "1.0.0",
     "@eslint/js": "^10.0.1",
-    "@formatjs/cli": "^6.12.2",
+    "@formatjs/cli": "^6.13.1",
     "@happy-dom/global-registrator": "^20.7.0",
     "@storybook/addon-docs": "^10.2.15",
     "@storybook/react-vite": "^10.2.15",
