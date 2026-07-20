@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Markdown } from "@storybook/addon-docs/blocks";
-import { IntlShape, injectIntl } from "react-intl";
+import { useIntl } from "react-intl";
 import { Table, type TableColumnProps, Typography } from "../../src";
 
 const { Text } = Typography;
@@ -33,7 +33,6 @@ export interface PropsTableData {
 }
 
 export interface PropsTableProps {
-  intl: IntlShape;
   /**
    * 是否包含通用 Props，比如：className、style 等
    *
@@ -46,8 +45,8 @@ export interface PropsTableProps {
   data?: PropsTableData[];
 }
 
-export function PropsTable({ intl, includeCommonProps = true, data = [] }: PropsTableProps) {
-  const { formatMessage } = intl;
+export function PropsTable({ includeCommonProps = true, data = [] }: PropsTableProps) {
+  const { formatMessage } = useIntl();
   const columns: TableColumnProps[] = [
     {
       title: formatMessage({ defaultMessage: "参数名" }),
@@ -104,6 +103,4 @@ export function PropsTable({ intl, includeCommonProps = true, data = [] }: Props
   );
 }
 
-const IntlPropsTable = injectIntl(PropsTable);
-
-export default IntlPropsTable;
+export default PropsTable;

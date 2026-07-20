@@ -1,4 +1,4 @@
-import { injectIntl, IntlShape } from "react-intl";
+import { useIntl } from "react-intl";
 import { Unstyled, Typeset } from "@storybook/addon-docs/blocks";
 import { Typography, Grid } from "../../src";
 import React from "react";
@@ -71,7 +71,8 @@ const FONT_FAMILY = [
 ];
 const NUMBER_TEXT = "0123456789";
 
-function DocPage({ intl: { formatMessage } }: { intl: IntlShape }) {
+function DocPage() {
+  const { formatMessage } = useIntl();
   return (
     <Unstyled>
       <Title>{formatMessage({ defaultMessage: "字体 Fonts" })}</Title>
@@ -126,4 +127,4 @@ function DocPage({ intl: { formatMessage } }: { intl: IntlShape }) {
   );
 }
 
-export default injectIntl(DocPage);
+export default DocPage;

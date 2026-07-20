@@ -1,13 +1,13 @@
 import PropsTable, { type PropsTableData } from "@/components/props-table";
 import { Typography } from "@/src";
 import { Canvas, Source, Unstyled } from "@storybook/addon-docs/blocks";
-import { injectIntl, IntlShape } from "react-intl";
+import { useIntl } from "react-intl";
 import * as WatermarkStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
-function DocPage({ intl }: { intl: IntlShape }) {
-  const { formatMessage } = intl;
+function DocPage() {
+  const { formatMessage } = useIntl();
 
   const data: PropsTableData[] = [
     {
@@ -124,5 +124,4 @@ function DocPage({ intl }: { intl: IntlShape }) {
   );
 }
 
-const IntlDocPage = injectIntl(DocPage);
-export default IntlDocPage;
+export default DocPage;

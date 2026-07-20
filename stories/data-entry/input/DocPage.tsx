@@ -1,4 +1,4 @@
-import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/addon-docs/blocks";
 import PropsTable, { type PropsTableData } from "../../../components/props-table";
 import { Typography } from "../../../src";
@@ -6,7 +6,8 @@ import * as InputStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
-function DocPage({ intl: { formatMessage } }: { intl: IntlShape }) {
+function DocPage() {
+  const { formatMessage } = useIntl();
   const data: PropsTableData[] = [
     {
       name: "allowClear",
@@ -303,4 +304,4 @@ const { Search, TextArea, Password } = Input;`}
   );
 }
 
-export default injectIntl(DocPage);
+export default DocPage;

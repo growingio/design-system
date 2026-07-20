@@ -1,4 +1,4 @@
-import { FormattedMessage, injectIntl, IntlShape } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/addon-docs/blocks";
 import { Typography } from "@/src";
 import PropsTable from "../../../components/props-table";
@@ -6,8 +6,8 @@ import * as Stories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
-function DocPage({ intl }: { intl: IntlShape }) {
-  const { formatMessage } = intl;
+function DocPage() {
+  const { formatMessage } = useIntl();
   const data = [
     {
       name: "height",
@@ -196,5 +196,4 @@ const { Split } = ResizeBox;`}
   );
 }
 
-const IntlDocPage = injectIntl(DocPage);
-export default IntlDocPage;
+export default DocPage;

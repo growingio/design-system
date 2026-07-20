@@ -1,6 +1,6 @@
 import { Grid, Tag, Typography } from "@/src";
 import { Unstyled } from "@storybook/addon-docs/blocks";
-import { injectIntl, type IntlShape } from "react-intl";
+import { useIntl } from "react-intl";
 import styles from "./doc-page.module.css";
 import ListItem, { ListItemProps } from "./list-item";
 import AffixSvg from "./svgs/affix-svg";
@@ -77,8 +77,8 @@ import WatermarkSvg from "./svgs/watermark-svg";
 
 const { Title } = Typography;
 
-function DocPage({ intl }: { intl: IntlShape }) {
-  const { formatMessage } = intl;
+function DocPage() {
+  const { formatMessage } = useIntl();
   const groups: {
     [key: string]: { title: string; components: ListItemProps[] };
   } = {
@@ -499,5 +499,4 @@ function DocPage({ intl }: { intl: IntlShape }) {
   );
 }
 
-const IntlDocPage = injectIntl(DocPage);
-export default IntlDocPage;
+export default DocPage;

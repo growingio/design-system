@@ -1,13 +1,13 @@
 import PropsTable, { type PropsTableData } from "@/components/props-table";
 import { Typography } from "@/src";
 import { Canvas, Source, Unstyled } from "@storybook/addon-docs/blocks";
-import { IntlShape, injectIntl } from "react-intl";
+import { useIntl } from "react-intl";
 import * as Stories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
-function DocPage({ intl }: { intl: IntlShape }) {
-  const { formatMessage } = intl;
+function DocPage() {
+  const { formatMessage } = useIntl();
   const data: PropsTableData[] = [
     {
       name: "destroyOnHide",
@@ -314,4 +314,4 @@ const { TabPane } = Tabs;`}
   );
 }
 
-export default injectIntl(DocPage);
+export default DocPage;

@@ -1,4 +1,4 @@
-import { injectIntl, IntlShape } from "react-intl";
+import { useIntl } from "react-intl";
 import { Canvas, Unstyled, Source } from "@storybook/addon-docs/blocks";
 import PropsTable, { type PropsTableData } from "../../../components/props-table";
 import { Typography } from "../../../src";
@@ -6,8 +6,8 @@ import * as FormStories from "./index.stories";
 
 const { Title, Paragraph } = Typography;
 
-function DocPage({ intl }: { intl: IntlShape }) {
-  const { formatMessage } = intl;
+function DocPage() {
+  const { formatMessage } = useIntl();
 
   const data: PropsTableData[] = [
     {
@@ -467,4 +467,4 @@ function DocPage({ intl }: { intl: IntlShape }) {
   );
 }
 
-export default injectIntl(DocPage);
+export default DocPage;
