@@ -12,7 +12,7 @@
       "devDependencies": {
         "@arco-iconbox/react-growingio": "1.0.0",
         "@eslint/js": "^10.0.1",
-        "@formatjs/cli": "^6.14.2",
+        "@formatjs/cli": "^6.16.14",
         "@happy-dom/global-registrator": "^20.9.0",
         "@storybook/addon-docs": "^10.4.6",
         "@storybook/react-vite": "^10.4.6",
@@ -169,7 +169,19 @@
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.6.1", "", { "dependencies": { "@eslint/core": "^1.1.1", "levn": "^0.4.1" } }, "sha512-iH1B076HoAshH1mLpHMgwdGeTs0CYwL0SPMkGuSebZrwBp16v415e9NZXg2jtrqPVQjf6IANe2Vtlr5KswtcZQ=="],
 
-    "@formatjs/cli": ["@formatjs/cli@6.14.2", "", { "peerDependencies": { "@glimmer/syntax": "^0.84.3 || ^0.95.0", "@vue/compiler-core": "^3.5.0", "content-tag": "^4.1.0", "vue": "^3.5.0" }, "optionalPeers": ["@glimmer/syntax", "@vue/compiler-core", "content-tag", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-0aZLIRcrxIf6QU2u04bIorYIVA1Sm8hHlHzlK9ROGB2BLN0WbiBCwK3jAPV9um+pPS6O4ZFT6K9c2j/3iMkmSw=="],
+    "@formatjs/cli": ["@formatjs/cli@6.16.14", "", { "optionalDependencies": { "@formatjs/cli-native-darwin-arm64": "1.1.8", "@formatjs/cli-native-linux-arm64": "1.2.8", "@formatjs/cli-native-linux-arm64-musl": "1.0.6", "@formatjs/cli-native-linux-x64": "1.1.8", "@formatjs/cli-native-linux-x64-musl": "1.0.6", "@formatjs/cli-native-win32-x64": "1.1.9" }, "peerDependencies": { "@glimmer/syntax": "^0.84.3 || ^0.95.0", "@vue/compiler-core": "3", "content-tag": "4", "vue": "3" }, "optionalPeers": ["@glimmer/syntax", "@vue/compiler-core", "content-tag", "vue"], "bin": { "formatjs": "bin/formatjs" } }, "sha512-aortaTMdCWuGtHnksxpznioudRVvSVkY2/6AQrpUR3tpATGl8sWCuhU9XUEG4ba7UWbFGMv7XLME93rCPfIrJw=="],
+
+    "@formatjs/cli-native-darwin-arm64": ["@formatjs/cli-native-darwin-arm64@1.1.8", "", { "os": "darwin", "cpu": "arm64" }, "sha512-uIHA6JFbG5vE3GlQodIrbYMmQc50mhBBVJ++ze99Tetfj4eFmIOtVKz2UMt8P8QmvCUZQMyEH95Jm+FbBDY46A=="],
+
+    "@formatjs/cli-native-linux-arm64": ["@formatjs/cli-native-linux-arm64@1.2.8", "", { "os": "linux", "cpu": "arm64" }, "sha512-EfrurpWY66hjWvtlO9BjWMDze0SBw4dMMZkUnAZYNdBmOTTRJC+CLi62nRxiSoSVV7QzP8BN6W/zZ5qLySYl0w=="],
+
+    "@formatjs/cli-native-linux-arm64-musl": ["@formatjs/cli-native-linux-arm64-musl@1.0.6", "", { "os": "linux", "cpu": "arm64" }, "sha512-ZiM2H4w61rrvkAwhDFWjFEhW43/AphNNHa3lTdZvNOttst1mQ2gUS4+bLGBOfMqKG8+AU+6B9PCF67AbDOlwPg=="],
+
+    "@formatjs/cli-native-linux-x64": ["@formatjs/cli-native-linux-x64@1.1.8", "", { "os": "linux", "cpu": "x64" }, "sha512-J3aInCY7VKSyBrjpXedz/AYNbr+X82zLpSwfeO3obnOqUxn6dko9tnHlaQxuSnZHMx4sAOjJyTzUqDHD6Ft2GA=="],
+
+    "@formatjs/cli-native-linux-x64-musl": ["@formatjs/cli-native-linux-x64-musl@1.0.6", "", { "os": "linux", "cpu": "x64" }, "sha512-Va4rt4gL5p02gixW73VFLCvhgvXhsaT9dMdGfQE32/dqn4NYxg/8gquhauIBvTCkKPYgOhtXRcMWKQINxMB8oA=="],
+
+    "@formatjs/cli-native-win32-x64": ["@formatjs/cli-native-win32-x64@1.1.9", "", { "os": "win32", "cpu": "x64" }, "sha512-EUH4z1WhKmjJ4FIn+dvzmgbtJRZ4YHCP3kbHiZv0tgmrQiQ5Q4Flv0Smt66kwYMEnyEf9/mY1JmKdBIjPaQM6A=="],
 
     "@formatjs/ecma402-abstract": ["@formatjs/ecma402-abstract@3.1.1", "", { "dependencies": { "@formatjs/fast-memoize": "3.1.0", "@formatjs/intl-localematcher": "0.8.1", "decimal.js": "^10.6.0", "tslib": "^2.8.1" } }, "sha512-jhZbTwda+2tcNrs4kKvxrPLPjx8QsBCLCUgrrJ/S+G9YrGHWLhAyFMMBHJBnBoOwuLHd7L14FgYudviKaxkO2Q=="],
 
