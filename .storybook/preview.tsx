@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/react-vite";
 import { useEffect } from "react";
 import { themes } from "storybook/theming";
 import { DocsContainer } from "@storybook/addon-docs/blocks";
-import { IntlProvider, injectIntl } from "react-intl";
+import { IntlProvider } from "react-intl";
 import { ConfigProvider } from "../src";
 import enUS from "../src/locale/en-US";
 import zhCN from "../src/locale/zh-CN";
@@ -43,11 +43,10 @@ const withConfigProvider = (Story, context) => {
     globals: { locale },
   } = context;
 
-  const StoryWithIntl = injectIntl(Story);
   return (
     <IntlProvider defaultLocale={defaultLocale} locale={locale} messages={getDocsLocale(locale)}>
       <ConfigProvider locale={getComponentLocale(locale)}>
-        <StoryWithIntl />
+        <Story />
       </ConfigProvider>
     </IntlProvider>
   );
